@@ -1,0 +1,8 @@
+cloudservice module
+===================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudservice
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

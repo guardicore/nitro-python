@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>nsicapprofile module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="ns package" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html" />
+    <link rel="next" title="nsip module" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsip.html" />
+    <link rel="prev" title="nshttpprofile module" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshttpprofile.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsip.html" title="nsip module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshttpprofile.html" title="nshttpprofile module"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html" accesskey="U">ns package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile">
+<span id="nsicapprofile-module"></span><h1>nsicapprofile module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile">
+<em class="property">class </em><tt class="descname">nsicapprofile</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<p>Configuration for ICAP profile resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.name">
+<tt class="descname">name</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for an ICAP profile. Must begin with a letter, number, or the underscore (_) character. Other characters allowed, after the first character, are the hyphen (-), period (.), hash (#), space ( ), at (&#64;), colon (:), and equal (=) characters. The name of a ICAP profile cannot be changed after it is created.
+CLI Users: If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, &#8220;my icap profile&#8221; or &#8216;my icap profile&#8217;).&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  127.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.preview">
+<tt class="descname">preview</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.preview" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable or Disable preview header with ICAP request. This feature allows an ICAP server to see the beginning of a transaction, then decide if it wants to opt-out of the transaction early instead of receiving the remainder of the request message.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.previewlength">
+<tt class="descname">previewlength</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.previewlength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Value of Preview Header field. Citrix ADC uses the minimum of this set value and the preview size received on OPTIONS response.&lt;br/&gt;Default value: 4096&lt;br/&gt;Maximum length =  0xFFFFFFFE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.uri">
+<tt class="descname">uri</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.uri" title="Permalink to this definition">¶</a></dt>
+<dd><p>URI representing icap service. It is a mandatory argument while creating an icapprofile.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.hostheader">
+<tt class="descname">hostheader</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.hostheader" title="Permalink to this definition">¶</a></dt>
+<dd><p>ICAP Host Header.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.useragent">
+<tt class="descname">useragent</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.useragent" title="Permalink to this definition">¶</a></dt>
+<dd><p>ICAP User Agent Header String.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.mode">
+<tt class="descname">mode</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>ICAP Mode of operation. It is a mandatory argument while creating an icapprofile.&lt;br/&gt;Possible values = REQMOD, RESPMOD.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.queryparams">
+<tt class="descname">queryparams</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.queryparams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query parameters to be included with ICAP request URI. Entered values should be in arg=value format. For more than one parameters, add &amp; separated values. e.g.: arg1=val1&amp;arg2=val2.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.connectionkeepalive">
+<tt class="descname">connectionkeepalive</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.connectionkeepalive" title="Permalink to this definition">¶</a></dt>
+<dd><p>If enabled, Citrix ADC keeps the ICAP connection alive after a transaction to reuse it to send next ICAP request.&lt;br/&gt;Default value: ENABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.allow204">
+<tt class="descname">allow204</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.allow204" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable or Disable sending Allow: 204 header in ICAP request.&lt;br/&gt;Default value: ENABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.inserticapheaders">
+<tt class="descname">inserticapheaders</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.inserticapheaders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert custom ICAP headers in the ICAP request to send to ICAP server. The headers can be static or can be dynamically constructed using PI Policy Expression. For example, to send static user agent and Client&#8217;s IP address, the expression can be specified as &#8220;User-Agent: NS-ICAP-Client/V1.0rnX-Client-IP: &#8220;+CLIENT.IP.SRC+&#8221;rn&#8221;.
+The Citrix ADC does not check the validity of the specified header name-value. You must manually validate the specified header syntax.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.inserthttprequest">
+<tt class="descname">inserthttprequest</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.inserthttprequest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exact HTTP request, in the form of an expression, which the Citrix ADC encapsulates and sends to the ICAP server. If you set this parameter, the ICAP request is sent using only this header. This can be used when the HTTP header is not available to send or ICAP server only needs part of the incoming HTTP request. The request expression is constrained by the feature for which it is used.
+The Citrix ADC does not check the validity of this request. You must manually validate the request.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.reqtimeout">
+<tt class="descname">reqtimeout</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.reqtimeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time, in seconds, within which the remote server should respond to the ICAP-request. If the Netscaler does not receive full response with this time, the specified request timeout action is performed. Zero value disables this timeout functionality.&lt;br/&gt;Default value: 0&lt;br/&gt;Maximum length =  86400.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.reqtimeoutaction">
+<tt class="descname">reqtimeoutaction</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.reqtimeoutaction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the action to perform if the Vserver/Server representing the remote service does not respond with any response within the timeout value configured. The Supported actions are
+* BYPASS - This Ignores the remote server response and sends the request/response to Client/Server.
+* If the ICAP response with Encapsulated headers is not received within the request-timeout value configured, this Ignores the remote ICAP server response and sends the Full request/response to Server/Client.
+* RESET - Reset the client connection by closing it. The client program, such as a browser, will handle this and may inform the user. The client may then resend the request if desired.
+* DROP - Drop the request without sending a response to the user.&lt;br/&gt;Default value: RESET&lt;br/&gt;Possible values = BYPASS, DROP, RESET.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.logaction">
+<tt class="descname">logaction</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.logaction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the audit message action which would be evaluated on receiving the ICAP response to emit the logs.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.filter_add_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_add_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.filter_add_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only add operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.add">
+<em class="property">classmethod </em><tt class="descname">add</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to add nsicapprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.filter_delete_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_delete_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.filter_delete_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only delete operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.delete">
+<em class="property">classmethod </em><tt class="descname">delete</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to delete nsicapprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.filter_update_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_update_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.filter_update_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only update operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.update">
+<em class="property">classmethod </em><tt class="descname">update</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to update nsicapprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.unset">
+<em class="property">classmethod </em><tt class="descname">unset</tt><big>(</big><em>client</em>, <em>resource</em>, <em>args</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.unset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to unset the properties of nsicapprofile resource.
+Properties that need to be unset are specified in args array.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>client</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the nsicapprofile resources that are configured on netscaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.get_filtered">
+<em class="property">classmethod </em><tt class="descname">get_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.get_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch filtered set of nsicapprofile resources.
+filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.count">
+<em class="property">classmethod </em><tt class="descname">count</tt><big>(</big><em>client</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count the nsicapprofile resources configured on NetScaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.count_filtered">
+<em class="property">classmethod </em><tt class="descname">count_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.count_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count filtered the set of nsicapprofile resources.
+Filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Mode">
+<em class="property">class </em><tt class="descname">Mode</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Mode" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Mode.REQMOD">
+<tt class="descname">REQMOD</tt><em class="property"> = 'REQMOD'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Mode.REQMOD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Mode.RESPMOD">
+<tt class="descname">RESPMOD</tt><em class="property"> = 'RESPMOD'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Mode.RESPMOD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Reqtimeoutaction">
+<em class="property">class </em><tt class="descclassname">nsicapprofile.</tt><tt class="descname">Reqtimeoutaction</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Reqtimeoutaction" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Reqtimeoutaction.BYPASS">
+<tt class="descname">BYPASS</tt><em class="property"> = 'BYPASS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Reqtimeoutaction.BYPASS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Reqtimeoutaction.DROP">
+<tt class="descname">DROP</tt><em class="property"> = 'DROP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Reqtimeoutaction.DROP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Reqtimeoutaction.RESET">
+<tt class="descname">RESET</tt><em class="property"> = 'RESET'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Reqtimeoutaction.RESET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Connectionkeepalive">
+<em class="property">class </em><tt class="descclassname">nsicapprofile.</tt><tt class="descname">Connectionkeepalive</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Connectionkeepalive" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Connectionkeepalive.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Connectionkeepalive.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Connectionkeepalive.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Connectionkeepalive.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Preview">
+<em class="property">class </em><tt class="descclassname">nsicapprofile.</tt><tt class="descname">Preview</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Preview" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Preview.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Preview.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Preview.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Preview.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Allow204">
+<em class="property">class </em><tt class="descclassname">nsicapprofile.</tt><tt class="descname">Allow204</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Allow204" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Allow204.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Allow204.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Allow204.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile.Allow204.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile_response">
+<em class="property">class </em><tt class="descname">nsicapprofile_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.nsicapprofile_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html">aaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.adm.html">adm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.analytics.html">analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.app.html">app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.azure.html">azure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.basic.html">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bfd.html">bfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bot.html">bot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cache.html">cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.html">cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cmp.html">cmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.html">contentinspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cr.html">cr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html">cs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.db.html">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html">gslb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ha.html">ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html">ica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsecalg.html">ipsecalg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html">lb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lldp.html">lldp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html">lsn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.network.html">network</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html">ns</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl.html">nsacl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.html">nsacl6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacls.html">nsacls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacls6.html">nsacls6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsappflowcollector.html">nsappflowcollector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsappflowparam.html">nsappflowparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsaptlicense.html">nsaptlicense</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsassignment.html">nsassignment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nscapacity.html">nscapacity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nscentralmanagementserver.html">nscentralmanagementserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsconfig.html">nsconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsconnectiontable.html">nsconnectiontable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsconsoleloginprompt.html">nsconsoleloginprompt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nscqaparam.html">nscqaparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsdhcpip.html">nsdhcpip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsdhcpparams.html">nsdhcpparams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsdiameter.html">nsdiameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsencryptionkey.html">nsencryptionkey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsencryptionparams.html">nsencryptionparams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsevents.html">nsevents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsextension.html">nsextension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsextension_binding.html">nsextension_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsextension_extensionfunction_binding.html">nsextension_extensionfunction_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsfeature.html">nsfeature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshardware.html">nshardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshmackey.html">nshmackey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshostname.html">nshostname</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshttpparam.html">nshttpparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshttpprofile.html">nshttpprofile</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">nsicapprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsip.html">nsip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsip6.html">nsip6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicense.html">nslicense</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicenseparameters.html">nslicenseparameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicenseproxyserver.html">nslicenseproxyserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicenseserver.html">nslicenseserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicenseserverpool.html">nslicenseserverpool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitidentifier.html">nslimitidentifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitidentifier_binding.html">nslimitidentifier_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitidentifier_nslimitsessions_binding.html">nslimitidentifier_nslimitsessions_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitselector.html">nslimitselector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitsessions.html">nslimitsessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsmigration.html">nsmigration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsmode.html">nsmode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.html">nsparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition.html">nspartition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition_binding.html">nspartition_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition_bridgegroup_binding.html">nspartition_bridgegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition_vlan_binding.html">nspartition_vlan_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition_vxlan_binding.html">nspartition_vxlan_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartitionmac.html">nspartitionmac</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspbr.html">nspbr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspbr6.html">nspbr6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspbrs.html">nspbrs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsratecontrol.html">nsratecontrol</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsrollbackcmd.html">nsrollbackcmd</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsrpcnode.html">nsrpcnode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsrunningconfig.html">nsrunningconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssavedconfig.html">nssavedconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsservicefunction.html">nsservicefunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsservicepath.html">nsservicepath</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsservicepath_binding.html">nsservicepath_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsservicepath_nsservicefunction_binding.html">nsservicepath_nsservicefunction_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssimpleacl.html">nssimpleacl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssimpleacl6.html">nssimpleacl6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssourceroutecachetable.html">nssourceroutecachetable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsspparams.html">nsspparams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsstats.html">nsstats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssurgeq.html">nssurgeq</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstcpbufparam.html">nstcpbufparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstcpparam.html">nstcpparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstcpprofile.html">nstcpprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstestlicense.html">nstestlicense</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimeout.html">nstimeout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimer.html">nstimer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimer_autoscalepolicy_binding.html">nstimer_autoscalepolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimer_binding.html">nstimer_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimezone.html">nstimezone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain.html">nstrafficdomain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain_binding.html">nstrafficdomain_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain_bridgegroup_binding.html">nstrafficdomain_bridgegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain_vlan_binding.html">nstrafficdomain_vlan_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain_vxlan_binding.html">nstrafficdomain_vxlan_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsvariable.html">nsvariable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsversion.html">nsversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsvpxparam.html">nsvpxparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsweblogparam.html">nsweblogparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsxmlnamespace.html">nsxmlnamespace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.reboot.html">reboot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.shutdown.html">shutdown</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ntp.html">ntp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pcp.html">pcp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.policy.html">policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pq.html">pq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.protocol.html">protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quic.html">quic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quicbridge.html">quicbridge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html">rdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.reputation.html">reputation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.router.html">router</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.smpp.html">smpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.html">subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ulfd.html">ulfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.html">urlfiltering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.user.html">user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.utility.html">utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.videooptimization.html">videooptimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.vpn.html">vpn</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a></li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshttpprofile.html"
+                        title="previous chapter">nshttpprofile module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsip.html"
+                        title="next chapter">nsip module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

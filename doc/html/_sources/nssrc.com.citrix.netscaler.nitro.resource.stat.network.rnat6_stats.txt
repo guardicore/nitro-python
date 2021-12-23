@@ -1,0 +1,8 @@
+rnat6_stats module
+==================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.stat.network.rnat6_stats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

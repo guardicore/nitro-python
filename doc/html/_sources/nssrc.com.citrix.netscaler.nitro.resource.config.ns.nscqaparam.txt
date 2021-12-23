@@ -1,0 +1,8 @@
+nscqaparam module
+=================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.ns.nscqaparam
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

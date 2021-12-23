@@ -1,0 +1,8 @@
+hasyncfailures module
+=====================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.ha.hasyncfailures
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

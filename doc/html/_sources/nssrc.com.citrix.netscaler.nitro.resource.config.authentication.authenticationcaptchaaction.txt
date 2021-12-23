@@ -1,0 +1,8 @@
+authenticationcaptchaaction module
+==================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.authentication.authenticationcaptchaaction
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

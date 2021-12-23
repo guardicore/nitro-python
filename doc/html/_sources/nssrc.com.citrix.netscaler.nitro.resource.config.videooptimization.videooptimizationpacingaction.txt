@@ -1,0 +1,8 @@
+videooptimizationpacingaction module
+====================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.videooptimization.videooptimizationpacingaction
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

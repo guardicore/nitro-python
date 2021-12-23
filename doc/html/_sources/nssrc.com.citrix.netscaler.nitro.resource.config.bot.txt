@@ -1,0 +1,33 @@
+bot package
+===========
+
+Subpackages
+-----------
+
+.. toctree::
+
+	botglobal_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botglobal_binding>
+	botglobal_botpolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botglobal_botpolicy_binding>
+	botpolicy <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botpolicy>
+	botpolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botpolicy_binding>
+	botpolicy_botglobal_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botpolicy_botglobal_binding>
+	botpolicy_botpolicylabel_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botpolicy_botpolicylabel_binding>
+	botpolicy_csvserver_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botpolicy_csvserver_binding>
+	botpolicy_lbvserver_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botpolicy_lbvserver_binding>
+	botpolicylabel <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botpolicylabel>
+	botpolicylabel_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botpolicylabel_binding>
+	botpolicylabel_botpolicy_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botpolicylabel_botpolicy_binding>
+	botpolicylabel_policybinding_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botpolicylabel_policybinding_binding>
+	botprofile <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botprofile>
+	botprofile_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botprofile_binding>
+	botprofile_blacklist_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botprofile_blacklist_binding>
+	botprofile_captcha_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botprofile_captcha_binding>
+	botprofile_ipreputation_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botprofile_ipreputation_binding>
+	botprofile_kmdetectionexpr_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botprofile_kmdetectionexpr_binding>
+	botprofile_logexpression_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botprofile_logexpression_binding>
+	botprofile_ratelimit_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botprofile_ratelimit_binding>
+	botprofile_tps_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botprofile_tps_binding>
+	botprofile_trapinsertionurl_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botprofile_trapinsertionurl_binding>
+	botprofile_whitelist_binding <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botprofile_whitelist_binding>
+	botsettings <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botsettings>
+	botsignature <nssrc.com.citrix.netscaler.nitro.resource.config.bot.botsignature>

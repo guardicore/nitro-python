@@ -1,0 +1,8 @@
+urlfilteringcategorization module
+=================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.urlfilteringcategorization
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

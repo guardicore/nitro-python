@@ -1,0 +1,17 @@
+cloud package
+=============
+
+Subpackages
+-----------
+
+.. toctree::
+
+	cloudallowedngsticketprofile <nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudallowedngsticketprofile>
+	cloudautoscalegroup <nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudautoscalegroup>
+	cloudcredential <nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudcredential>
+	cloudngsparameter <nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudngsparameter>
+	cloudparameter <nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudparameter>
+	cloudparaminternal <nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudparaminternal>
+	cloudprofile <nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile>
+	cloudservice <nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudservice>
+	cloudvserverip <nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudvserverip>

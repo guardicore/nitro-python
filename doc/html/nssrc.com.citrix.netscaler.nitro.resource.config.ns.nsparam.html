@@ -1,0 +1,608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>nsparam module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="ns package" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html" />
+    <link rel="next" title="nspartition module" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition.html" />
+    <link rel="prev" title="nsmode module" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsmode.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition.html" title="nspartition module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsmode.html" title="nsmode module"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html" accesskey="U">ns package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam">
+<span id="nsparam-module"></span><h1>nsparam module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam">
+<em class="property">class </em><tt class="descname">nsparam</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<p>Configuration for Citrix ADC parameters resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.httpport">
+<tt class="descname">httpport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.httpport" title="Permalink to this definition">¶</a></dt>
+<dd><p>HTTP ports on the web server. This allows the system to perform connection off-load for any client request that has a destination port matching one of these configured ports.&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  65535.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.maxconn">
+<tt class="descname">maxconn</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.maxconn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum number of connections that will be made from the appliance to the web server(s) attached to it. The value entered here is applied globally to all attached servers.&lt;br/&gt;Default value: 0&lt;br/&gt;Maximum length =  4294967294.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.maxreq">
+<tt class="descname">maxreq</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.maxreq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum number of requests that the system can pass on a particular connection between the appliance and a server attached to it. Setting this value to 0 allows an unlimited number of requests to be passed. This value is overridden by the maximum number of requests configured on the individual service.&lt;br/&gt;Maximum length =  65535.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.cip">
+<tt class="descname">cip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.cip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable or disable the insertion of the actual client IP address into the HTTP header request passed from the client to one, some, or all servers attached to the system. The passed address can then be accessed through a minor modification to the server.
+* If the CIP header is specified, it will be used as the client IP header.
+* If the CIP header is not specified, the value that has been set will be used as the client IP header.&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.cipheader">
+<tt class="descname">cipheader</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.cipheader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Text that will be used as the client IP address header.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.cookieversion">
+<tt class="descname">cookieversion</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.cookieversion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Version of the cookie inserted by the system.&lt;br/&gt;Possible values = 0, 1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.securecookie">
+<tt class="descname">securecookie</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.securecookie" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable or disable secure flag for persistence cookie.&lt;br/&gt;Default value: ENABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.pmtumin">
+<tt class="descname">pmtumin</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.pmtumin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum path MTU value that Citrix ADC will process in the ICMP fragmentation needed message. If the ICMP message contains a value less than this value, then this value is used instead.&lt;br/&gt;Default value: 576&lt;br/&gt;Minimum length =  168&lt;br/&gt;Maximum length =  1500.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.pmtutimeout">
+<tt class="descname">pmtutimeout</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.pmtutimeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interval, in minutes, for flushing the PMTU entries.&lt;br/&gt;Default value: 10&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  1440.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.ftpportrange">
+<tt class="descname">ftpportrange</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.ftpportrange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum and maximum port (port range) that FTP services are allowed to use.&lt;br/&gt;Minimum length =  1024&lt;br/&gt;Maximum length =  64000.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.crportrange">
+<tt class="descname">crportrange</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.crportrange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Port range for cache redirection services.&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  65535.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.timezone">
+<tt class="descname">timezone</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.timezone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time zone for the Citrix ADC. Name of the time zone should be specified as argument.&lt;br/&gt;Default value: CoordinatedUniversalTime&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  63.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.grantquotamaxclient">
+<tt class="descname">grantquotamaxclient</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.grantquotamaxclient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage of shared quota to be granted at a time for maxClient.&lt;br/&gt;Default value: 10&lt;br/&gt;Maximum length =  100.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.exclusivequotamaxclient">
+<tt class="descname">exclusivequotamaxclient</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.exclusivequotamaxclient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage of maxClient to be given to PEs.&lt;br/&gt;Default value: 80&lt;br/&gt;Maximum length =  100.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.grantquotaspillover">
+<tt class="descname">grantquotaspillover</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.grantquotaspillover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage of shared quota to be granted at a time for spillover.&lt;br/&gt;Default value: 10&lt;br/&gt;Maximum length =  100.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.exclusivequotaspillover">
+<tt class="descname">exclusivequotaspillover</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.exclusivequotaspillover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Percentage of maximum limit to be given to PEs.&lt;br/&gt;Default value: 80&lt;br/&gt;Maximum length =  100.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.useproxyport">
+<tt class="descname">useproxyport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.useproxyport" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable/Disable use_proxy_port setting.&lt;br/&gt;Default value: ENABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.internaluserlogin">
+<tt class="descname">internaluserlogin</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.internaluserlogin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables/disables the internal user from logging in to the appliance. Before disabling internal user login, you must have key-based authentication set up on the appliance. The file name for the key pair must be &#8220;ns_comm_key&#8221;.&lt;br/&gt;Default value: ENABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.aftpallowrandomsourceport">
+<tt class="descname">aftpallowrandomsourceport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.aftpallowrandomsourceport" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow the FTP server to come from a random source port for active FTP data connections.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.icaports">
+<tt class="descname">icaports</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.icaports" title="Permalink to this definition">¶</a></dt>
+<dd><p>The ICA ports on the Web server. This allows the system to perform connection off-load for any
+client request that has a destination port matching one of these configured ports.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.tcpcip">
+<tt class="descname">tcpcip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.tcpcip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable or disable the insertion of the client TCP/IP header in TCP payload passed from the client to one, some, or all servers attached to the system. The passed address can then be accessed through a minor modification to the server.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.servicepathingressvlan">
+<tt class="descname">servicepathingressvlan</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.servicepathingressvlan" title="Permalink to this definition">¶</a></dt>
+<dd><p>VLAN on which the subscriber traffic arrives on the appliance.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.secureicaports">
+<tt class="descname">secureicaports</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.secureicaports" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Secure ICA ports on the Web server. This allows the system to perform connection off-load for any
+client request that has a destination port matching one of these configured ports.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.mgmthttpport">
+<tt class="descname">mgmthttpport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.mgmthttpport" title="Permalink to this definition">¶</a></dt>
+<dd><p>This allow the configuration of management HTTP port.&lt;br/&gt;Default value: 80&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  65534.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.mgmthttpsport">
+<tt class="descname">mgmthttpsport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.mgmthttpsport" title="Permalink to this definition">¶</a></dt>
+<dd><p>This allows the configuration of management HTTPS port.&lt;br/&gt;Default value: 443&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  65534.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.proxyprotocol">
+<tt class="descname">proxyprotocol</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.proxyprotocol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disable/Enable v1 or v2 proxy protocol header for client info insertion.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.advancedanalyticsstats">
+<tt class="descname">advancedanalyticsstats</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.advancedanalyticsstats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disable/Enable advanace analytics stats.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.ipttl">
+<tt class="descname">ipttl</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.ipttl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the IP Time to Live (TTL) and Hop Limit value for all outgoing packets from Citrix ADC.&lt;br/&gt;Default value: 255&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  255.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.autoscaleoption">
+<tt class="descname">autoscaleoption</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.autoscaleoption" title="Permalink to this definition">¶</a></dt>
+<dd><p>64 bits are provided for communication between ADM and ADC in cloud deployments. Currently LSB 3 bits are used.0x01=&gt;AWS,0x02=&gt;Azure,0x04=&gt;GCP.&lt;br/&gt;Default value: 0.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.filter_update_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_update_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.filter_update_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only update operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.update">
+<em class="property">classmethod </em><tt class="descname">update</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to update nsparam.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.unset">
+<em class="property">classmethod </em><tt class="descname">unset</tt><big>(</big><em>client</em>, <em>resource</em>, <em>args</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.unset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to unset the properties of nsparam resource.
+Properties that need to be unset are specified in args array.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>client</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the nsparam resources that are configured on netscaler.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Proxyprotocol">
+<em class="property">class </em><tt class="descname">Proxyprotocol</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Proxyprotocol" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Proxyprotocol.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Proxyprotocol.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Proxyprotocol.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Proxyprotocol.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Advancedanalyticsstats">
+<em class="property">class </em><tt class="descclassname">nsparam.</tt><tt class="descname">Advancedanalyticsstats</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Advancedanalyticsstats" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Advancedanalyticsstats.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Advancedanalyticsstats.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Advancedanalyticsstats.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Advancedanalyticsstats.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Securecookie">
+<em class="property">class </em><tt class="descclassname">nsparam.</tt><tt class="descname">Securecookie</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Securecookie" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Securecookie.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Securecookie.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Securecookie.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Securecookie.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Tcpcip">
+<em class="property">class </em><tt class="descclassname">nsparam.</tt><tt class="descname">Tcpcip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Tcpcip" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Tcpcip.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Tcpcip.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Tcpcip.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Tcpcip.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Cookieversion">
+<em class="property">class </em><tt class="descclassname">nsparam.</tt><tt class="descname">Cookieversion</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Cookieversion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Internaluserlogin">
+<em class="property">class </em><tt class="descclassname">nsparam.</tt><tt class="descname">Internaluserlogin</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Internaluserlogin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Internaluserlogin.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Internaluserlogin.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Internaluserlogin.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Internaluserlogin.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Useproxyport">
+<em class="property">class </em><tt class="descclassname">nsparam.</tt><tt class="descname">Useproxyport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Useproxyport" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Useproxyport.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Useproxyport.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Useproxyport.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Useproxyport.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Cip">
+<em class="property">class </em><tt class="descclassname">nsparam.</tt><tt class="descname">Cip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Cip" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Cip.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Cip.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Cip.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Cip.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Aftpallowrandomsourceport">
+<em class="property">class </em><tt class="descclassname">nsparam.</tt><tt class="descname">Aftpallowrandomsourceport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Aftpallowrandomsourceport" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Aftpallowrandomsourceport.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Aftpallowrandomsourceport.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Aftpallowrandomsourceport.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam.Aftpallowrandomsourceport.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam_response">
+<em class="property">class </em><tt class="descname">nsparam_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.nsparam_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html">aaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.adm.html">adm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.analytics.html">analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.app.html">app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.azure.html">azure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.basic.html">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bfd.html">bfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bot.html">bot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cache.html">cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.html">cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cmp.html">cmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.html">contentinspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cr.html">cr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html">cs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.db.html">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html">gslb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ha.html">ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html">ica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsecalg.html">ipsecalg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html">lb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lldp.html">lldp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html">lsn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.network.html">network</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html">ns</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl.html">nsacl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.html">nsacl6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacls.html">nsacls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacls6.html">nsacls6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsappflowcollector.html">nsappflowcollector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsappflowparam.html">nsappflowparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsaptlicense.html">nsaptlicense</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsassignment.html">nsassignment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nscapacity.html">nscapacity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nscentralmanagementserver.html">nscentralmanagementserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsconfig.html">nsconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsconnectiontable.html">nsconnectiontable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsconsoleloginprompt.html">nsconsoleloginprompt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nscqaparam.html">nscqaparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsdhcpip.html">nsdhcpip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsdhcpparams.html">nsdhcpparams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsdiameter.html">nsdiameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsencryptionkey.html">nsencryptionkey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsencryptionparams.html">nsencryptionparams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsevents.html">nsevents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsextension.html">nsextension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsextension_binding.html">nsextension_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsextension_extensionfunction_binding.html">nsextension_extensionfunction_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsfeature.html">nsfeature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshardware.html">nshardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshmackey.html">nshmackey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshostname.html">nshostname</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshttpparam.html">nshttpparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshttpprofile.html">nshttpprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.html">nsicapprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsip.html">nsip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsip6.html">nsip6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicense.html">nslicense</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicenseparameters.html">nslicenseparameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicenseproxyserver.html">nslicenseproxyserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicenseserver.html">nslicenseserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicenseserverpool.html">nslicenseserverpool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitidentifier.html">nslimitidentifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitidentifier_binding.html">nslimitidentifier_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitidentifier_nslimitsessions_binding.html">nslimitidentifier_nslimitsessions_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitselector.html">nslimitselector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitsessions.html">nslimitsessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsmigration.html">nsmigration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsmode.html">nsmode</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">nsparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition.html">nspartition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition_binding.html">nspartition_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition_bridgegroup_binding.html">nspartition_bridgegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition_vlan_binding.html">nspartition_vlan_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition_vxlan_binding.html">nspartition_vxlan_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartitionmac.html">nspartitionmac</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspbr.html">nspbr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspbr6.html">nspbr6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspbrs.html">nspbrs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsratecontrol.html">nsratecontrol</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsrollbackcmd.html">nsrollbackcmd</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsrpcnode.html">nsrpcnode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsrunningconfig.html">nsrunningconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssavedconfig.html">nssavedconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsservicefunction.html">nsservicefunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsservicepath.html">nsservicepath</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsservicepath_binding.html">nsservicepath_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsservicepath_nsservicefunction_binding.html">nsservicepath_nsservicefunction_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssimpleacl.html">nssimpleacl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssimpleacl6.html">nssimpleacl6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssourceroutecachetable.html">nssourceroutecachetable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsspparams.html">nsspparams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsstats.html">nsstats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssurgeq.html">nssurgeq</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstcpbufparam.html">nstcpbufparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstcpparam.html">nstcpparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstcpprofile.html">nstcpprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstestlicense.html">nstestlicense</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimeout.html">nstimeout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimer.html">nstimer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimer_autoscalepolicy_binding.html">nstimer_autoscalepolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimer_binding.html">nstimer_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimezone.html">nstimezone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain.html">nstrafficdomain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain_binding.html">nstrafficdomain_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain_bridgegroup_binding.html">nstrafficdomain_bridgegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain_vlan_binding.html">nstrafficdomain_vlan_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain_vxlan_binding.html">nstrafficdomain_vxlan_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsvariable.html">nsvariable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsversion.html">nsversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsvpxparam.html">nsvpxparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsweblogparam.html">nsweblogparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsxmlnamespace.html">nsxmlnamespace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.reboot.html">reboot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.shutdown.html">shutdown</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ntp.html">ntp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pcp.html">pcp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.policy.html">policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pq.html">pq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.protocol.html">protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quic.html">quic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quicbridge.html">quicbridge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html">rdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.reputation.html">reputation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.router.html">router</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.smpp.html">smpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.html">subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ulfd.html">ulfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.html">urlfiltering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.user.html">user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.utility.html">utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.videooptimization.html">videooptimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.vpn.html">vpn</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a></li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsmode.html"
+                        title="previous chapter">nsmode module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition.html"
+                        title="next chapter">nspartition module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

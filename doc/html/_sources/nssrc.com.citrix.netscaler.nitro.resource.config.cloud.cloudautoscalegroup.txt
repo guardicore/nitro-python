@@ -1,0 +1,8 @@
+cloudautoscalegroup module
+==========================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudautoscalegroup
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

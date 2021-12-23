@@ -1,0 +1,760 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>csaction module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="cs package" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html" />
+    <link rel="next" title="csparameter module" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csparameter.html" />
+    <link rel="prev" title="cs package" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csparameter.html" title="csparameter module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html" title="cs package"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html" accesskey="U">cs package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction">
+<span id="csaction-module"></span><h1>csaction module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction">
+<em class="property">class </em><tt class="descname">csaction</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<p>Configuration for Content Switching action resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.name">
+<tt class="descname">name</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for the content switching action. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at sign (&#64;), equal sign (=), and hyphen (-) characters. Can be changed after the content switching action is created.
+The following requirement applies only to the Citrix ADC CLI:
+If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, &#8220;my action&#8221; or &#8216;my action&#8217;).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.targetlbvserver">
+<tt class="descname">targetlbvserver</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.targetlbvserver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the load balancing virtual server to which the content is switched.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.targetvserver">
+<tt class="descname">targetvserver</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.targetvserver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the VPN, GSLB or Authentication virtual server to which the content is switched.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.targetvserverexpr">
+<tt class="descname">targetvserverexpr</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.targetvserverexpr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Information about this content switching action.&lt;br/&gt;Maximum length =  1499.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Comments associated with this cs action.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.newname">
+<tt class="descname">newname</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.newname" title="Permalink to this definition">¶</a></dt>
+<dd><p>New name for the content switching action. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at sign (&#64;), equal sign (=), and hyphen (-) characters. 
+The following requirement applies only to the Citrix ADC CLI:
+If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, &#8220;my name&#8221; or &#8216;my name&#8217;).&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.hits">
+<tt class="descname">hits</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.hits" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of times the action has been taken.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.referencecount">
+<tt class="descname">referencecount</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.referencecount" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of references to the action.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.undefhits">
+<tt class="descname">undefhits</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.undefhits" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of times the action resulted in UNDEF.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.builtin">
+<tt class="descname">builtin</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.builtin" title="Permalink to this definition">¶</a></dt>
+<dd><p>.&lt;br/&gt;Possible values = MODIFIABLE, DELETABLE, IMMUTABLE, PARTITION_ALL.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.feature">
+<tt class="descname">feature</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.feature" title="Permalink to this definition">¶</a></dt>
+<dd><p>The feature to be checked while applying this config.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.filter_add_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_add_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.filter_add_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only add operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.add">
+<em class="property">classmethod </em><tt class="descname">add</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to add csaction.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.filter_delete_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_delete_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.filter_delete_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only delete operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.delete">
+<em class="property">classmethod </em><tt class="descname">delete</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to delete csaction.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.filter_update_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_update_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.filter_update_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only update operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.update">
+<em class="property">classmethod </em><tt class="descname">update</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to update csaction.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.unset">
+<em class="property">classmethod </em><tt class="descname">unset</tt><big>(</big><em>client</em>, <em>resource</em>, <em>args</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.unset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to unset the properties of csaction resource.
+Properties that need to be unset are specified in args array.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.rename">
+<em class="property">classmethod </em><tt class="descname">rename</tt><big>(</big><em>client</em>, <em>resource</em>, <em>new_name</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.rename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to rename a csaction resource.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>client</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the csaction resources that are configured on netscaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.get_filtered">
+<em class="property">classmethod </em><tt class="descname">get_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.get_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch filtered set of csaction resources.
+filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.count">
+<em class="property">classmethod </em><tt class="descname">count</tt><big>(</big><em>client</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count the csaction resources configured on NetScaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.count_filtered">
+<em class="property">classmethod </em><tt class="descname">count_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.count_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count filtered the set of csaction resources.
+Filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature">
+<em class="property">class </em><tt class="descname">Feature</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.WL">
+<tt class="descname">WL</tt><em class="property"> = 'WL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.WL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.WebLogging">
+<tt class="descname">WebLogging</tt><em class="property"> = 'WebLogging'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.WebLogging" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SP">
+<tt class="descname">SP</tt><em class="property"> = 'SP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SurgeProtection">
+<tt class="descname">SurgeProtection</tt><em class="property"> = 'SurgeProtection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SurgeProtection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.LB">
+<tt class="descname">LB</tt><em class="property"> = 'LB'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.LB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.LoadBalancing">
+<tt class="descname">LoadBalancing</tt><em class="property"> = 'LoadBalancing'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.LoadBalancing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CS">
+<tt class="descname">CS</tt><em class="property"> = 'CS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ContentSwitching">
+<tt class="descname">ContentSwitching</tt><em class="property"> = 'ContentSwitching'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ContentSwitching" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CR">
+<tt class="descname">CR</tt><em class="property"> = 'CR'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CacheRedirection">
+<tt class="descname">CacheRedirection</tt><em class="property"> = 'CacheRedirection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CacheRedirection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SC">
+<tt class="descname">SC</tt><em class="property"> = 'SC'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SureConnect">
+<tt class="descname">SureConnect</tt><em class="property"> = 'SureConnect'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SureConnect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CMP">
+<tt class="descname">CMP</tt><em class="property"> = 'CMP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CMP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CMPcntl">
+<tt class="descname">CMPcntl</tt><em class="property"> = 'CMPcntl'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CMPcntl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CompressionControl">
+<tt class="descname">CompressionControl</tt><em class="property"> = 'CompressionControl'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CompressionControl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.PQ">
+<tt class="descname">PQ</tt><em class="property"> = 'PQ'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.PQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.PriorityQueuing">
+<tt class="descname">PriorityQueuing</tt><em class="property"> = 'PriorityQueuing'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.PriorityQueuing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.HDOSP">
+<tt class="descname">HDOSP</tt><em class="property"> = 'HDOSP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.HDOSP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.HttpDoSProtection">
+<tt class="descname">HttpDoSProtection</tt><em class="property"> = 'HttpDoSProtection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.HttpDoSProtection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SSLVPN">
+<tt class="descname">SSLVPN</tt><em class="property"> = 'SSLVPN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SSLVPN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.AAA">
+<tt class="descname">AAA</tt><em class="property"> = 'AAA'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.AAA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.GSLB">
+<tt class="descname">GSLB</tt><em class="property"> = 'GSLB'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.GSLB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.GlobalServerLoadBalancing">
+<tt class="descname">GlobalServerLoadBalancing</tt><em class="property"> = 'GlobalServerLoadBalancing'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.GlobalServerLoadBalancing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SSL">
+<tt class="descname">SSL</tt><em class="property"> = 'SSL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SSL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SSLOffload">
+<tt class="descname">SSLOffload</tt><em class="property"> = 'SSLOffload'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SSLOffload" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SSLOffloading">
+<tt class="descname">SSLOffloading</tt><em class="property"> = 'SSLOffloading'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SSLOffloading" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CF">
+<tt class="descname">CF</tt><em class="property"> = 'CF'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ContentFiltering">
+<tt class="descname">ContentFiltering</tt><em class="property"> = 'ContentFiltering'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ContentFiltering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.IC">
+<tt class="descname">IC</tt><em class="property"> = 'IC'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.IC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.IntegratedCaching">
+<tt class="descname">IntegratedCaching</tt><em class="property"> = 'IntegratedCaching'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.IntegratedCaching" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.OSPF">
+<tt class="descname">OSPF</tt><em class="property"> = 'OSPF'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.OSPF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.OSPFRouting">
+<tt class="descname">OSPFRouting</tt><em class="property"> = 'OSPFRouting'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.OSPFRouting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.RIP">
+<tt class="descname">RIP</tt><em class="property"> = 'RIP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.RIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.RIPRouting">
+<tt class="descname">RIPRouting</tt><em class="property"> = 'RIPRouting'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.RIPRouting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.BGP">
+<tt class="descname">BGP</tt><em class="property"> = 'BGP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.BGP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.BGPRouting">
+<tt class="descname">BGPRouting</tt><em class="property"> = 'BGPRouting'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.BGPRouting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.REWRITE">
+<tt class="descname">REWRITE</tt><em class="property"> = 'REWRITE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.REWRITE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.IPv6PT">
+<tt class="descname">IPv6PT</tt><em class="property"> = 'IPv6PT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.IPv6PT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.IPv6protocoltranslation">
+<tt class="descname">IPv6protocoltranslation</tt><em class="property"> = 'IPv6protocoltranslation'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.IPv6protocoltranslation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.AppFw">
+<tt class="descname">AppFw</tt><em class="property"> = 'AppFw'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.AppFw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ApplicationFirewall">
+<tt class="descname">ApplicationFirewall</tt><em class="property"> = 'ApplicationFirewall'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ApplicationFirewall" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.RESPONDER">
+<tt class="descname">RESPONDER</tt><em class="property"> = 'RESPONDER'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.RESPONDER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.HTMLInjection">
+<tt class="descname">HTMLInjection</tt><em class="property"> = 'HTMLInjection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.HTMLInjection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.push">
+<tt class="descname">push</tt><em class="property"> = 'push'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.push" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.NSPush">
+<tt class="descname">NSPush</tt><em class="property"> = 'NSPush'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.NSPush" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.NetScalerPush">
+<tt class="descname">NetScalerPush</tt><em class="property"> = 'NetScalerPush'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.NetScalerPush" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.AppFlow">
+<tt class="descname">AppFlow</tt><em class="property"> = 'AppFlow'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.AppFlow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CloudBridge">
+<tt class="descname">CloudBridge</tt><em class="property"> = 'CloudBridge'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CloudBridge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ISIS">
+<tt class="descname">ISIS</tt><em class="property"> = 'ISIS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ISIS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ISISRouting">
+<tt class="descname">ISISRouting</tt><em class="property"> = 'ISISRouting'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ISISRouting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CH">
+<tt class="descname">CH</tt><em class="property"> = 'CH'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CallHome">
+<tt class="descname">CallHome</tt><em class="property"> = 'CallHome'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CallHome" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.AppQoE">
+<tt class="descname">AppQoE</tt><em class="property"> = 'AppQoE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.AppQoE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ContentAccelerator">
+<tt class="descname">ContentAccelerator</tt><em class="property"> = 'ContentAccelerator'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ContentAccelerator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SYSTEM">
+<tt class="descname">SYSTEM</tt><em class="property"> = 'SYSTEM'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SYSTEM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.RISE">
+<tt class="descname">RISE</tt><em class="property"> = 'RISE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.RISE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.FEO">
+<tt class="descname">FEO</tt><em class="property"> = 'FEO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.FEO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.LSN">
+<tt class="descname">LSN</tt><em class="property"> = 'LSN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.LSN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.LargeScaleNAT">
+<tt class="descname">LargeScaleNAT</tt><em class="property"> = 'LargeScaleNAT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.LargeScaleNAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.RDPProxy">
+<tt class="descname">RDPProxy</tt><em class="property"> = 'RDPProxy'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.RDPProxy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.Rep">
+<tt class="descname">Rep</tt><em class="property"> = 'Rep'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.Rep" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.Reputation">
+<tt class="descname">Reputation</tt><em class="property"> = 'Reputation'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.Reputation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.URLFiltering">
+<tt class="descname">URLFiltering</tt><em class="property"> = 'URLFiltering'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.URLFiltering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.VideoOptimization">
+<tt class="descname">VideoOptimization</tt><em class="property"> = 'VideoOptimization'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.VideoOptimization" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ForwardProxy">
+<tt class="descname">ForwardProxy</tt><em class="property"> = 'ForwardProxy'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ForwardProxy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SSLInterception">
+<tt class="descname">SSLInterception</tt><em class="property"> = 'SSLInterception'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.SSLInterception" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.AdaptiveTCP">
+<tt class="descname">AdaptiveTCP</tt><em class="property"> = 'AdaptiveTCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.AdaptiveTCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CQA">
+<tt class="descname">CQA</tt><em class="property"> = 'CQA'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CQA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CI">
+<tt class="descname">CI</tt><em class="property"> = 'CI'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.CI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ContentInspection">
+<tt class="descname">ContentInspection</tt><em class="property"> = 'ContentInspection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.ContentInspection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.Bot">
+<tt class="descname">Bot</tt><em class="property"> = 'Bot'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.Bot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.APIGateway">
+<tt class="descname">APIGateway</tt><em class="property"> = 'APIGateway'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Feature.APIGateway" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Builtin">
+<em class="property">class </em><tt class="descclassname">csaction.</tt><tt class="descname">Builtin</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Builtin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Builtin.MODIFIABLE">
+<tt class="descname">MODIFIABLE</tt><em class="property"> = 'MODIFIABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Builtin.MODIFIABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Builtin.DELETABLE">
+<tt class="descname">DELETABLE</tt><em class="property"> = 'DELETABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Builtin.DELETABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Builtin.IMMUTABLE">
+<tt class="descname">IMMUTABLE</tt><em class="property"> = 'IMMUTABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Builtin.IMMUTABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Builtin.PARTITION_ALL">
+<tt class="descname">PARTITION_ALL</tt><em class="property"> = 'PARTITION_ALL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction.Builtin.PARTITION_ALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction_response">
+<em class="property">class </em><tt class="descname">csaction_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.csaction_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html">aaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.adm.html">adm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.analytics.html">analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.app.html">app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.azure.html">azure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.basic.html">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bfd.html">bfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bot.html">bot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cache.html">cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.html">cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cmp.html">cmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.html">contentinspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cr.html">cr</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html">cs</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">csaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csparameter.html">csparameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.cspolicy.html">cspolicy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.cspolicy_binding.html">cspolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.cspolicy_crvserver_binding.html">cspolicy_crvserver_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.cspolicy_cspolicylabel_binding.html">cspolicy_cspolicylabel_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.cspolicy_csvserver_binding.html">cspolicy_csvserver_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.cspolicylabel.html">cspolicylabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.cspolicylabel_binding.html">cspolicylabel_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.cspolicylabel_cspolicy_binding.html">cspolicylabel_cspolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver.html">csvserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_analyticsprofile_binding.html">csvserver_analyticsprofile_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_appflowpolicy_binding.html">csvserver_appflowpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_appfwpolicy_binding.html">csvserver_appfwpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_appqoepolicy_binding.html">csvserver_appqoepolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_auditnslogpolicy_binding.html">csvserver_auditnslogpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_auditsyslogpolicy_binding.html">csvserver_auditsyslogpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_authorizationpolicy_binding.html">csvserver_authorizationpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_binding.html">csvserver_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_botpolicy_binding.html">csvserver_botpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_cachepolicy_binding.html">csvserver_cachepolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_cmppolicy_binding.html">csvserver_cmppolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_contentinspectionpolicy_binding.html">csvserver_contentinspectionpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_cspolicy_binding.html">csvserver_cspolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_domain_binding.html">csvserver_domain_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_feopolicy_binding.html">csvserver_feopolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_filterpolicy_binding.html">csvserver_filterpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_gslbvserver_binding.html">csvserver_gslbvserver_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_lbvserver_binding.html">csvserver_lbvserver_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_responderpolicy_binding.html">csvserver_responderpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_rewritepolicy_binding.html">csvserver_rewritepolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_spilloverpolicy_binding.html">csvserver_spilloverpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_tmtrafficpolicy_binding.html">csvserver_tmtrafficpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_transformpolicy_binding.html">csvserver_transformpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csvserver_vpnvserver_binding.html">csvserver_vpnvserver_binding</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.db.html">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html">gslb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ha.html">ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html">ica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsecalg.html">ipsecalg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html">lb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lldp.html">lldp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html">lsn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.network.html">network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html">ns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ntp.html">ntp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pcp.html">pcp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.policy.html">policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pq.html">pq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.protocol.html">protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quic.html">quic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quicbridge.html">quicbridge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html">rdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.reputation.html">reputation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.router.html">router</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.smpp.html">smpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.html">subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ulfd.html">ulfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.html">urlfiltering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.user.html">user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.utility.html">utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.videooptimization.html">videooptimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.vpn.html">vpn</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a></li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html"
+                        title="previous chapter">cs package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.csparameter.html"
+                        title="next chapter">csparameter module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.config.cs.csaction.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,906 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>aaaradiusparams module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="aaa package" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html" />
+    <link rel="next" title="aaasession module" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaasession.html" />
+    <link rel="prev" title="aaapreauthenticationpolicy_vpnvserver_binding module" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaapreauthenticationpolicy_vpnvserver_binding.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaasession.html" title="aaasession module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaapreauthenticationpolicy_vpnvserver_binding.html" title="aaapreauthenticationpolicy_vpnvserver_binding module"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html" accesskey="U">aaa package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams">
+<span id="aaaradiusparams-module"></span><h1>aaaradiusparams module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams">
+<em class="property">class </em><tt class="descname">aaaradiusparams</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<p>Configuration for RADIUS parameter resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.serverip">
+<tt class="descname">serverip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.serverip" title="Permalink to this definition">¶</a></dt>
+<dd><p>IP address of your RADIUS server.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.serverport">
+<tt class="descname">serverport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.serverport" title="Permalink to this definition">¶</a></dt>
+<dd><p>Port number on which the RADIUS server listens for connections.&lt;br/&gt;Default value: 1812&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.authtimeout">
+<tt class="descname">authtimeout</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.authtimeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum number of seconds that the Citrix ADC waits for a response from the RADIUS server.&lt;br/&gt;Default value: 3&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radkey">
+<tt class="descname">radkey</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radkey" title="Permalink to this definition">¶</a></dt>
+<dd><p>The key shared between the RADIUS server and clients. 
+Required for allowing the Citrix ADC to communicate with the RADIUS server.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radnasip">
+<tt class="descname">radnasip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radnasip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send the Citrix ADC IP (NSIP) address to the RADIUS server as the Network Access Server IP (NASIP) part of the Radius protocol.&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radnasid">
+<tt class="descname">radnasid</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radnasid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send the Network Access Server ID (NASID) for your Citrix ADC to the RADIUS server as the nasid part of the Radius protocol.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radvendorid">
+<tt class="descname">radvendorid</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radvendorid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vendor ID for RADIUS group extraction.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radattributetype">
+<tt class="descname">radattributetype</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radattributetype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attribute type for RADIUS group extraction.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radgroupsprefix">
+<tt class="descname">radgroupsprefix</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radgroupsprefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prefix string that precedes group names within a RADIUS attribute for RADIUS group extraction.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radgroupseparator">
+<tt class="descname">radgroupseparator</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.radgroupseparator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Group separator string that delimits group names within a RADIUS attribute for RADIUS group extraction.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.passencoding">
+<tt class="descname">passencoding</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.passencoding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable password encoding in RADIUS packets that the Citrix ADC sends to the RADIUS server.&lt;br/&gt;Default value: mschapv2&lt;br/&gt;Possible values = pap, chap, mschapv1, mschapv2.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.ipvendorid">
+<tt class="descname">ipvendorid</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.ipvendorid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vendor ID attribute in the RADIUS response. 
+If the attribute is not vendor-encoded, it is set to 0.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.ipattributetype">
+<tt class="descname">ipattributetype</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.ipattributetype" title="Permalink to this definition">¶</a></dt>
+<dd><p>IP attribute type in the RADIUS response.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.accounting">
+<tt class="descname">accounting</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.accounting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configure the RADIUS server state to accept or refuse accounting messages.&lt;br/&gt;Possible values = ON, OFF.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.pwdvendorid">
+<tt class="descname">pwdvendorid</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.pwdvendorid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vendor ID of the password in the RADIUS response. Used to extract the user password.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.pwdattributetype">
+<tt class="descname">pwdattributetype</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.pwdattributetype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attribute type of the Vendor ID in the RADIUS response.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.defaultauthenticationgroup">
+<tt class="descname">defaultauthenticationgroup</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.defaultauthenticationgroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the default group that is chosen when the authentication succeeds in addition to extracted groups.&lt;br/&gt;Maximum length =  64.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.callingstationid">
+<tt class="descname">callingstationid</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.callingstationid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send Calling-Station-ID of the client to the RADIUS server. IP Address of the client is sent as its Calling-Station-ID.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.authservretry">
+<tt class="descname">authservretry</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.authservretry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of retry by the Citrix ADC before getting response from the RADIUS server.&lt;br/&gt;Default value: 3&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  10.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.authentication">
+<tt class="descname">authentication</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.authentication" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configure the RADIUS server state to accept or refuse authentication messages.&lt;br/&gt;Default value: ON&lt;br/&gt;Possible values = ON, OFF.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.tunnelendpointclientip">
+<tt class="descname">tunnelendpointclientip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.tunnelendpointclientip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send Tunnel Endpoint Client IP address to the RADIUS server.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.groupauthname">
+<tt class="descname">groupauthname</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.groupauthname" title="Permalink to this definition">¶</a></dt>
+<dd><p>To associate AAA users with an AAA group, use the command
+&#8220;bind AAA group ... -username ...&#8221;.
+You can bind different policies to each AAA group. Use the command
+&#8220;bind AAA group ... -policy ...&#8221;.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.ipaddress">
+<tt class="descname">ipaddress</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.ipaddress" title="Permalink to this definition">¶</a></dt>
+<dd><p>IP Address.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.builtin">
+<tt class="descname">builtin</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.builtin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates that a variable is a built-in (SYSTEM INTERNAL) type.&lt;br/&gt;Possible values = MODIFIABLE, DELETABLE, IMMUTABLE, PARTITION_ALL.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.feature">
+<tt class="descname">feature</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.feature" title="Permalink to this definition">¶</a></dt>
+<dd><p>The feature to be checked while applying this config.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.filter_update_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_update_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.filter_update_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only update operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.update">
+<em class="property">classmethod </em><tt class="descname">update</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to update aaaradiusparams.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.unset">
+<em class="property">classmethod </em><tt class="descname">unset</tt><big>(</big><em>client</em>, <em>resource</em>, <em>args</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.unset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to unset the properties of aaaradiusparams resource.
+Properties that need to be unset are specified in args array.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>client</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the aaaradiusparams resources that are configured on netscaler.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Authentication">
+<em class="property">class </em><tt class="descname">Authentication</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Authentication" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Authentication.ON">
+<tt class="descname">ON</tt><em class="property"> = 'ON'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Authentication.ON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Authentication.OFF">
+<tt class="descname">OFF</tt><em class="property"> = 'OFF'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Authentication.OFF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Passencoding">
+<em class="property">class </em><tt class="descclassname">aaaradiusparams.</tt><tt class="descname">Passencoding</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Passencoding" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Passencoding.pap">
+<tt class="descname">pap</tt><em class="property"> = 'pap'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Passencoding.pap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Passencoding.chap">
+<tt class="descname">chap</tt><em class="property"> = 'chap'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Passencoding.chap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Passencoding.mschapv1">
+<tt class="descname">mschapv1</tt><em class="property"> = 'mschapv1'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Passencoding.mschapv1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Passencoding.mschapv2">
+<tt class="descname">mschapv2</tt><em class="property"> = 'mschapv2'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Passencoding.mschapv2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature">
+<em class="property">class </em><tt class="descclassname">aaaradiusparams.</tt><tt class="descname">Feature</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.WL">
+<tt class="descname">WL</tt><em class="property"> = 'WL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.WL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.WebLogging">
+<tt class="descname">WebLogging</tt><em class="property"> = 'WebLogging'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.WebLogging" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SP">
+<tt class="descname">SP</tt><em class="property"> = 'SP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SurgeProtection">
+<tt class="descname">SurgeProtection</tt><em class="property"> = 'SurgeProtection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SurgeProtection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.LB">
+<tt class="descname">LB</tt><em class="property"> = 'LB'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.LB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.LoadBalancing">
+<tt class="descname">LoadBalancing</tt><em class="property"> = 'LoadBalancing'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.LoadBalancing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CS">
+<tt class="descname">CS</tt><em class="property"> = 'CS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ContentSwitching">
+<tt class="descname">ContentSwitching</tt><em class="property"> = 'ContentSwitching'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ContentSwitching" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CR">
+<tt class="descname">CR</tt><em class="property"> = 'CR'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CacheRedirection">
+<tt class="descname">CacheRedirection</tt><em class="property"> = 'CacheRedirection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CacheRedirection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SC">
+<tt class="descname">SC</tt><em class="property"> = 'SC'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SureConnect">
+<tt class="descname">SureConnect</tt><em class="property"> = 'SureConnect'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SureConnect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CMP">
+<tt class="descname">CMP</tt><em class="property"> = 'CMP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CMP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CMPcntl">
+<tt class="descname">CMPcntl</tt><em class="property"> = 'CMPcntl'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CMPcntl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CompressionControl">
+<tt class="descname">CompressionControl</tt><em class="property"> = 'CompressionControl'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CompressionControl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.PQ">
+<tt class="descname">PQ</tt><em class="property"> = 'PQ'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.PQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.PriorityQueuing">
+<tt class="descname">PriorityQueuing</tt><em class="property"> = 'PriorityQueuing'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.PriorityQueuing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.HDOSP">
+<tt class="descname">HDOSP</tt><em class="property"> = 'HDOSP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.HDOSP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.HttpDoSProtection">
+<tt class="descname">HttpDoSProtection</tt><em class="property"> = 'HttpDoSProtection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.HttpDoSProtection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SSLVPN">
+<tt class="descname">SSLVPN</tt><em class="property"> = 'SSLVPN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SSLVPN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.AAA">
+<tt class="descname">AAA</tt><em class="property"> = 'AAA'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.AAA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.GSLB">
+<tt class="descname">GSLB</tt><em class="property"> = 'GSLB'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.GSLB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.GlobalServerLoadBalancing">
+<tt class="descname">GlobalServerLoadBalancing</tt><em class="property"> = 'GlobalServerLoadBalancing'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.GlobalServerLoadBalancing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SSL">
+<tt class="descname">SSL</tt><em class="property"> = 'SSL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SSL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SSLOffload">
+<tt class="descname">SSLOffload</tt><em class="property"> = 'SSLOffload'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SSLOffload" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SSLOffloading">
+<tt class="descname">SSLOffloading</tt><em class="property"> = 'SSLOffloading'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SSLOffloading" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CF">
+<tt class="descname">CF</tt><em class="property"> = 'CF'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ContentFiltering">
+<tt class="descname">ContentFiltering</tt><em class="property"> = 'ContentFiltering'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ContentFiltering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.IC">
+<tt class="descname">IC</tt><em class="property"> = 'IC'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.IC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.IntegratedCaching">
+<tt class="descname">IntegratedCaching</tt><em class="property"> = 'IntegratedCaching'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.IntegratedCaching" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.OSPF">
+<tt class="descname">OSPF</tt><em class="property"> = 'OSPF'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.OSPF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.OSPFRouting">
+<tt class="descname">OSPFRouting</tt><em class="property"> = 'OSPFRouting'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.OSPFRouting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.RIP">
+<tt class="descname">RIP</tt><em class="property"> = 'RIP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.RIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.RIPRouting">
+<tt class="descname">RIPRouting</tt><em class="property"> = 'RIPRouting'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.RIPRouting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.BGP">
+<tt class="descname">BGP</tt><em class="property"> = 'BGP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.BGP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.BGPRouting">
+<tt class="descname">BGPRouting</tt><em class="property"> = 'BGPRouting'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.BGPRouting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.REWRITE">
+<tt class="descname">REWRITE</tt><em class="property"> = 'REWRITE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.REWRITE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.IPv6PT">
+<tt class="descname">IPv6PT</tt><em class="property"> = 'IPv6PT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.IPv6PT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.IPv6protocoltranslation">
+<tt class="descname">IPv6protocoltranslation</tt><em class="property"> = 'IPv6protocoltranslation'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.IPv6protocoltranslation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.AppFw">
+<tt class="descname">AppFw</tt><em class="property"> = 'AppFw'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.AppFw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ApplicationFirewall">
+<tt class="descname">ApplicationFirewall</tt><em class="property"> = 'ApplicationFirewall'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ApplicationFirewall" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.RESPONDER">
+<tt class="descname">RESPONDER</tt><em class="property"> = 'RESPONDER'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.RESPONDER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.HTMLInjection">
+<tt class="descname">HTMLInjection</tt><em class="property"> = 'HTMLInjection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.HTMLInjection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.push">
+<tt class="descname">push</tt><em class="property"> = 'push'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.push" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.NSPush">
+<tt class="descname">NSPush</tt><em class="property"> = 'NSPush'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.NSPush" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.NetScalerPush">
+<tt class="descname">NetScalerPush</tt><em class="property"> = 'NetScalerPush'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.NetScalerPush" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.AppFlow">
+<tt class="descname">AppFlow</tt><em class="property"> = 'AppFlow'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.AppFlow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CloudBridge">
+<tt class="descname">CloudBridge</tt><em class="property"> = 'CloudBridge'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CloudBridge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ISIS">
+<tt class="descname">ISIS</tt><em class="property"> = 'ISIS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ISIS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ISISRouting">
+<tt class="descname">ISISRouting</tt><em class="property"> = 'ISISRouting'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ISISRouting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CH">
+<tt class="descname">CH</tt><em class="property"> = 'CH'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CallHome">
+<tt class="descname">CallHome</tt><em class="property"> = 'CallHome'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CallHome" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.AppQoE">
+<tt class="descname">AppQoE</tt><em class="property"> = 'AppQoE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.AppQoE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ContentAccelerator">
+<tt class="descname">ContentAccelerator</tt><em class="property"> = 'ContentAccelerator'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ContentAccelerator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SYSTEM">
+<tt class="descname">SYSTEM</tt><em class="property"> = 'SYSTEM'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SYSTEM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.RISE">
+<tt class="descname">RISE</tt><em class="property"> = 'RISE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.RISE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.FEO">
+<tt class="descname">FEO</tt><em class="property"> = 'FEO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.FEO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.LSN">
+<tt class="descname">LSN</tt><em class="property"> = 'LSN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.LSN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.LargeScaleNAT">
+<tt class="descname">LargeScaleNAT</tt><em class="property"> = 'LargeScaleNAT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.LargeScaleNAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.RDPProxy">
+<tt class="descname">RDPProxy</tt><em class="property"> = 'RDPProxy'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.RDPProxy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.Rep">
+<tt class="descname">Rep</tt><em class="property"> = 'Rep'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.Rep" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.Reputation">
+<tt class="descname">Reputation</tt><em class="property"> = 'Reputation'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.Reputation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.URLFiltering">
+<tt class="descname">URLFiltering</tt><em class="property"> = 'URLFiltering'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.URLFiltering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.VideoOptimization">
+<tt class="descname">VideoOptimization</tt><em class="property"> = 'VideoOptimization'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.VideoOptimization" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ForwardProxy">
+<tt class="descname">ForwardProxy</tt><em class="property"> = 'ForwardProxy'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ForwardProxy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SSLInterception">
+<tt class="descname">SSLInterception</tt><em class="property"> = 'SSLInterception'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.SSLInterception" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.AdaptiveTCP">
+<tt class="descname">AdaptiveTCP</tt><em class="property"> = 'AdaptiveTCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.AdaptiveTCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CQA">
+<tt class="descname">CQA</tt><em class="property"> = 'CQA'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CQA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CI">
+<tt class="descname">CI</tt><em class="property"> = 'CI'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.CI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ContentInspection">
+<tt class="descname">ContentInspection</tt><em class="property"> = 'ContentInspection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.ContentInspection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.Bot">
+<tt class="descname">Bot</tt><em class="property"> = 'Bot'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.Bot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.APIGateway">
+<tt class="descname">APIGateway</tt><em class="property"> = 'APIGateway'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Feature.APIGateway" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Builtin">
+<em class="property">class </em><tt class="descclassname">aaaradiusparams.</tt><tt class="descname">Builtin</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Builtin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Builtin.MODIFIABLE">
+<tt class="descname">MODIFIABLE</tt><em class="property"> = 'MODIFIABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Builtin.MODIFIABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Builtin.DELETABLE">
+<tt class="descname">DELETABLE</tt><em class="property"> = 'DELETABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Builtin.DELETABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Builtin.IMMUTABLE">
+<tt class="descname">IMMUTABLE</tt><em class="property"> = 'IMMUTABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Builtin.IMMUTABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Builtin.PARTITION_ALL">
+<tt class="descname">PARTITION_ALL</tt><em class="property"> = 'PARTITION_ALL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Builtin.PARTITION_ALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Callingstationid">
+<em class="property">class </em><tt class="descclassname">aaaradiusparams.</tt><tt class="descname">Callingstationid</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Callingstationid" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Callingstationid.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Callingstationid.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Callingstationid.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Callingstationid.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Accounting">
+<em class="property">class </em><tt class="descclassname">aaaradiusparams.</tt><tt class="descname">Accounting</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Accounting" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Accounting.ON">
+<tt class="descname">ON</tt><em class="property"> = 'ON'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Accounting.ON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Accounting.OFF">
+<tt class="descname">OFF</tt><em class="property"> = 'OFF'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Accounting.OFF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Radnasip">
+<em class="property">class </em><tt class="descclassname">aaaradiusparams.</tt><tt class="descname">Radnasip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Radnasip" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Radnasip.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Radnasip.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Radnasip.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Radnasip.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Tunnelendpointclientip">
+<em class="property">class </em><tt class="descclassname">aaaradiusparams.</tt><tt class="descname">Tunnelendpointclientip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Tunnelendpointclientip" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Tunnelendpointclientip.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Tunnelendpointclientip.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Tunnelendpointclientip.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams.Tunnelendpointclientip.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams_response">
+<em class="property">class </em><tt class="descname">aaaradiusparams_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.aaaradiusparams_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html">aaa</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaacertparams.html">aaacertparams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaglobal_aaapreauthenticationpolicy_binding.html">aaaglobal_aaapreauthenticationpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaglobal_authenticationnegotiateaction_binding.html">aaaglobal_authenticationnegotiateaction_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaglobal_binding.html">aaaglobal_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup.html">aaagroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup_aaauser_binding.html">aaagroup_aaauser_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup_auditnslogpolicy_binding.html">aaagroup_auditnslogpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup_auditsyslogpolicy_binding.html">aaagroup_auditsyslogpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup_authorizationpolicy_binding.html">aaagroup_authorizationpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup_binding.html">aaagroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup_intranetip6_binding.html">aaagroup_intranetip6_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup_intranetip_binding.html">aaagroup_intranetip_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup_tmsessionpolicy_binding.html">aaagroup_tmsessionpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup_vpnintranetapplication_binding.html">aaagroup_vpnintranetapplication_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup_vpnsessionpolicy_binding.html">aaagroup_vpnsessionpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup_vpntrafficpolicy_binding.html">aaagroup_vpntrafficpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup_vpnurl_binding.html">aaagroup_vpnurl_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaagroup_vpnurlpolicy_binding.html">aaagroup_vpnurlpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaakcdaccount.html">aaakcdaccount</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaldapparams.html">aaaldapparams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaotpparameter.html">aaaotpparameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaparameter.html">aaaparameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaapreauthenticationaction.html">aaapreauthenticationaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaapreauthenticationparameter.html">aaapreauthenticationparameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaapreauthenticationpolicy.html">aaapreauthenticationpolicy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaapreauthenticationpolicy_aaaglobal_binding.html">aaapreauthenticationpolicy_aaaglobal_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaapreauthenticationpolicy_binding.html">aaapreauthenticationpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaapreauthenticationpolicy_vpnvserver_binding.html">aaapreauthenticationpolicy_vpnvserver_binding</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">aaaradiusparams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaasession.html">aaasession</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaassoprofile.html">aaassoprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaatacacsparams.html">aaatacacsparams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser.html">aaauser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser_aaagroup_binding.html">aaauser_aaagroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser_auditnslogpolicy_binding.html">aaauser_auditnslogpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser_auditsyslogpolicy_binding.html">aaauser_auditsyslogpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser_authorizationpolicy_binding.html">aaauser_authorizationpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser_binding.html">aaauser_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser_intranetip6_binding.html">aaauser_intranetip6_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser_intranetip_binding.html">aaauser_intranetip_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser_tmsessionpolicy_binding.html">aaauser_tmsessionpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser_vpnintranetapplication_binding.html">aaauser_vpnintranetapplication_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser_vpnsessionpolicy_binding.html">aaauser_vpnsessionpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser_vpntrafficpolicy_binding.html">aaauser_vpntrafficpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser_vpnurl_binding.html">aaauser_vpnurl_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaauser_vpnurlpolicy_binding.html">aaauser_vpnurlpolicy_binding</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.adm.html">adm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.analytics.html">analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.app.html">app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.azure.html">azure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.basic.html">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bfd.html">bfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bot.html">bot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cache.html">cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.html">cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cmp.html">cmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.html">contentinspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cr.html">cr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html">cs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.db.html">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html">gslb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ha.html">ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html">ica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsecalg.html">ipsecalg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html">lb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lldp.html">lldp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html">lsn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.network.html">network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html">ns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ntp.html">ntp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pcp.html">pcp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.policy.html">policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pq.html">pq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.protocol.html">protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quic.html">quic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quicbridge.html">quicbridge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html">rdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.reputation.html">reputation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.router.html">router</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.smpp.html">smpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.html">subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ulfd.html">ulfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.html">urlfiltering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.user.html">user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.utility.html">utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.videooptimization.html">videooptimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.vpn.html">vpn</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a></li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaapreauthenticationpolicy_vpnvserver_binding.html"
+                        title="previous chapter">aaapreauthenticationpolicy_vpnvserver_binding module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaasession.html"
+                        title="next chapter">aaasession module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.config.aaa.aaaradiusparams.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

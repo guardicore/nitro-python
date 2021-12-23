@@ -1,0 +1,1549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>nsacl6 module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="ns package" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html" />
+    <link rel="next" title="nsacls module" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacls.html" />
+    <link rel="prev" title="nsacl module" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacls.html" title="nsacls module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl.html" title="nsacl module"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html" accesskey="U">ns package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6">
+<span id="nsacl6-module"></span><h1>nsacl6 module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6">
+<em class="property">class </em><tt class="descname">nsacl6</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<p>Configuration for ACL6 entry resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.acl6name">
+<tt class="descname">acl6name</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.acl6name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for the ACL6 rule. Must begin with an ASCII alphabetic or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (&#64;), equals (=), and hyphen (-) characters.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.acl6action">
+<tt class="descname">acl6action</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.acl6action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Action to perform on the incoming IPv6 packets that match the ACL6 rule.
+Available settings function as follows:
+* ALLOW - The Citrix ADC processes the packet.
+* BRIDGE - The Citrix ADC bridges the packet to the destination without processing it.
+* DENY - The Citrix ADC drops the packet.&lt;br/&gt;Possible values = BRIDGE, DENY, ALLOW.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.td">
+<tt class="descname">td</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.td" title="Permalink to this definition">¶</a></dt>
+<dd><p>Integer value that uniquely identifies the traffic domain in which you want to configure the entity. If you do not specify an ID, the entity becomes part of the default traffic domain, which has an ID of 0.&lt;br/&gt;Maximum length =  4094.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcipv6">
+<tt class="descname">srcipv6</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcipv6" title="Permalink to this definition">¶</a></dt>
+<dd><p>IP address or range of IP addresses to match against the source IP address of an incoming IPv6 packet. In the command line interface, separate the range with a hyphen.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcipop">
+<tt class="descname">srcipop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcipop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either the equals (=) or does not equal (!=) logical operator.&lt;br/&gt;Possible values = =, !=, EQ, NEQ.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcipv6val">
+<tt class="descname">srcipv6val</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcipv6val" title="Permalink to this definition">¶</a></dt>
+<dd><p>Source IPv6 address (range).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcport">
+<tt class="descname">srcport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcport" title="Permalink to this definition">¶</a></dt>
+<dd><p>Port number or range of port numbers to match against the source port number of an incoming IPv6 packet. In the command line interface, separate the range with a hyphen. For example: 40-90.
+Note: The destination port can be specified only for TCP and UDP protocols.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcportop">
+<tt class="descname">srcportop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcportop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either the equals (=) or does not equal (!=) logical operator.&lt;br/&gt;Possible values = =, !=, EQ, NEQ.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcportval">
+<tt class="descname">srcportval</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcportval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Source port (range).&lt;br/&gt;Maximum length =  65535.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.destipv6">
+<tt class="descname">destipv6</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.destipv6" title="Permalink to this definition">¶</a></dt>
+<dd><p>IP address or range of IP addresses to match against the destination IP address of an incoming IPv6 packet.  In the command line interface, separate the range with a hyphen.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.destipop">
+<tt class="descname">destipop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.destipop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either the equals (=) or does not equal (!=) logical operator.&lt;br/&gt;Possible values = =, !=, EQ, NEQ.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.destipv6val">
+<tt class="descname">destipv6val</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.destipv6val" title="Permalink to this definition">¶</a></dt>
+<dd><p>Destination IPv6 address (range).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.destport">
+<tt class="descname">destport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.destport" title="Permalink to this definition">¶</a></dt>
+<dd><p>Port number or range of port numbers to match against the destination port number of an incoming IPv6 packet. In the command line interface, separate the range with a hyphen. For example: 40-90.
+Note: The destination port can be specified only for TCP and UDP protocols.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.destportop">
+<tt class="descname">destportop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.destportop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either the equals (=) or does not equal (!=) logical operator.&lt;br/&gt;Possible values = =, !=, EQ, NEQ.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.destportval">
+<tt class="descname">destportval</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.destportval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Destination port (range).&lt;br/&gt;Maximum length =  65535.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.ttl">
+<tt class="descname">ttl</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.ttl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time to expire this ACL6 (in seconds).&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  0x7FFFFFFF.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcmac">
+<tt class="descname">srcmac</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcmac" title="Permalink to this definition">¶</a></dt>
+<dd><p>MAC address to match against the source MAC address of an incoming IPv6 packet.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcmacmask">
+<tt class="descname">srcmacmask</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.srcmacmask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used to define range of Source MAC address. It takes string of 0 and 1, 0s are for exact match and 1s for wildcard. For matching first 3 bytes of MAC address, srcMacMask value &#8220;000000111111&#8221;. .&lt;br/&gt;Default value: &#8220;000000000000&#8221;.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.protocol">
+<tt class="descname">protocol</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.protocol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Protocol, identified by protocol name, to match against the protocol of an incoming IPv6 packet.&lt;br/&gt;Possible values = ICMPV6, TCP, UDP, ICMP, IGMP, EGP, IGP, ARGUS, RDP, RSVP, EIGRP, L2TP, ISIS, GGP, IPoverIP, ST, CBT, BBN-RCC-M, NVP-II, PUP, EMCON, XNET, CHAOS, MUX, DCN-MEAS, HMP, PRM, XNS-IDP, TRUNK-1, TRUNK-2, LEAF-1, LEAF-2, IRTP, ISO-TP4, NETBLT, MFE-NSP, MERIT-INP, SEP, 3PC, IDPR, XTP, DDP, IDPR-CMTP, TP++, IL, IPv6, SDRP, IPv6-Route, IPv6-Frag, IDRP, GRE, MHRP, BNA, ESP, AH, I-NLSP, SWIPE, NARP, MOBILE, TLSP, SKIP, IPv6-NoNx, IPv6-Opts, Any-Host-Internal-Protocol, CFTP, Any-Local-Network, SAT-EXPAK, KRYPTOLAN, RVD, IPPC, Any-Distributed-File-System, TFTP, VISA, IPCV, CPNX, CPHB, WSN, PVP, BR-SAT-MO, SUN-ND, WB-MON, WB-EXPAK, ISO-IP, VMTP, SECURE-VM, VINES, TTP, NSFNET-IG, DGP, TCF, OSPFIGP, Sprite-RP, LARP, MTP, AX.25, IPIP, MICP, SCC-SP, ETHERIP, Any-Private-Encryption-Scheme, GMTP, IFMP, PNNI, PIM, ARIS, SCPS, QNX, A/N, IPComp, SNP, Compaq-Pe, IPX-in-IP, VRRP, PGM, Any-0-Hop-Protocol, ENCAP, DDX, IATP, STP, SRP, UTI, SMP, SM, PTP, FIRE, CRTP, CRUDP, SSCOPMCE, IPLT, SPS, PIPE, SCTP, FC, RSVP-E2E-IGNORE, Mobility-Header, UDPLite.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.protocolnumber">
+<tt class="descname">protocolnumber</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.protocolnumber" title="Permalink to this definition">¶</a></dt>
+<dd><p>Protocol, identified by protocol number, to match against the protocol of an incoming IPv6 packet.&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  255.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.vlan">
+<tt class="descname">vlan</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.vlan" title="Permalink to this definition">¶</a></dt>
+<dd><p>ID of the VLAN. The Citrix ADC applies the ACL6 rule only to the incoming packets on the specified VLAN. If you do not specify a VLAN ID, the appliance applies the ACL6 rule to the incoming packets on all VLANs.&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  4094.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.vxlan">
+<tt class="descname">vxlan</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.vxlan" title="Permalink to this definition">¶</a></dt>
+<dd><p>ID of the VXLAN. The Citrix ADC applies the ACL6 rule only to the incoming packets on the specified VXLAN. If you do not specify a VXLAN ID, the appliance applies the ACL6 rule to the incoming packets on all VXLANs.&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  16777215.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Interface">
+<tt class="descname">Interface</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Interface" title="Permalink to this definition">¶</a></dt>
+<dd><p>ID of an interface. The Citrix ADC applies the ACL6 rule only to the incoming packets from the specified interface. If you do not specify any value, the appliance applies the ACL6 rule to the incoming packets from all interfaces.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.established">
+<tt class="descname">established</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.established" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow only incoming TCP packets that have the ACK or RST bit set if the action set for the ACL6 rule is ALLOW and these packets match the other conditions in the ACL6 rule.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.icmptype">
+<tt class="descname">icmptype</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.icmptype" title="Permalink to this definition">¶</a></dt>
+<dd><p>ICMP Message type to match against the message type of an incoming IPv6 ICMP packet. For example, to block DESTINATION UNREACHABLE messages, you must specify 3 as the ICMP type.
+Note: This parameter can be specified only for the ICMP protocol.&lt;br/&gt;Maximum length =  65536.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.icmpcode">
+<tt class="descname">icmpcode</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.icmpcode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Code of a particular ICMP message type to match against the ICMP code of an incoming IPv6 ICMP packet.  For example, to block DESTINATION HOST UNREACHABLE messages, specify 3 as the ICMP type and 1 as the ICMP code.
+If you set this parameter, you must set the ICMP Type parameter.&lt;br/&gt;Maximum length =  65536.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.priority">
+<tt class="descname">priority</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.priority" title="Permalink to this definition">¶</a></dt>
+<dd><p>Priority for the ACL6 rule, which determines the order in which it is evaluated relative to the other ACL6 rules. If you do not specify priorities while creating ACL6 rules, the ACL6 rules are evaluated in the order in which they are created.&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  81920.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.state">
+<tt class="descname">state</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.state" title="Permalink to this definition">¶</a></dt>
+<dd><p>State of the ACL6.&lt;br/&gt;Default value: ENABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.type">
+<tt class="descname">type</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Type of the acl6 ,default will be CLASSIC.
+Available options as follows:
+* CLASSIC - specifies the regular extended acls.
+* DFD - cluster specific acls,specifies hashmethod for steering of the packet in cluster .&lt;br/&gt;Default value: CLASSIC&lt;br/&gt;Possible values = CLASSIC, DFD.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.dfdhash">
+<tt class="descname">dfdhash</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.dfdhash" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the type of hashmethod to be applied, to steer the packet to the FP of the packet.&lt;br/&gt;Possible values = SIP-SPORT-DIP-DPORT, SIP, DIP, SIP-DIP, SIP-SPORT, DIP-DPORT.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.dfdprefix">
+<tt class="descname">dfdprefix</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.dfdprefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>hashprefix to be applied to SIP/DIP to generate rsshash FP.eg 128 =&gt; hash calculated on the complete IP.&lt;br/&gt;Default value: 128&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  128.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.stateful">
+<tt class="descname">stateful</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.stateful" title="Permalink to this definition">¶</a></dt>
+<dd><p>If stateful option is enabled, transparent sessions are created for the traffic hitting this ACL6 and not hitting any other features like LB, INAT etc. .&lt;br/&gt;Default value: NO&lt;br/&gt;Possible values = YES, NO.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.logstate">
+<tt class="descname">logstate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.logstate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable or disable logging of events related to the ACL6 rule. The log messages are stored in the configured syslog or auditlog server.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.ratelimit">
+<tt class="descname">ratelimit</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.ratelimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum number of log messages to be generated per second. If you set this parameter, you must enable the Log State parameter.&lt;br/&gt;Default value: 100&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  10000.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.aclaction">
+<tt class="descname">aclaction</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.aclaction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Action associated with the ACL6.&lt;br/&gt;Possible values = BRIDGE, DENY, ALLOW.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.newname">
+<tt class="descname">newname</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.newname" title="Permalink to this definition">¶</a></dt>
+<dd><p>New name for the ACL6 rule. Must begin with an ASCII alphabetic or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (&#64;), equals (=), and hyphen (-) characters.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.kernelstate">
+<tt class="descname">kernelstate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.kernelstate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Commit status of the ACL6.&lt;br/&gt;Default value: NOTAPPLIED&lt;br/&gt;Possible values = APPLIED, NOTAPPLIED, RE-APPLY, SFAPPLIED, SFNOTAPPLIED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.hits">
+<tt class="descname">hits</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.hits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of hits of this ACL6.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.aclassociate">
+<tt class="descname">aclassociate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.aclassociate" title="Permalink to this definition">¶</a></dt>
+<dd><p>ACL6 linked.&lt;br/&gt;Possible values = NAT, FORWARDINGSESSION, NAT64, LSN.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.filter_add_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_add_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.filter_add_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only add operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.add">
+<em class="property">classmethod </em><tt class="descname">add</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to add nsacl6.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.filter_delete_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_delete_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.filter_delete_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only delete operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.delete">
+<em class="property">classmethod </em><tt class="descname">delete</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to delete nsacl6.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.filter_update_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_update_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.filter_update_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only update operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.update">
+<em class="property">classmethod </em><tt class="descname">update</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to update nsacl6.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.unset">
+<em class="property">classmethod </em><tt class="descname">unset</tt><big>(</big><em>client</em>, <em>resource</em>, <em>args</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.unset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to unset the properties of nsacl6 resource.
+Properties that need to be unset are specified in args array.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.enable">
+<em class="property">classmethod </em><tt class="descname">enable</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.enable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to enable nsacl6.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.disable">
+<em class="property">classmethod </em><tt class="descname">disable</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.disable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to disable nsacl6.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.rename">
+<em class="property">classmethod </em><tt class="descname">rename</tt><big>(</big><em>client</em>, <em>resource</em>, <em>new_acl6name</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.rename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to rename a nsacl6 resource.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>client</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the nsacl6 resources that are configured on netscaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.get_args">
+<em class="property">classmethod </em><tt class="descname">get_args</tt><big>(</big><em>client</em>, <em>args</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.get_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the nsacl6 resources that are configured on netscaler.
+# This uses nsacl6_args which is a way to provide additional arguments while fetching the resources.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.get_filtered">
+<em class="property">classmethod </em><tt class="descname">get_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.get_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch filtered set of nsacl6 resources.
+filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.count">
+<em class="property">classmethod </em><tt class="descname">count</tt><big>(</big><em>client</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count the nsacl6 resources configured on NetScaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.count_filtered">
+<em class="property">classmethod </em><tt class="descname">count_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.count_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count filtered the set of nsacl6 resources.
+Filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol">
+<em class="property">class </em><tt class="descname">Protocol</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ICMPV6">
+<tt class="descname">ICMPV6</tt><em class="property"> = 'ICMPV6'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ICMPV6" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TCP">
+<tt class="descname">TCP</tt><em class="property"> = 'TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.UDP">
+<tt class="descname">UDP</tt><em class="property"> = 'UDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.UDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ICMP">
+<tt class="descname">ICMP</tt><em class="property"> = 'ICMP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ICMP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IGMP">
+<tt class="descname">IGMP</tt><em class="property"> = 'IGMP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IGMP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.EGP">
+<tt class="descname">EGP</tt><em class="property"> = 'EGP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.EGP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IGP">
+<tt class="descname">IGP</tt><em class="property"> = 'IGP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IGP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ARGUS">
+<tt class="descname">ARGUS</tt><em class="property"> = 'ARGUS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ARGUS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.RDP">
+<tt class="descname">RDP</tt><em class="property"> = 'RDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.RDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.RSVP">
+<tt class="descname">RSVP</tt><em class="property"> = 'RSVP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.RSVP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.EIGRP">
+<tt class="descname">EIGRP</tt><em class="property"> = 'EIGRP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.EIGRP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.L2TP">
+<tt class="descname">L2TP</tt><em class="property"> = 'L2TP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.L2TP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ISIS">
+<tt class="descname">ISIS</tt><em class="property"> = 'ISIS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ISIS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.GGP">
+<tt class="descname">GGP</tt><em class="property"> = 'GGP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.GGP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPoverIP">
+<tt class="descname">IPoverIP</tt><em class="property"> = 'IPoverIP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPoverIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ST">
+<tt class="descname">ST</tt><em class="property"> = 'ST'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CBT">
+<tt class="descname">CBT</tt><em class="property"> = 'CBT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CBT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.BBN_RCC_M">
+<tt class="descname">BBN_RCC_M</tt><em class="property"> = 'BBN-RCC-M'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.BBN_RCC_M" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.NVP_II">
+<tt class="descname">NVP_II</tt><em class="property"> = 'NVP-II'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.NVP_II" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PUP">
+<tt class="descname">PUP</tt><em class="property"> = 'PUP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PUP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.EMCON">
+<tt class="descname">EMCON</tt><em class="property"> = 'EMCON'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.EMCON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.XNET">
+<tt class="descname">XNET</tt><em class="property"> = 'XNET'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.XNET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CHAOS">
+<tt class="descname">CHAOS</tt><em class="property"> = 'CHAOS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CHAOS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MUX">
+<tt class="descname">MUX</tt><em class="property"> = 'MUX'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MUX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.DCN_MEAS">
+<tt class="descname">DCN_MEAS</tt><em class="property"> = 'DCN-MEAS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.DCN_MEAS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.HMP">
+<tt class="descname">HMP</tt><em class="property"> = 'HMP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.HMP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PRM">
+<tt class="descname">PRM</tt><em class="property"> = 'PRM'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PRM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.XNS_IDP">
+<tt class="descname">XNS_IDP</tt><em class="property"> = 'XNS-IDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.XNS_IDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TRUNK_1">
+<tt class="descname">TRUNK_1</tt><em class="property"> = 'TRUNK-1'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TRUNK_1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TRUNK_2">
+<tt class="descname">TRUNK_2</tt><em class="property"> = 'TRUNK-2'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TRUNK_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.LEAF_1">
+<tt class="descname">LEAF_1</tt><em class="property"> = 'LEAF-1'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.LEAF_1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.LEAF_2">
+<tt class="descname">LEAF_2</tt><em class="property"> = 'LEAF-2'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.LEAF_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IRTP">
+<tt class="descname">IRTP</tt><em class="property"> = 'IRTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IRTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ISO_TP4">
+<tt class="descname">ISO_TP4</tt><em class="property"> = 'ISO-TP4'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ISO_TP4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.NETBLT">
+<tt class="descname">NETBLT</tt><em class="property"> = 'NETBLT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.NETBLT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MFE_NSP">
+<tt class="descname">MFE_NSP</tt><em class="property"> = 'MFE-NSP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MFE_NSP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MERIT_INP">
+<tt class="descname">MERIT_INP</tt><em class="property"> = 'MERIT-INP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MERIT_INP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SEP">
+<tt class="descname">SEP</tt><em class="property"> = 'SEP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SEP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IDPR">
+<tt class="descname">IDPR</tt><em class="property"> = 'IDPR'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IDPR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.XTP">
+<tt class="descname">XTP</tt><em class="property"> = 'XTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.XTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.DDP">
+<tt class="descname">DDP</tt><em class="property"> = 'DDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.DDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IDPR_CMTP">
+<tt class="descname">IDPR_CMTP</tt><em class="property"> = 'IDPR-CMTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IDPR_CMTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TP__">
+<tt class="descname">TP__</tt><em class="property"> = 'TP++'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TP__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IL">
+<tt class="descname">IL</tt><em class="property"> = 'IL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPv6">
+<tt class="descname">IPv6</tt><em class="property"> = 'IPv6'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPv6" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SDRP">
+<tt class="descname">SDRP</tt><em class="property"> = 'SDRP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SDRP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPv6_Route">
+<tt class="descname">IPv6_Route</tt><em class="property"> = 'IPv6-Route'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPv6_Route" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPv6_Frag">
+<tt class="descname">IPv6_Frag</tt><em class="property"> = 'IPv6-Frag'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPv6_Frag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IDRP">
+<tt class="descname">IDRP</tt><em class="property"> = 'IDRP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IDRP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.GRE">
+<tt class="descname">GRE</tt><em class="property"> = 'GRE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.GRE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MHRP">
+<tt class="descname">MHRP</tt><em class="property"> = 'MHRP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MHRP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.BNA">
+<tt class="descname">BNA</tt><em class="property"> = 'BNA'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.BNA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ESP">
+<tt class="descname">ESP</tt><em class="property"> = 'ESP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ESP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.AH">
+<tt class="descname">AH</tt><em class="property"> = 'AH'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.AH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.I_NLSP">
+<tt class="descname">I_NLSP</tt><em class="property"> = 'I-NLSP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.I_NLSP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SWIPE">
+<tt class="descname">SWIPE</tt><em class="property"> = 'SWIPE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SWIPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.NARP">
+<tt class="descname">NARP</tt><em class="property"> = 'NARP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.NARP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MOBILE">
+<tt class="descname">MOBILE</tt><em class="property"> = 'MOBILE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MOBILE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TLSP">
+<tt class="descname">TLSP</tt><em class="property"> = 'TLSP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TLSP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SKIP">
+<tt class="descname">SKIP</tt><em class="property"> = 'SKIP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SKIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPv6_NoNx">
+<tt class="descname">IPv6_NoNx</tt><em class="property"> = 'IPv6-NoNx'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPv6_NoNx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPv6_Opts">
+<tt class="descname">IPv6_Opts</tt><em class="property"> = 'IPv6-Opts'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPv6_Opts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Any_Host_Internal_Protocol">
+<tt class="descname">Any_Host_Internal_Protocol</tt><em class="property"> = 'Any-Host-Internal-Protocol'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Any_Host_Internal_Protocol" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CFTP">
+<tt class="descname">CFTP</tt><em class="property"> = 'CFTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CFTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Any_Local_Network">
+<tt class="descname">Any_Local_Network</tt><em class="property"> = 'Any-Local-Network'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Any_Local_Network" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SAT_EXPAK">
+<tt class="descname">SAT_EXPAK</tt><em class="property"> = 'SAT-EXPAK'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SAT_EXPAK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.KRYPTOLAN">
+<tt class="descname">KRYPTOLAN</tt><em class="property"> = 'KRYPTOLAN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.KRYPTOLAN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.RVD">
+<tt class="descname">RVD</tt><em class="property"> = 'RVD'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.RVD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPPC">
+<tt class="descname">IPPC</tt><em class="property"> = 'IPPC'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPPC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Any_Distributed_File_System">
+<tt class="descname">Any_Distributed_File_System</tt><em class="property"> = 'Any-Distributed-File-System'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Any_Distributed_File_System" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TFTP">
+<tt class="descname">TFTP</tt><em class="property"> = 'TFTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TFTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.VISA">
+<tt class="descname">VISA</tt><em class="property"> = 'VISA'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.VISA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPCV">
+<tt class="descname">IPCV</tt><em class="property"> = 'IPCV'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPCV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CPNX">
+<tt class="descname">CPNX</tt><em class="property"> = 'CPNX'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CPNX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CPHB">
+<tt class="descname">CPHB</tt><em class="property"> = 'CPHB'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CPHB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.WSN">
+<tt class="descname">WSN</tt><em class="property"> = 'WSN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.WSN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PVP">
+<tt class="descname">PVP</tt><em class="property"> = 'PVP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PVP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.BR_SAT_MO">
+<tt class="descname">BR_SAT_MO</tt><em class="property"> = 'BR-SAT-MO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.BR_SAT_MO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SUN_ND">
+<tt class="descname">SUN_ND</tt><em class="property"> = 'SUN-ND'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SUN_ND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.WB_MON">
+<tt class="descname">WB_MON</tt><em class="property"> = 'WB-MON'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.WB_MON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.WB_EXPAK">
+<tt class="descname">WB_EXPAK</tt><em class="property"> = 'WB-EXPAK'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.WB_EXPAK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ISO_IP">
+<tt class="descname">ISO_IP</tt><em class="property"> = 'ISO-IP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ISO_IP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.VMTP">
+<tt class="descname">VMTP</tt><em class="property"> = 'VMTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.VMTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SECURE_VM">
+<tt class="descname">SECURE_VM</tt><em class="property"> = 'SECURE-VM'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SECURE_VM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.VINES">
+<tt class="descname">VINES</tt><em class="property"> = 'VINES'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.VINES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TTP">
+<tt class="descname">TTP</tt><em class="property"> = 'TTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.NSFNET_IG">
+<tt class="descname">NSFNET_IG</tt><em class="property"> = 'NSFNET-IG'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.NSFNET_IG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.DGP">
+<tt class="descname">DGP</tt><em class="property"> = 'DGP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.DGP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TCF">
+<tt class="descname">TCF</tt><em class="property"> = 'TCF'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.TCF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.OSPFIGP">
+<tt class="descname">OSPFIGP</tt><em class="property"> = 'OSPFIGP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.OSPFIGP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Sprite_RP">
+<tt class="descname">Sprite_RP</tt><em class="property"> = 'Sprite-RP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Sprite_RP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.LARP">
+<tt class="descname">LARP</tt><em class="property"> = 'LARP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.LARP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MTP">
+<tt class="descname">MTP</tt><em class="property"> = 'MTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.AX_25">
+<tt class="descname">AX_25</tt><em class="property"> = 'AX.25'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.AX_25" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPIP">
+<tt class="descname">IPIP</tt><em class="property"> = 'IPIP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MICP">
+<tt class="descname">MICP</tt><em class="property"> = 'MICP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.MICP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SCC_SP">
+<tt class="descname">SCC_SP</tt><em class="property"> = 'SCC-SP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SCC_SP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ETHERIP">
+<tt class="descname">ETHERIP</tt><em class="property"> = 'ETHERIP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ETHERIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Any_Private_Encryption_Scheme">
+<tt class="descname">Any_Private_Encryption_Scheme</tt><em class="property"> = 'Any-Private-Encryption-Scheme'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Any_Private_Encryption_Scheme" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.GMTP">
+<tt class="descname">GMTP</tt><em class="property"> = 'GMTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.GMTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IFMP">
+<tt class="descname">IFMP</tt><em class="property"> = 'IFMP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IFMP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PNNI">
+<tt class="descname">PNNI</tt><em class="property"> = 'PNNI'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PNNI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PIM">
+<tt class="descname">PIM</tt><em class="property"> = 'PIM'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PIM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ARIS">
+<tt class="descname">ARIS</tt><em class="property"> = 'ARIS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ARIS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SCPS">
+<tt class="descname">SCPS</tt><em class="property"> = 'SCPS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SCPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.QNX">
+<tt class="descname">QNX</tt><em class="property"> = 'QNX'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.QNX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.A_N">
+<tt class="descname">A_N</tt><em class="property"> = 'A/N'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.A_N" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPComp">
+<tt class="descname">IPComp</tt><em class="property"> = 'IPComp'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPComp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SNP">
+<tt class="descname">SNP</tt><em class="property"> = 'SNP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SNP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Compaq_Pe">
+<tt class="descname">Compaq_Pe</tt><em class="property"> = 'Compaq-Pe'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Compaq_Pe" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPX_in_IP">
+<tt class="descname">IPX_in_IP</tt><em class="property"> = 'IPX-in-IP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPX_in_IP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.VRRP">
+<tt class="descname">VRRP</tt><em class="property"> = 'VRRP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.VRRP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PGM">
+<tt class="descname">PGM</tt><em class="property"> = 'PGM'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PGM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Any_0_Hop_Protocol">
+<tt class="descname">Any_0_Hop_Protocol</tt><em class="property"> = 'Any-0-Hop-Protocol'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Any_0_Hop_Protocol" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ENCAP">
+<tt class="descname">ENCAP</tt><em class="property"> = 'ENCAP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.ENCAP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.DDX">
+<tt class="descname">DDX</tt><em class="property"> = 'DDX'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.DDX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IATP">
+<tt class="descname">IATP</tt><em class="property"> = 'IATP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IATP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.STP">
+<tt class="descname">STP</tt><em class="property"> = 'STP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.STP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SRP">
+<tt class="descname">SRP</tt><em class="property"> = 'SRP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SRP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.UTI">
+<tt class="descname">UTI</tt><em class="property"> = 'UTI'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.UTI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SMP">
+<tt class="descname">SMP</tt><em class="property"> = 'SMP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SMP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SM">
+<tt class="descname">SM</tt><em class="property"> = 'SM'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PTP">
+<tt class="descname">PTP</tt><em class="property"> = 'PTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.FIRE">
+<tt class="descname">FIRE</tt><em class="property"> = 'FIRE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.FIRE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CRTP">
+<tt class="descname">CRTP</tt><em class="property"> = 'CRTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CRTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CRUDP">
+<tt class="descname">CRUDP</tt><em class="property"> = 'CRUDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.CRUDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SSCOPMCE">
+<tt class="descname">SSCOPMCE</tt><em class="property"> = 'SSCOPMCE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SSCOPMCE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPLT">
+<tt class="descname">IPLT</tt><em class="property"> = 'IPLT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.IPLT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SPS">
+<tt class="descname">SPS</tt><em class="property"> = 'SPS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PIPE">
+<tt class="descname">PIPE</tt><em class="property"> = 'PIPE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.PIPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SCTP">
+<tt class="descname">SCTP</tt><em class="property"> = 'SCTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.SCTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.FC">
+<tt class="descname">FC</tt><em class="property"> = 'FC'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.FC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.RSVP_E2E_IGNORE">
+<tt class="descname">RSVP_E2E_IGNORE</tt><em class="property"> = 'RSVP-E2E-IGNORE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.RSVP_E2E_IGNORE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Mobility_Header">
+<tt class="descname">Mobility_Header</tt><em class="property"> = 'Mobility-Header'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.Mobility_Header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.UDPLite">
+<tt class="descname">UDPLite</tt><em class="property"> = 'UDPLite'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Protocol.UDPLite" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Srcipop">
+<em class="property">class </em><tt class="descclassname">nsacl6.</tt><tt class="descname">Srcipop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Srcipop" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Srcipop.EQ">
+<tt class="descname">EQ</tt><em class="property"> = 'EQ'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Srcipop.EQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Srcipop.NEQ">
+<tt class="descname">NEQ</tt><em class="property"> = 'NEQ'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Srcipop.NEQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclassociate">
+<em class="property">class </em><tt class="descclassname">nsacl6.</tt><tt class="descname">Aclassociate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclassociate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclassociate.NAT">
+<tt class="descname">NAT</tt><em class="property"> = 'NAT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclassociate.NAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclassociate.FORWARDINGSESSION">
+<tt class="descname">FORWARDINGSESSION</tt><em class="property"> = 'FORWARDINGSESSION'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclassociate.FORWARDINGSESSION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclassociate.NAT64">
+<tt class="descname">NAT64</tt><em class="property"> = 'NAT64'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclassociate.NAT64" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclassociate.LSN">
+<tt class="descname">LSN</tt><em class="property"> = 'LSN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclassociate.LSN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash">
+<em class="property">class </em><tt class="descclassname">nsacl6.</tt><tt class="descname">Dfdhash</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash.SIP_SPORT_DIP_DPORT">
+<tt class="descname">SIP_SPORT_DIP_DPORT</tt><em class="property"> = 'SIP-SPORT-DIP-DPORT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash.SIP_SPORT_DIP_DPORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash.SIP">
+<tt class="descname">SIP</tt><em class="property"> = 'SIP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash.SIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash.DIP">
+<tt class="descname">DIP</tt><em class="property"> = 'DIP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash.DIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash.SIP_DIP">
+<tt class="descname">SIP_DIP</tt><em class="property"> = 'SIP-DIP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash.SIP_DIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash.SIP_SPORT">
+<tt class="descname">SIP_SPORT</tt><em class="property"> = 'SIP-SPORT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash.SIP_SPORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash.DIP_DPORT">
+<tt class="descname">DIP_DPORT</tt><em class="property"> = 'DIP-DPORT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Dfdhash.DIP_DPORT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Destipop">
+<em class="property">class </em><tt class="descclassname">nsacl6.</tt><tt class="descname">Destipop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Destipop" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Destipop.EQ">
+<tt class="descname">EQ</tt><em class="property"> = 'EQ'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Destipop.EQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Destipop.NEQ">
+<tt class="descname">NEQ</tt><em class="property"> = 'NEQ'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Destipop.NEQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.State">
+<em class="property">class </em><tt class="descclassname">nsacl6.</tt><tt class="descname">State</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.State" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.State.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.State.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.State.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.State.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Kernelstate">
+<em class="property">class </em><tt class="descclassname">nsacl6.</tt><tt class="descname">Kernelstate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Kernelstate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Kernelstate.APPLIED">
+<tt class="descname">APPLIED</tt><em class="property"> = 'APPLIED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Kernelstate.APPLIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Kernelstate.NOTAPPLIED">
+<tt class="descname">NOTAPPLIED</tt><em class="property"> = 'NOTAPPLIED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Kernelstate.NOTAPPLIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Kernelstate.RE_APPLY">
+<tt class="descname">RE_APPLY</tt><em class="property"> = 'RE-APPLY'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Kernelstate.RE_APPLY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Kernelstate.SFAPPLIED">
+<tt class="descname">SFAPPLIED</tt><em class="property"> = 'SFAPPLIED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Kernelstate.SFAPPLIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Kernelstate.SFNOTAPPLIED">
+<tt class="descname">SFNOTAPPLIED</tt><em class="property"> = 'SFNOTAPPLIED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Kernelstate.SFNOTAPPLIED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Logstate">
+<em class="property">class </em><tt class="descclassname">nsacl6.</tt><tt class="descname">Logstate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Logstate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Logstate.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Logstate.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Logstate.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Logstate.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Stateful">
+<em class="property">class </em><tt class="descclassname">nsacl6.</tt><tt class="descname">Stateful</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Stateful" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Stateful.YES">
+<tt class="descname">YES</tt><em class="property"> = 'YES'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Stateful.YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Stateful.NO">
+<tt class="descname">NO</tt><em class="property"> = 'NO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Stateful.NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Acl6action">
+<em class="property">class </em><tt class="descclassname">nsacl6.</tt><tt class="descname">Acl6action</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Acl6action" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Acl6action.BRIDGE">
+<tt class="descname">BRIDGE</tt><em class="property"> = 'BRIDGE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Acl6action.BRIDGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Acl6action.DENY">
+<tt class="descname">DENY</tt><em class="property"> = 'DENY'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Acl6action.DENY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Acl6action.ALLOW">
+<tt class="descname">ALLOW</tt><em class="property"> = 'ALLOW'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Acl6action.ALLOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Destportop">
+<em class="property">class </em><tt class="descclassname">nsacl6.</tt><tt class="descname">Destportop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Destportop" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Destportop.EQ">
+<tt class="descname">EQ</tt><em class="property"> = 'EQ'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Destportop.EQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Destportop.NEQ">
+<tt class="descname">NEQ</tt><em class="property"> = 'NEQ'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Destportop.NEQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclaction">
+<em class="property">class </em><tt class="descclassname">nsacl6.</tt><tt class="descname">Aclaction</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclaction" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclaction.BRIDGE">
+<tt class="descname">BRIDGE</tt><em class="property"> = 'BRIDGE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclaction.BRIDGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclaction.DENY">
+<tt class="descname">DENY</tt><em class="property"> = 'DENY'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclaction.DENY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclaction.ALLOW">
+<tt class="descname">ALLOW</tt><em class="property"> = 'ALLOW'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Aclaction.ALLOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Type">
+<em class="property">class </em><tt class="descclassname">nsacl6.</tt><tt class="descname">Type</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Type" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Type.CLASSIC">
+<tt class="descname">CLASSIC</tt><em class="property"> = 'CLASSIC'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Type.CLASSIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Type.DFD">
+<tt class="descname">DFD</tt><em class="property"> = 'DFD'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Type.DFD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Srcportop">
+<em class="property">class </em><tt class="descclassname">nsacl6.</tt><tt class="descname">Srcportop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Srcportop" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Srcportop.EQ">
+<tt class="descname">EQ</tt><em class="property"> = 'EQ'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Srcportop.EQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Srcportop.NEQ">
+<tt class="descname">NEQ</tt><em class="property"> = 'NEQ'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6.Srcportop.NEQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6_response">
+<em class="property">class </em><tt class="descname">nsacl6_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.nsacl6_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html">aaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.adm.html">adm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.analytics.html">analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.app.html">app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.azure.html">azure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.basic.html">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bfd.html">bfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bot.html">bot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cache.html">cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.html">cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cmp.html">cmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.html">contentinspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cr.html">cr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html">cs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.db.html">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html">gslb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ha.html">ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html">ica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsecalg.html">ipsecalg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html">lb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lldp.html">lldp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html">lsn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.network.html">network</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html">ns</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl.html">nsacl</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">nsacl6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacls.html">nsacls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacls6.html">nsacls6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsappflowcollector.html">nsappflowcollector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsappflowparam.html">nsappflowparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsaptlicense.html">nsaptlicense</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsassignment.html">nsassignment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nscapacity.html">nscapacity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nscentralmanagementserver.html">nscentralmanagementserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsconfig.html">nsconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsconnectiontable.html">nsconnectiontable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsconsoleloginprompt.html">nsconsoleloginprompt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nscqaparam.html">nscqaparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsdhcpip.html">nsdhcpip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsdhcpparams.html">nsdhcpparams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsdiameter.html">nsdiameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsencryptionkey.html">nsencryptionkey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsencryptionparams.html">nsencryptionparams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsevents.html">nsevents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsextension.html">nsextension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsextension_binding.html">nsextension_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsextension_extensionfunction_binding.html">nsextension_extensionfunction_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsfeature.html">nsfeature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshardware.html">nshardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshmackey.html">nshmackey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshostname.html">nshostname</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshttpparam.html">nshttpparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nshttpprofile.html">nshttpprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile.html">nsicapprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsip.html">nsip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsip6.html">nsip6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicense.html">nslicense</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicenseparameters.html">nslicenseparameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicenseproxyserver.html">nslicenseproxyserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicenseserver.html">nslicenseserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicenseserverpool.html">nslicenseserverpool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitidentifier.html">nslimitidentifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitidentifier_binding.html">nslimitidentifier_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitidentifier_nslimitsessions_binding.html">nslimitidentifier_nslimitsessions_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitselector.html">nslimitselector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslimitsessions.html">nslimitsessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsmigration.html">nsmigration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsmode.html">nsmode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsparam.html">nsparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition.html">nspartition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition_binding.html">nspartition_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition_bridgegroup_binding.html">nspartition_bridgegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition_vlan_binding.html">nspartition_vlan_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartition_vxlan_binding.html">nspartition_vxlan_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspartitionmac.html">nspartitionmac</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspbr.html">nspbr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspbr6.html">nspbr6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nspbrs.html">nspbrs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsratecontrol.html">nsratecontrol</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsrollbackcmd.html">nsrollbackcmd</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsrpcnode.html">nsrpcnode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsrunningconfig.html">nsrunningconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssavedconfig.html">nssavedconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsservicefunction.html">nsservicefunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsservicepath.html">nsservicepath</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsservicepath_binding.html">nsservicepath_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsservicepath_nsservicefunction_binding.html">nsservicepath_nsservicefunction_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssimpleacl.html">nssimpleacl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssimpleacl6.html">nssimpleacl6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssourceroutecachetable.html">nssourceroutecachetable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsspparams.html">nsspparams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsstats.html">nsstats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nssurgeq.html">nssurgeq</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstcpbufparam.html">nstcpbufparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstcpparam.html">nstcpparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstcpprofile.html">nstcpprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstestlicense.html">nstestlicense</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimeout.html">nstimeout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimer.html">nstimer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimer_autoscalepolicy_binding.html">nstimer_autoscalepolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimer_binding.html">nstimer_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstimezone.html">nstimezone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain.html">nstrafficdomain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain_binding.html">nstrafficdomain_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain_bridgegroup_binding.html">nstrafficdomain_bridgegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain_vlan_binding.html">nstrafficdomain_vlan_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstrafficdomain_vxlan_binding.html">nstrafficdomain_vxlan_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsvariable.html">nsvariable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsversion.html">nsversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsvpxparam.html">nsvpxparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsweblogparam.html">nsweblogparam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsxmlnamespace.html">nsxmlnamespace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.reboot.html">reboot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.shutdown.html">shutdown</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ntp.html">ntp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pcp.html">pcp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.policy.html">policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pq.html">pq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.protocol.html">protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quic.html">quic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quicbridge.html">quicbridge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html">rdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.reputation.html">reputation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.router.html">router</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.smpp.html">smpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.html">subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ulfd.html">ulfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.html">urlfiltering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.user.html">user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.utility.html">utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.videooptimization.html">videooptimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.vpn.html">vpn</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a></li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl.html"
+                        title="previous chapter">nsacl module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacls.html"
+                        title="next chapter">nsacls module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsacl6.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

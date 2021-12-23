@@ -1,0 +1,8 @@
+cloudallowedngsticketprofile module
+===================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudallowedngsticketprofile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

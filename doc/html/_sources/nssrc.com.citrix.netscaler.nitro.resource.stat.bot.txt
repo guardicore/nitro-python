@@ -1,0 +1,12 @@
+bot package
+===========
+
+Subpackages
+-----------
+
+.. toctree::
+
+	bot_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats>
+	botpolicy_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.bot.botpolicy_stats>
+	botpolicylabel_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.bot.botpolicylabel_stats>
+	botprofile_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.bot.botprofile_stats>

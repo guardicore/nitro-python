@@ -1,0 +1,8 @@
+lsnappsattributes module
+========================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.lsn.lsnappsattributes
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

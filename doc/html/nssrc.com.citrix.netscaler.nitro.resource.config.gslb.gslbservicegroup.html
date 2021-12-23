@@ -1,0 +1,1019 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>gslbservicegroup module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="gslb package" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html" />
+    <link rel="next" title="gslbservicegroup_binding module" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup_binding.html" />
+    <link rel="prev" title="gslbservice_lbmonitor_binding module" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservice_lbmonitor_binding.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup_binding.html" title="gslbservicegroup_binding module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservice_lbmonitor_binding.html" title="gslbservice_lbmonitor_binding module"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html" accesskey="U">gslb package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup">
+<span id="gslbservicegroup-module"></span><h1>gslbservicegroup module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup">
+<em class="property">class </em><tt class="descname">gslbservicegroup</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<p>Configuration for GSLB service group resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.servicegroupname">
+<tt class="descname">servicegroupname</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.servicegroupname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the GSLB service group. Must begin with an ASCII alphabetic or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (&#64;), equals (=), and hyphen (-) characters. Can be changed after the name is created.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.servicetype">
+<tt class="descname">servicetype</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.servicetype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Protocol used to exchange data with the GSLB service.&lt;br/&gt;Possible values = HTTP, FTP, TCP, UDP, SSL, SSL_BRIDGE, SSL_TCP, NNTP, ANY, SIP_UDP, SIP_TCP, SIP_SSL, RADIUS, RDP, RTSP, MYSQL, MSSQL, ORACLE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.maxclient">
+<tt class="descname">maxclient</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.maxclient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum number of simultaneous open connections for the GSLB service group.&lt;br/&gt;Maximum length =  4294967294.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.cip">
+<tt class="descname">cip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.cip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert the Client IP header in requests forwarded to the GSLB service.&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.cipheader">
+<tt class="descname">cipheader</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.cipheader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the HTTP header whose value must be set to the IP address of the client. Used with the Client IP parameter. If client IP insertion is enabled, and the client IP header is not specified, the value of Client IP Header parameter or the value set by the set ns config command is used as client&#8217;s IP header name.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.healthmonitor">
+<tt class="descname">healthmonitor</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.healthmonitor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Monitor the health of this GSLB service.Available settings function are as follows:
+YES - Send probes to check the health of the GSLB service.
+NO - Do not send probes to check the health of the GSLB service. With the NO option, the appliance shows the service as UP at all times.&lt;br/&gt;Default value: YES&lt;br/&gt;Possible values = YES, NO.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.clttimeout">
+<tt class="descname">clttimeout</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.clttimeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time, in seconds, after which to terminate an idle client connection.&lt;br/&gt;Maximum length =  31536000.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.svrtimeout">
+<tt class="descname">svrtimeout</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.svrtimeout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time, in seconds, after which to terminate an idle server connection.&lt;br/&gt;Maximum length =  31536000.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.maxbandwidth">
+<tt class="descname">maxbandwidth</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.maxbandwidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum bandwidth, in Kbps, allocated for all the services in the GSLB service group.&lt;br/&gt;Maximum length =  4294967287.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.monthreshold">
+<tt class="descname">monthreshold</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.monthreshold" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum sum of weights of the monitors that are bound to this GSLB service. Used to determine whether to mark a GSLB service as UP or DOWN.&lt;br/&gt;Maximum length =  65535.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.state">
+<tt class="descname">state</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initial state of the GSLB service group.&lt;br/&gt;Default value: ENABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.downstateflush">
+<tt class="descname">downstateflush</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.downstateflush" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flush all active transactions associated with all the services in the GSLB service group whose state transitions from UP to DOWN. Do not enable this option for applications that must complete their transactions.&lt;br/&gt;Default value: ENABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Any information about the GSLB service group.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.appflowlog">
+<tt class="descname">appflowlog</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.appflowlog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable logging of AppFlow information for the specified GSLB service group.&lt;br/&gt;Default value: ENABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.autoscale">
+<tt class="descname">autoscale</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.autoscale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Auto scale option for a GSLB servicegroup.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = DISABLED, DNS.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.sitename">
+<tt class="descname">sitename</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.sitename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the GSLB site to which the service group belongs.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.sitepersistence">
+<tt class="descname">sitepersistence</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.sitepersistence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use cookie-based site persistence. Applicable only to HTTP and SSL non-autoscale enabled GSLB servicegroups.&lt;br/&gt;Possible values = ConnectionProxy, HTTPRedirect, NONE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.servername">
+<tt class="descname">servername</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.servername" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the server to which to bind the service group.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.port">
+<tt class="descname">port</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.port" title="Permalink to this definition">¶</a></dt>
+<dd><p>Server port number.&lt;br/&gt;Range 1 - 65535&lt;br/&gt;* in CLI is represented as 65535 in NITRO API.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.weight">
+<tt class="descname">weight</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Weight to assign to the servers in the service group. Specifies the capacity of the servers relative to the other servers in the load balancing configuration. The higher the weight, the higher the percentage of requests sent to the service.&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  100.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.hashid">
+<tt class="descname">hashid</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.hashid" title="Permalink to this definition">¶</a></dt>
+<dd><p>The hash identifier for the service. This must be unique for each service. This parameter is used by hash based load balancing methods.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.publicip">
+<tt class="descname">publicip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.publicip" title="Permalink to this definition">¶</a></dt>
+<dd><p>The public IP address that a NAT device translates to the GSLB service&#8217;s private IP address. Optional.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.publicport">
+<tt class="descname">publicport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.publicport" title="Permalink to this definition">¶</a></dt>
+<dd><p>The public port associated with the GSLB service&#8217;s public IP address. The port is mapped to the service&#8217;s private port number. Applicable to the local GSLB service. Optional.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.siteprefix">
+<tt class="descname">siteprefix</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.siteprefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>The site&#8217;s prefix string. When the GSLB service group is bound to a GSLB virtual server, a GSLB site domain is generated internally for each bound serviceitem-domain pair by concatenating the site prefix of the service item and the name of the domain. If the special string NONE is specified, the site-prefix string is unset. When implementing HTTP redirect site persistence, the Citrix ADC redirects GSLB requests to GSLB services by using their site domains.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.monitor_name_svc">
+<tt class="descname">monitor_name_svc</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.monitor_name_svc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the monitor bound to the GSLB service group. Used to assign a weight to the monitor.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.dup_weight">
+<tt class="descname">dup_weight</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.dup_weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>weight of the monitor that is bound to GSLB servicegroup.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.delay">
+<tt class="descname">delay</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.delay" title="Permalink to this definition">¶</a></dt>
+<dd><p>The time allowed (in seconds) for a graceful shutdown. During this period, new connections or requests will continue to be sent to this service for clients who already have a persistent session on the system. Connections or requests from fresh or new clients who do not yet have a persistence sessions on the system will not be sent to the service. Instead, they will be load balanced among other available services. After the delay time expires, no new requests or connections will be sent to the service.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.graceful">
+<tt class="descname">graceful</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.graceful" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wait for all existing connections to the service to terminate before shutting down the service.&lt;br/&gt;Default value: NO&lt;br/&gt;Possible values = YES, NO.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.includemembers">
+<tt class="descname">includemembers</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.includemembers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display the members of the listed GSLB service groups in addition to their settings. Can be specified when no service group name is provided in the command. In that case, the details displayed for each service group are identical to the details displayed when a service group name is provided, except that bound monitors are not displayed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.newname">
+<tt class="descname">newname</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.newname" title="Permalink to this definition">¶</a></dt>
+<dd><p>New name for the GSLB service group.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.numofconnections">
+<tt class="descname">numofconnections</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.numofconnections" title="Permalink to this definition">¶</a></dt>
+<dd><p>This will tell the number of client side connections are still open.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.serviceconftype">
+<tt class="descname">serviceconftype</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.serviceconftype" title="Permalink to this definition">¶</a></dt>
+<dd><p>The configuration type of the GSLB service group.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.value">
+<tt class="descname">value</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>SSL Status.&lt;br/&gt;Possible values = Certkey not bound, SSL feature disabled.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.svrstate">
+<tt class="descname">svrstate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.svrstate" title="Permalink to this definition">¶</a></dt>
+<dd><p>The state of the GSLB service.&lt;br/&gt;Possible values = UP, DOWN, UNKNOWN, BUSY, OUT OF SERVICE, GOING OUT OF SERVICE, DOWN WHEN GOING OUT OF SERVICE, NS_EMPTY_STR, Unknown, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.ip">
+<tt class="descname">ip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.ip" title="Permalink to this definition">¶</a></dt>
+<dd><p>IP Address.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.monstatcode">
+<tt class="descname">monstatcode</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.monstatcode" title="Permalink to this definition">¶</a></dt>
+<dd><p>The code indicating the monitor response.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.monstatparam1">
+<tt class="descname">monstatparam1</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.monstatparam1" title="Permalink to this definition">¶</a></dt>
+<dd><p>First parameter for use with message code.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.monstatparam2">
+<tt class="descname">monstatparam2</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.monstatparam2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Second parameter for use with message code.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.monstatparam3">
+<tt class="descname">monstatparam3</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.monstatparam3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Third parameter for use with message code.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.statechangetimemsec">
+<tt class="descname">statechangetimemsec</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.statechangetimemsec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time when last state change occurred. Milliseconds part.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.stateupdatereason">
+<tt class="descname">stateupdatereason</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.stateupdatereason" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks state update reason on the secondary node.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.clmonowner">
+<tt class="descname">clmonowner</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.clmonowner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tells the mon owner of the service.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.clmonview">
+<tt class="descname">clmonview</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.clmonview" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tells the view id of the monitoring owner.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.groupcount">
+<tt class="descname">groupcount</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.groupcount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Servicegroup Count.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.serviceipstr">
+<tt class="descname">serviceipstr</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.serviceipstr" title="Permalink to this definition">¶</a></dt>
+<dd><p>This field has been intorduced to show the dbs services ip.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.servicegroupeffectivestate">
+<tt class="descname">servicegroupeffectivestate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.servicegroupeffectivestate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates the effective GSLB servicegroup state based on the state of the bound service items.If all services are UP the effective state is UP, if all are DOWN its DOWN,if all are OFS its OFS.If atleast one serviceis UP and rest are either DOWN or OFS, the effective state is PARTIAL-UP.If atleast one bound service is DOWN and rest are OFS the effective state is PARTIAL DOWN.&lt;br/&gt;Possible values = UP, DOWN, OUT OF SERVICE, PARTIAL-UP, PARTIAL-DOWN.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.gslb">
+<tt class="descname">gslb</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.gslb" title="Permalink to this definition">¶</a></dt>
+<dd><p>.&lt;br/&gt;Default value: GSLB&lt;br/&gt;Possible values = REMOTE, LOCAL.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.svreffgslbstate">
+<tt class="descname">svreffgslbstate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.svreffgslbstate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Effective state of the gslb svc.&lt;br/&gt;Possible values = UP, DOWN, UNKNOWN, BUSY, OUT OF SERVICE, GOING OUT OF SERVICE, DOWN WHEN GOING OUT OF SERVICE, NS_EMPTY_STR, Unknown, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.nodefaultbindings">
+<tt class="descname">nodefaultbindings</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.nodefaultbindings" title="Permalink to this definition">¶</a></dt>
+<dd><p>to determine if the configuration is from stylebooks.&lt;br/&gt;Default value: NO&lt;br/&gt;Possible values = YES, NO.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.filter_add_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_add_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.filter_add_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only add operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.add">
+<em class="property">classmethod </em><tt class="descname">add</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to add gslbservicegroup.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.filter_delete_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_delete_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.filter_delete_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only delete operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.delete">
+<em class="property">classmethod </em><tt class="descname">delete</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to delete gslbservicegroup.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.filter_update_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_update_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.filter_update_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only update operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.update">
+<em class="property">classmethod </em><tt class="descname">update</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to update gslbservicegroup.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.unset">
+<em class="property">classmethod </em><tt class="descname">unset</tt><big>(</big><em>client</em>, <em>resource</em>, <em>args</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.unset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to unset the properties of gslbservicegroup resource.
+Properties that need to be unset are specified in args array.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.enable">
+<em class="property">classmethod </em><tt class="descname">enable</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.enable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to enable gslbservicegroup.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.disable">
+<em class="property">classmethod </em><tt class="descname">disable</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.disable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to disable gslbservicegroup.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.rename">
+<em class="property">classmethod </em><tt class="descname">rename</tt><big>(</big><em>client</em>, <em>resource</em>, <em>new_servicegroupname</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.rename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to rename a gslbservicegroup resource.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>client</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the gslbservicegroup resources that are configured on netscaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.get_args">
+<em class="property">classmethod </em><tt class="descname">get_args</tt><big>(</big><em>client</em>, <em>args</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.get_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the gslbservicegroup resources that are configured on netscaler.
+# This uses gslbservicegroup_args which is a way to provide additional arguments while fetching the resources.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.get_filtered">
+<em class="property">classmethod </em><tt class="descname">get_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.get_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch filtered set of gslbservicegroup resources.
+filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.count">
+<em class="property">classmethod </em><tt class="descname">count</tt><big>(</big><em>client</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count the gslbservicegroup resources configured on NetScaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.count_filtered">
+<em class="property">classmethod </em><tt class="descname">count_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.count_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count filtered the set of gslbservicegroup resources.
+Filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Downstateflush">
+<em class="property">class </em><tt class="descname">Downstateflush</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Downstateflush" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Downstateflush.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Downstateflush.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Downstateflush.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Downstateflush.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">Servicetype</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.HTTP">
+<tt class="descname">HTTP</tt><em class="property"> = 'HTTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.HTTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.FTP">
+<tt class="descname">FTP</tt><em class="property"> = 'FTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.FTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.TCP">
+<tt class="descname">TCP</tt><em class="property"> = 'TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.UDP">
+<tt class="descname">UDP</tt><em class="property"> = 'UDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.UDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.SSL">
+<tt class="descname">SSL</tt><em class="property"> = 'SSL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.SSL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.SSL_BRIDGE">
+<tt class="descname">SSL_BRIDGE</tt><em class="property"> = 'SSL_BRIDGE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.SSL_BRIDGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.SSL_TCP">
+<tt class="descname">SSL_TCP</tt><em class="property"> = 'SSL_TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.SSL_TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.NNTP">
+<tt class="descname">NNTP</tt><em class="property"> = 'NNTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.NNTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.ANY">
+<tt class="descname">ANY</tt><em class="property"> = 'ANY'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.ANY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.SIP_UDP">
+<tt class="descname">SIP_UDP</tt><em class="property"> = 'SIP_UDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.SIP_UDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.SIP_TCP">
+<tt class="descname">SIP_TCP</tt><em class="property"> = 'SIP_TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.SIP_TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.SIP_SSL">
+<tt class="descname">SIP_SSL</tt><em class="property"> = 'SIP_SSL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.SIP_SSL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.RADIUS">
+<tt class="descname">RADIUS</tt><em class="property"> = 'RADIUS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.RADIUS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.RDP">
+<tt class="descname">RDP</tt><em class="property"> = 'RDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.RDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.RTSP">
+<tt class="descname">RTSP</tt><em class="property"> = 'RTSP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.RTSP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.MYSQL">
+<tt class="descname">MYSQL</tt><em class="property"> = 'MYSQL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.MYSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.MSSQL">
+<tt class="descname">MSSQL</tt><em class="property"> = 'MSSQL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.MSSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.ORACLE">
+<tt class="descname">ORACLE</tt><em class="property"> = 'ORACLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicetype.ORACLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Autoscale">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">Autoscale</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Autoscale" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Autoscale.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Autoscale.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Autoscale.DNS">
+<tt class="descname">DNS</tt><em class="property"> = 'DNS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Autoscale.DNS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Sitepersistence">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">Sitepersistence</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Sitepersistence" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Sitepersistence.ConnectionProxy">
+<tt class="descname">ConnectionProxy</tt><em class="property"> = 'ConnectionProxy'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Sitepersistence.ConnectionProxy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Sitepersistence.HTTPRedirect">
+<tt class="descname">HTTPRedirect</tt><em class="property"> = 'HTTPRedirect'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Sitepersistence.HTTPRedirect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Sitepersistence.NONE">
+<tt class="descname">NONE</tt><em class="property"> = 'NONE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Sitepersistence.NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Healthmonitor">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">Healthmonitor</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Healthmonitor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Healthmonitor.YES">
+<tt class="descname">YES</tt><em class="property"> = 'YES'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Healthmonitor.YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Healthmonitor.NO">
+<tt class="descname">NO</tt><em class="property"> = 'NO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Healthmonitor.NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.State">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">State</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.State" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.State.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.State.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.State.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.State.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Nodefaultbindings">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">Nodefaultbindings</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Nodefaultbindings" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Nodefaultbindings.YES">
+<tt class="descname">YES</tt><em class="property"> = 'YES'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Nodefaultbindings.YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Nodefaultbindings.NO">
+<tt class="descname">NO</tt><em class="property"> = 'NO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Nodefaultbindings.NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">Svrstate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.UP">
+<tt class="descname">UP</tt><em class="property"> = 'UP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.UP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.DOWN">
+<tt class="descname">DOWN</tt><em class="property"> = 'DOWN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 'UNKNOWN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.BUSY">
+<tt class="descname">BUSY</tt><em class="property"> = 'BUSY'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.BUSY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.OUT_OF_SERVICE">
+<tt class="descname">OUT_OF_SERVICE</tt><em class="property"> = 'OUT OF SERVICE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.OUT_OF_SERVICE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.GOING_OUT_OF_SERVICE">
+<tt class="descname">GOING_OUT_OF_SERVICE</tt><em class="property"> = 'GOING OUT OF SERVICE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.GOING_OUT_OF_SERVICE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.DOWN_WHEN_GOING_OUT_OF_SERVICE">
+<tt class="descname">DOWN_WHEN_GOING_OUT_OF_SERVICE</tt><em class="property"> = 'DOWN WHEN GOING OUT OF SERVICE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.DOWN_WHEN_GOING_OUT_OF_SERVICE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.NS_EMPTY_STR">
+<tt class="descname">NS_EMPTY_STR</tt><em class="property"> = 'NS_EMPTY_STR'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.NS_EMPTY_STR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.Unknown">
+<tt class="descname">Unknown</tt><em class="property"> = 'Unknown'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.Unknown" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svrstate.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Value">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">Value</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Value" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Value.Certkey_not_bound">
+<tt class="descname">Certkey_not_bound</tt><em class="property"> = 'Certkey not bound'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Value.Certkey_not_bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Value.SSL_feature_disabled">
+<tt class="descname">SSL_feature_disabled</tt><em class="property"> = 'SSL feature disabled'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Value.SSL_feature_disabled" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Gslb">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">Gslb</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Gslb" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Gslb.REMOTE">
+<tt class="descname">REMOTE</tt><em class="property"> = 'REMOTE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Gslb.REMOTE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Gslb.LOCAL">
+<tt class="descname">LOCAL</tt><em class="property"> = 'LOCAL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Gslb.LOCAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">Svreffgslbstate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.UP">
+<tt class="descname">UP</tt><em class="property"> = 'UP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.UP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.DOWN">
+<tt class="descname">DOWN</tt><em class="property"> = 'DOWN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = 'UNKNOWN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.BUSY">
+<tt class="descname">BUSY</tt><em class="property"> = 'BUSY'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.BUSY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.OUT_OF_SERVICE">
+<tt class="descname">OUT_OF_SERVICE</tt><em class="property"> = 'OUT OF SERVICE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.OUT_OF_SERVICE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.GOING_OUT_OF_SERVICE">
+<tt class="descname">GOING_OUT_OF_SERVICE</tt><em class="property"> = 'GOING OUT OF SERVICE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.GOING_OUT_OF_SERVICE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.DOWN_WHEN_GOING_OUT_OF_SERVICE">
+<tt class="descname">DOWN_WHEN_GOING_OUT_OF_SERVICE</tt><em class="property"> = 'DOWN WHEN GOING OUT OF SERVICE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.DOWN_WHEN_GOING_OUT_OF_SERVICE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.NS_EMPTY_STR">
+<tt class="descname">NS_EMPTY_STR</tt><em class="property"> = 'NS_EMPTY_STR'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.NS_EMPTY_STR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.Unknown">
+<tt class="descname">Unknown</tt><em class="property"> = 'Unknown'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.Unknown" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Svreffgslbstate.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicegroupeffectivestate">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">Servicegroupeffectivestate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicegroupeffectivestate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicegroupeffectivestate.UP">
+<tt class="descname">UP</tt><em class="property"> = 'UP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicegroupeffectivestate.UP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicegroupeffectivestate.DOWN">
+<tt class="descname">DOWN</tt><em class="property"> = 'DOWN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicegroupeffectivestate.DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicegroupeffectivestate.OUT_OF_SERVICE">
+<tt class="descname">OUT_OF_SERVICE</tt><em class="property"> = 'OUT OF SERVICE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicegroupeffectivestate.OUT_OF_SERVICE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicegroupeffectivestate.PARTIAL_UP">
+<tt class="descname">PARTIAL_UP</tt><em class="property"> = 'PARTIAL-UP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicegroupeffectivestate.PARTIAL_UP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicegroupeffectivestate.PARTIAL_DOWN">
+<tt class="descname">PARTIAL_DOWN</tt><em class="property"> = 'PARTIAL-DOWN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Servicegroupeffectivestate.PARTIAL_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Cip">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">Cip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Cip" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Cip.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Cip.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Cip.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Cip.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Appflowlog">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">Appflowlog</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Appflowlog" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Appflowlog.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Appflowlog.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Appflowlog.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Appflowlog.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Graceful">
+<em class="property">class </em><tt class="descclassname">gslbservicegroup.</tt><tt class="descname">Graceful</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Graceful" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Graceful.YES">
+<tt class="descname">YES</tt><em class="property"> = 'YES'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Graceful.YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Graceful.NO">
+<tt class="descname">NO</tt><em class="property"> = 'NO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup.Graceful.NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup_response">
+<em class="property">class </em><tt class="descname">gslbservicegroup_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.gslbservicegroup_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html">aaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.adm.html">adm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.analytics.html">analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.app.html">app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.azure.html">azure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.basic.html">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bfd.html">bfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bot.html">bot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cache.html">cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.html">cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cmp.html">cmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.html">contentinspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cr.html">cr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html">cs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.db.html">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.filter.html">filter</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html">gslb</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbconfig.html">gslbconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbdomain.html">gslbdomain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbdomain_binding.html">gslbdomain_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbdomain_gslbservice_binding.html">gslbdomain_gslbservice_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbdomain_gslbservicegroup_binding.html">gslbdomain_gslbservicegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbdomain_gslbservicegroupmember_binding.html">gslbdomain_gslbservicegroupmember_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbdomain_gslbvserver_binding.html">gslbdomain_gslbvserver_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbdomain_lbmonitor_binding.html">gslbdomain_lbmonitor_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbldnsentries.html">gslbldnsentries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbldnsentry.html">gslbldnsentry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbparameter.html">gslbparameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbrunningconfig.html">gslbrunningconfig</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservice.html">gslbservice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservice_binding.html">gslbservice_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservice_dnsview_binding.html">gslbservice_dnsview_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservice_lbmonitor_binding.html">gslbservice_lbmonitor_binding</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">gslbservicegroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup_binding.html">gslbservicegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup_gslbservicegroupmember_binding.html">gslbservicegroup_gslbservicegroupmember_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup_lbmonitor_binding.html">gslbservicegroup_lbmonitor_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup_servicegroupentitymonbindings_binding.html">gslbservicegroup_servicegroupentitymonbindings_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbsite.html">gslbsite</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbsite_binding.html">gslbsite_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbsite_gslbservice_binding.html">gslbsite_gslbservice_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbsite_gslbservicegroup_binding.html">gslbsite_gslbservicegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbsite_gslbservicegroupmember_binding.html">gslbsite_gslbservicegroupmember_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbsyncstatus.html">gslbsyncstatus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbvserver.html">gslbvserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbvserver_binding.html">gslbvserver_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbvserver_domain_binding.html">gslbvserver_domain_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbvserver_gslbservice_binding.html">gslbvserver_gslbservice_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbvserver_gslbservicegroup_binding.html">gslbvserver_gslbservicegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbvserver_gslbservicegroupmember_binding.html">gslbvserver_gslbservicegroupmember_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbvserver_spilloverpolicy_binding.html">gslbvserver_spilloverpolicy_binding</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ha.html">ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html">ica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsecalg.html">ipsecalg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html">lb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lldp.html">lldp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html">lsn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.network.html">network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html">ns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ntp.html">ntp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pcp.html">pcp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.policy.html">policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pq.html">pq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.protocol.html">protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quic.html">quic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quicbridge.html">quicbridge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html">rdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.reputation.html">reputation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.router.html">router</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.smpp.html">smpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.html">subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ulfd.html">ulfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.html">urlfiltering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.user.html">user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.utility.html">utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.videooptimization.html">videooptimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.vpn.html">vpn</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a></li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservice_lbmonitor_binding.html"
+                        title="previous chapter">gslbservice_lbmonitor_binding module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup_binding.html"
+                        title="next chapter">gslbservicegroup_binding module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

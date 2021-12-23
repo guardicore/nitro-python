@@ -1,0 +1,8 @@
+analyticsglobal_analyticsprofile_binding module
+===============================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.analytics.analyticsglobal_analyticsprofile_binding
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

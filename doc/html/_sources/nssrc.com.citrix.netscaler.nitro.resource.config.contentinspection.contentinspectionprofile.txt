@@ -1,0 +1,8 @@
+contentinspectionprofile module
+===============================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionprofile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

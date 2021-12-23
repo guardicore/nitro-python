@@ -1,0 +1,12 @@
+urlfiltering package
+====================
+
+Subpackages
+-----------
+
+.. toctree::
+
+	urlfilteringcategories <nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.urlfilteringcategories>
+	urlfilteringcategorization <nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.urlfilteringcategorization>
+	urlfilteringcategorygroups <nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.urlfilteringcategorygroups>
+	urlfilteringparameter <nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.urlfilteringparameter>

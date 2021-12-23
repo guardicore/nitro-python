@@ -1,0 +1,8 @@
+systemrestorepoint module
+=========================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.system.systemrestorepoint
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

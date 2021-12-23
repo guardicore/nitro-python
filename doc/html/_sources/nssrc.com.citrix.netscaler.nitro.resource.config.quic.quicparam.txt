@@ -1,0 +1,8 @@
+quicparam module
+================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.quic.quicparam
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

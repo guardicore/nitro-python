@@ -1,0 +1,8 @@
+nslicenseparameters module
+==========================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.ns.nslicenseparameters
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

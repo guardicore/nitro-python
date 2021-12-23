@@ -1,0 +1,8 @@
+cloudprofile module
+===================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

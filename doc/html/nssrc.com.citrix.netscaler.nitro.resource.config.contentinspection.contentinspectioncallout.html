@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>contentinspectioncallout module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="contentinspection package" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.html" />
+    <link rel="next" title="contentinspectionglobal_binding module" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionglobal_binding.html" />
+    <link rel="prev" title="contentinspectionaction module" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionaction.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionglobal_binding.html" title="contentinspectionglobal_binding module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionaction.html" title="contentinspectionaction module"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.html" accesskey="U">contentinspection package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout">
+<span id="contentinspectioncallout-module"></span><h1>contentinspectioncallout module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout">
+<em class="property">class </em><tt class="descname">contentinspectioncallout</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<p>Configuration for Content Inspection callout resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.name">
+<tt class="descname">name</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for the Content Inspection callout. Not case sensitive. Must begin with an ASCII letter or underscore (_) character, and must consist only of ASCII alphanumeric or underscore characters. Must not begin with &#8216;re&#8217; or &#8216;xp&#8217; or be a word reserved for use as an expression qualifier prefix (such as HTTP) or enumeration value (such as ASCII). Must not be the name of an existing named expression, pattern set, dataset, stringmap, or callout.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.type">
+<tt class="descname">type</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Type of the Content Inspection callout. It must be one of the following:
+* ICAP - Sends ICAP request to the configured ICAP server.&lt;br/&gt;Possible values = ICAP.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.profilename">
+<tt class="descname">profilename</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.profilename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the Content Inspection profile. The type of the configured profile must match the type specified using -type argument.&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  127.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.servername">
+<tt class="descname">servername</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.servername" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the load balancing or content switching virtual server or service to which the Content Inspection request is issued. Mutually exclusive with server IP address and port parameters. The service type must be TCP or SSL_TCP. If there are vservers and services with the same name, then vserver is selected.&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  127.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.serverip">
+<tt class="descname">serverip</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.serverip" title="Permalink to this definition">¶</a></dt>
+<dd><p>IP address of Content Inspection server. Mutually exclusive with the server name parameter.&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.serverport">
+<tt class="descname">serverport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.serverport" title="Permalink to this definition">¶</a></dt>
+<dd><p>Port of the Content Inspection server.&lt;br/&gt;Default value: 1344&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  65535.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.returntype">
+<tt class="descname">returntype</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.returntype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Type of data that the target callout agent returns in response to the callout.
+Available settings function as follows:
+* TEXT - Treat the returned value as a text string.
+* NUM - Treat the returned value as a number.
+* BOOL - Treat the returned value as a Boolean value.
+Note: You cannot change the return type after it is set.&lt;br/&gt;Possible values = BOOL, NUM, TEXT.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.resultexpr">
+<tt class="descname">resultexpr</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.resultexpr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Expression that extracts the callout results from the response sent by the CI callout agent. Must be a response based expression, that is, it must begin with ICAP.RES. The operations in this expression must match the return type. For example, if you configure a return type of TEXT, the result expression must be a text based expression, as in the following example: icap.res.header(&#8220;ISTag&#8221;).&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Any comments to preserve information about this Content Inspection callout.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.hits">
+<tt class="descname">hits</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.hits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total hits.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.undefhits">
+<tt class="descname">undefhits</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.undefhits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total undefs.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.undefreason">
+<tt class="descname">undefreason</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.undefreason" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reason for last undef.&lt;br/&gt;Possible values = Failed to add service, Vserver not found, Not a HTTP or SSL vserver, Generated callout request is invalid, Content-Length header not found in callout request, Not enough space to put Content-Length value, Config incomplete, Server is DOWN, Creating callout connection failed, No memory to generate callout request packets, No memory to create callout task, No memory to create callout async, Callout request expression undef, No callout response expression, Skipped callout response eval, Callout response pixl init undef, Callout response expression undef.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.filter_add_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_add_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.filter_add_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only add operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.add">
+<em class="property">classmethod </em><tt class="descname">add</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to add contentinspectioncallout.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.filter_delete_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_delete_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.filter_delete_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only delete operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.delete">
+<em class="property">classmethod </em><tt class="descname">delete</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to delete contentinspectioncallout.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.filter_update_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_update_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.filter_update_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only update operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.update">
+<em class="property">classmethod </em><tt class="descname">update</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to update contentinspectioncallout.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.unset">
+<em class="property">classmethod </em><tt class="descname">unset</tt><big>(</big><em>client</em>, <em>resource</em>, <em>args</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.unset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to unset the properties of contentinspectioncallout resource.
+Properties that need to be unset are specified in args array.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>client</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the contentinspectioncallout resources that are configured on netscaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.get_filtered">
+<em class="property">classmethod </em><tt class="descname">get_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.get_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch filtered set of contentinspectioncallout resources.
+filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.count">
+<em class="property">classmethod </em><tt class="descname">count</tt><big>(</big><em>client</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count the contentinspectioncallout resources configured on NetScaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.count_filtered">
+<em class="property">classmethod </em><tt class="descname">count_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.count_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count filtered the set of contentinspectioncallout resources.
+Filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Type">
+<em class="property">class </em><tt class="descname">Type</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Type" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Type.ICAP">
+<tt class="descname">ICAP</tt><em class="property"> = 'ICAP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Type.ICAP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Returntype">
+<em class="property">class </em><tt class="descclassname">contentinspectioncallout.</tt><tt class="descname">Returntype</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Returntype" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Returntype.BOOL">
+<tt class="descname">BOOL</tt><em class="property"> = 'BOOL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Returntype.BOOL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Returntype.NUM">
+<tt class="descname">NUM</tt><em class="property"> = 'NUM'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Returntype.NUM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Returntype.TEXT">
+<tt class="descname">TEXT</tt><em class="property"> = 'TEXT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Returntype.TEXT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason">
+<em class="property">class </em><tt class="descclassname">contentinspectioncallout.</tt><tt class="descname">Undefreason</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Failed_to_add_service">
+<tt class="descname">Failed_to_add_service</tt><em class="property"> = 'Failed to add service'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Failed_to_add_service" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Vserver_not_found">
+<tt class="descname">Vserver_not_found</tt><em class="property"> = 'Vserver not found'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Vserver_not_found" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Not_a_HTTP_or_SSL_vserver">
+<tt class="descname">Not_a_HTTP_or_SSL_vserver</tt><em class="property"> = 'Not a HTTP or SSL vserver'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Not_a_HTTP_or_SSL_vserver" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Generated_callout_request_is_invalid">
+<tt class="descname">Generated_callout_request_is_invalid</tt><em class="property"> = 'Generated callout request is invalid'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Generated_callout_request_is_invalid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Content_Length_header_not_found_in_callout_request">
+<tt class="descname">Content_Length_header_not_found_in_callout_request</tt><em class="property"> = 'Content-Length header not found in callout request'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Content_Length_header_not_found_in_callout_request" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Not_enough_space_to_put_Content_Length_value">
+<tt class="descname">Not_enough_space_to_put_Content_Length_value</tt><em class="property"> = 'Not enough space to put Content-Length value'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Not_enough_space_to_put_Content_Length_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Config_incomplete">
+<tt class="descname">Config_incomplete</tt><em class="property"> = 'Config incomplete'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Config_incomplete" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Server_is_DOWN">
+<tt class="descname">Server_is_DOWN</tt><em class="property"> = 'Server is DOWN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Server_is_DOWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Creating_callout_connection_failed">
+<tt class="descname">Creating_callout_connection_failed</tt><em class="property"> = 'Creating callout connection failed'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Creating_callout_connection_failed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.No_memory_to_generate_callout_request_packets">
+<tt class="descname">No_memory_to_generate_callout_request_packets</tt><em class="property"> = 'No memory to generate callout request packets'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.No_memory_to_generate_callout_request_packets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.No_memory_to_create_callout_task">
+<tt class="descname">No_memory_to_create_callout_task</tt><em class="property"> = 'No memory to create callout task'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.No_memory_to_create_callout_task" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.No_memory_to_create_callout_async">
+<tt class="descname">No_memory_to_create_callout_async</tt><em class="property"> = 'No memory to create callout async'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.No_memory_to_create_callout_async" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Callout_request_expression_undef">
+<tt class="descname">Callout_request_expression_undef</tt><em class="property"> = 'Callout request expression undef'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Callout_request_expression_undef" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.No_callout_response_expression">
+<tt class="descname">No_callout_response_expression</tt><em class="property"> = 'No callout response expression'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.No_callout_response_expression" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Skipped_callout_response_eval">
+<tt class="descname">Skipped_callout_response_eval</tt><em class="property"> = 'Skipped callout response eval'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Skipped_callout_response_eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Callout_response_pixl_init_undef">
+<tt class="descname">Callout_response_pixl_init_undef</tt><em class="property"> = 'Callout response pixl init undef'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Callout_response_pixl_init_undef" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Callout_response_expression_undef">
+<tt class="descname">Callout_response_expression_undef</tt><em class="property"> = 'Callout response expression undef'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout.Undefreason.Callout_response_expression_undef" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout_response">
+<em class="property">class </em><tt class="descname">contentinspectioncallout_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.contentinspectioncallout_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html">aaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.adm.html">adm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.analytics.html">analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.app.html">app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.azure.html">azure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.basic.html">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bfd.html">bfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bot.html">bot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cache.html">cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.html">cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cmp.html">cmp</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.html">contentinspection</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionaction.html">contentinspectionaction</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">contentinspectioncallout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionglobal_binding.html">contentinspectionglobal_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionglobal_contentinspectionpolicy_binding.html">contentinspectionglobal_contentinspectionpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionparameter.html">contentinspectionparameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionpolicy.html">contentinspectionpolicy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionpolicy_binding.html">contentinspectionpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionpolicy_contentinspectionglobal_binding.html">contentinspectionpolicy_contentinspectionglobal_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionpolicy_contentinspectionpolicylabel_binding.html">contentinspectionpolicy_contentinspectionpolicylabel_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionpolicy_csvserver_binding.html">contentinspectionpolicy_csvserver_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionpolicy_lbvserver_binding.html">contentinspectionpolicy_lbvserver_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionpolicylabel.html">contentinspectionpolicylabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionpolicylabel_binding.html">contentinspectionpolicylabel_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionpolicylabel_contentinspectionpolicy_binding.html">contentinspectionpolicylabel_contentinspectionpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionpolicylabel_policybinding_binding.html">contentinspectionpolicylabel_policybinding_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionprofile.html">contentinspectionprofile</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cr.html">cr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html">cs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.db.html">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html">gslb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ha.html">ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html">ica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsecalg.html">ipsecalg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html">lb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lldp.html">lldp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html">lsn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.network.html">network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html">ns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ntp.html">ntp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pcp.html">pcp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.policy.html">policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pq.html">pq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.protocol.html">protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quic.html">quic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quicbridge.html">quicbridge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html">rdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.reputation.html">reputation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.router.html">router</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.smpp.html">smpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.html">subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ulfd.html">ulfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.html">urlfiltering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.user.html">user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.utility.html">utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.videooptimization.html">videooptimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.vpn.html">vpn</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a></li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionaction.html"
+                        title="previous chapter">contentinspectionaction module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectionglobal_binding.html"
+                        title="next chapter">contentinspectionglobal_binding module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.contentinspectioncallout.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

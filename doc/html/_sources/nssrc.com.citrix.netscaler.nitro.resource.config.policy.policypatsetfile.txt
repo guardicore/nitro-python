@@ -1,0 +1,8 @@
+policypatsetfile module
+=======================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.policy.policypatsetfile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

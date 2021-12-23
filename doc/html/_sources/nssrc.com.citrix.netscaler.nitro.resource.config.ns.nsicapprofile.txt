@@ -1,0 +1,8 @@
+nsicapprofile module
+====================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.ns.nsicapprofile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

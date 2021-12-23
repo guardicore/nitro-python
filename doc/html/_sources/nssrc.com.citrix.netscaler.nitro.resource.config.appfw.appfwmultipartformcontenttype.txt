@@ -1,0 +1,8 @@
+appfwmultipartformcontenttype module
+====================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.appfw.appfwmultipartformcontenttype
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

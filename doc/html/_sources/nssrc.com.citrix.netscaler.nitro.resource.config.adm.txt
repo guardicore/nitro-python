@@ -1,0 +1,9 @@
+adm package
+===========
+
+Subpackages
+-----------
+
+.. toctree::
+
+	admparameter <nssrc.com.citrix.netscaler.nitro.resource.config.adm.admparameter>

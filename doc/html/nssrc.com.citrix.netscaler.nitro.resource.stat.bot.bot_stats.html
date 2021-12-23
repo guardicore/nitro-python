@@ -1,0 +1,838 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>bot_stats module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="bot package" href="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.html" />
+    <link rel="next" title="botpolicy_stats module" href="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.botpolicy_stats.html" />
+    <link rel="prev" title="bot package" href="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.botpolicy_stats.html" title="botpolicy_stats module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.html" title="bot package"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.stat.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.html" accesskey="U">bot package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats">
+<span id="bot-stats-module"></span><h1>bot_stats module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats">
+<em class="property">class </em><tt class="descname">bot_stats</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.clearstats">
+<tt class="descname">clearstats</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.clearstats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear the statsistics / counters.&lt;br/&gt;Possible values = basic, full.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationlograte">
+<tt class="descname">botviolipreputationlograte</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationlograte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolipreputationlog.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignaturereset">
+<tt class="descname">botviolstaticsignaturereset</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignaturereset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of static signature violations requests reset by the Bot Management to a different Web page or web server.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltps">
+<tt class="descname">botvioltps</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of tps violations seen by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltraplog">
+<tt class="descname">botvioltraplog</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltraplog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of trap violations logged by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputation">
+<tt class="descname">botviolipreputation</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of ip reputation violations seen by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistredirectrate">
+<tt class="descname">botviolblacklistredirectrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistredirectrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolblacklistredirect.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignaturedroprate">
+<tt class="descname">botviolstaticsignaturedroprate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignaturedroprate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolstaticsignaturedrop.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolwhitelistlog">
+<tt class="descname">botviolwhitelistlog</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolwhitelistlog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of white list violations logged by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintrate">
+<tt class="descname">botvioldevicefingerprintrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioldevicefingerprint.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintredirectrate">
+<tt class="descname">botvioldevicefingerprintredirectrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintredirectrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioldevicefingerprintredirect.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitlograte">
+<tt class="descname">botviolratelimitlograte</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitlograte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolratelimitlog.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrapredirectrate">
+<tt class="descname">botvioltrapredirectrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrapredirectrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioltrapredirect.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitdroprate">
+<tt class="descname">botviolratelimitdroprate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitdroprate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolratelimitdrop.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsrate">
+<tt class="descname">botvioltpsrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioltps.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistlograte">
+<tt class="descname">botviolblacklistlograte</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistlograte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolblacklistlog.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistredirect">
+<tt class="descname">botviolblacklistredirect</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistredirect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of black list violations redirected by the Bot Management to a different Web page or web server.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintcaptcha">
+<tt class="descname">botvioldevicefingerprintcaptcha</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintcaptcha" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of device fingerprint violations requests for which CAPTCHA challenge was sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignaturelog">
+<tt class="descname">botviolstaticsignaturelog</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignaturelog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of static signature violations logged by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpscaptcharate">
+<tt class="descname">botvioltpscaptcharate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpscaptcharate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioltpscaptcha.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptchadroprate">
+<tt class="descname">botviolcaptchadroprate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptchadroprate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolcaptchadrop.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botresponsesrate">
+<tt class="descname">botresponsesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botresponsesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botresponses.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignatureredirectrate">
+<tt class="descname">botviolstaticsignatureredirectrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignatureredirectrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolstaticsignatureredirect.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptcharedirectrate">
+<tt class="descname">botviolcaptcharedirectrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptcharedirectrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolcaptcharedirect.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintcaptcharate">
+<tt class="descname">botvioldevicefingerprintcaptcharate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintcaptcharate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioldevicefingerprintcaptcha.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationdroprate">
+<tt class="descname">botviolipreputationdroprate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationdroprate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolipreputationdrop.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botresbytesrate">
+<tt class="descname">botresbytesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botresbytesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botresbytes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitrate">
+<tt class="descname">botviolratelimitrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolratelimit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationlog">
+<tt class="descname">botviolipreputationlog</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationlog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of ip reputation violations logged by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintdrop">
+<tt class="descname">botvioldevicefingerprintdrop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintdrop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of device fingerprint violations dropped by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botreqbytes">
+<tt class="descname">botreqbytes</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botreqbytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of bytes transfered for requests.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignaturelograte">
+<tt class="descname">botviolstaticsignaturelograte</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignaturelograte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolstaticsignaturelog.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignaturerate">
+<tt class="descname">botviolstaticsignaturerate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignaturerate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolstaticsignature.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationcaptcharate">
+<tt class="descname">botviolipreputationcaptcharate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationcaptcharate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolipreputationcaptcha.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptchareset">
+<tt class="descname">botviolcaptchareset</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptchareset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of Captcha challenge failures reset by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationreset">
+<tt class="descname">botviolipreputationreset</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationreset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of ip reputation violations reset by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitdrop">
+<tt class="descname">botviolratelimitdrop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitdrop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of rate limiting violations dropped by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpslograte">
+<tt class="descname">botvioltpslograte</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpslograte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioltpslog.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsresetrate">
+<tt class="descname">botvioltpsresetrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsresetrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioltpsreset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botrequests">
+<tt class="descname">botrequests</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botrequests" title="Permalink to this definition">¶</a></dt>
+<dd><p>HTTP/HTTPS requests sent to your protected web servers via the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistrate">
+<tt class="descname">botviolblacklistrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolblacklist.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationredirectrate">
+<tt class="descname">botviolipreputationredirectrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationredirectrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolipreputationredirect.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltraplograte">
+<tt class="descname">botvioltraplograte</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltraplograte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioltraplog.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptcharedirect">
+<tt class="descname">botviolcaptcharedirect</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptcharedirect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of Captcha challenge failures redirected by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintdroprate">
+<tt class="descname">botvioldevicefingerprintdroprate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintdroprate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioldevicefingerprintdrop.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botlograte">
+<tt class="descname">botlograte</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botlograte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for bottotallog.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrapredirect">
+<tt class="descname">botvioltrapredirect</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrapredirect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of trap violations requests redirected by the Bot Management to a different Web page or web server.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsdrop">
+<tt class="descname">botvioltpsdrop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsdrop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of tps violations dropped by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrapreset">
+<tt class="descname">botvioltrapreset</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrapreset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of trap violations reset by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimit">
+<tt class="descname">botviolratelimit</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of rate limiting violations seen by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistdroprate">
+<tt class="descname">botviolblacklistdroprate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistdroprate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolblacklistdrop.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptchadrop">
+<tt class="descname">botviolcaptchadrop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptchadrop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of Captcha challenge failures dropped by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationrate">
+<tt class="descname">botviolipreputationrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolipreputation.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignatureredirect">
+<tt class="descname">botviolstaticsignatureredirect</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignatureredirect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of static signature violations requests redirected by the Bot Management to a different Web page or web server.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsreset">
+<tt class="descname">botvioltpsreset</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsreset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of tps violations reset by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsredirect">
+<tt class="descname">botvioltpsredirect</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsredirect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of tps violations requests redirected by the Bot Management to a different Web page or web server.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintlograte">
+<tt class="descname">botvioldevicefingerprintlograte</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintlograte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioldevicefingerprintlog.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botresponses">
+<tt class="descname">botresponses</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botresponses" title="Permalink to this definition">¶</a></dt>
+<dd><p>HTTP/HTTPS responses sent by your protected web servers via the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsredirectrate">
+<tt class="descname">botvioltpsredirectrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsredirectrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioltpsredirect.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptchalograte">
+<tt class="descname">botviolcaptchalograte</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptchalograte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolcaptchalog.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrapdrop">
+<tt class="descname">botvioltrapdrop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrapdrop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of trap violations dropped by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistreset">
+<tt class="descname">botviolblacklistreset</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistreset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of black list violations reset by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitredirectrate">
+<tt class="descname">botviolratelimitredirectrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitredirectrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolratelimitredirect.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolwhitelistlograte">
+<tt class="descname">botviolwhitelistlograte</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolwhitelistlograte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolwhitelistlog.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsdroprate">
+<tt class="descname">botvioltpsdroprate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpsdroprate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioltpsdrop.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistdrop">
+<tt class="descname">botviolblacklistdrop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistdrop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of black list violations dropped by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptcha">
+<tt class="descname">botviolcaptcha</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptcha" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of Captcha challenge failures seen by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationredirect">
+<tt class="descname">botviolipreputationredirect</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationredirect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of ip reputation violations requests redirected by the Bot Management to a different Web page or web server.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintreset">
+<tt class="descname">botvioldevicefingerprintreset</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintreset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of device fingerprint violations reset by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpscaptcha">
+<tt class="descname">botvioltpscaptcha</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpscaptcha" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of TPS violations requests for which CAPTCHA challenge was sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationdrop">
+<tt class="descname">botviolipreputationdrop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationdrop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of ip reputation violations dropped by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botresetrate">
+<tt class="descname">botresetrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botresetrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for bottotalreset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignature">
+<tt class="descname">botviolstaticsignature</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of static signature violations seen by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignaturedrop">
+<tt class="descname">botviolstaticsignaturedrop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignaturedrop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of static signature violations dropped by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.bottotalredirect">
+<tt class="descname">bottotalredirect</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.bottotalredirect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of redirects by the bot management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.bottotalreset">
+<tt class="descname">bottotalreset</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.bottotalreset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of resets by the bot management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitreset">
+<tt class="descname">botviolratelimitreset</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitreset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of rate limiting violations reset by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrap">
+<tt class="descname">botvioltrap</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of trap violations seen by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botreqbytesrate">
+<tt class="descname">botreqbytesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botreqbytesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botreqbytes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botresbytes">
+<tt class="descname">botresbytes</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botresbytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of bytes transfered for responses.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptcharate">
+<tt class="descname">botviolcaptcharate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptcharate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolcaptcha.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botdroprate">
+<tt class="descname">botdroprate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botdroprate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for bottotaldrop.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitredirect">
+<tt class="descname">botviolratelimitredirect</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitredirect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of rate limiting violations requests redirected by the Bot Management to a different Web page or web server.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintresetrate">
+<tt class="descname">botvioldevicefingerprintresetrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintresetrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioldevicefingerprintreset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitlog">
+<tt class="descname">botviolratelimitlog</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitlog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of rate limiting violations logged by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintlog">
+<tt class="descname">botvioldevicefingerprintlog</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintlog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of device fingerprint violations logged by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignatureresetrate">
+<tt class="descname">botviolstaticsignatureresetrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolstaticsignatureresetrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolstaticsignaturereset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrapresetrate">
+<tt class="descname">botvioltrapresetrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrapresetrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioltrapreset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolwhitelistrate">
+<tt class="descname">botviolwhitelistrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolwhitelistrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolwhitelist.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolwhitelist">
+<tt class="descname">botviolwhitelist</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolwhitelist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of white list violations seen by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botredirectrate">
+<tt class="descname">botredirectrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botredirectrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for bottotalredirect.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistlog">
+<tt class="descname">botviolblacklistlog</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistlog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of black list violations logged by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpslog">
+<tt class="descname">botvioltpslog</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltpslog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of tps violations logged by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklist">
+<tt class="descname">botviolblacklist</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of black list violations seen by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botrequestsrate">
+<tt class="descname">botrequestsrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botrequestsrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botrequests.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationresetrate">
+<tt class="descname">botviolipreputationresetrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationresetrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolipreputationreset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptcharesetrate">
+<tt class="descname">botviolcaptcharesetrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptcharesetrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolcaptchareset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationcaptcha">
+<tt class="descname">botviolipreputationcaptcha</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolipreputationcaptcha" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of ip reputation violations requests for which CAPTCHA challenge was sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrapdroprate">
+<tt class="descname">botvioltrapdroprate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltrapdroprate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioltrapdrop.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptchalog">
+<tt class="descname">botviolcaptchalog</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolcaptchalog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of Captcha challenge failures logged by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltraprate">
+<tt class="descname">botvioltraprate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioltraprate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botvioltrap.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.bottotallog">
+<tt class="descname">bottotallog</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.bottotallog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of logs by the bot management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprint">
+<tt class="descname">botvioldevicefingerprint</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of device fingerprint violations seen by the Bot Management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.bottotaldrop">
+<tt class="descname">bottotaldrop</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.bottotaldrop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of drops by the bot management.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintredirect">
+<tt class="descname">botvioldevicefingerprintredirect</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botvioldevicefingerprintredirect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of device fingerprint violations requests redirected by the Bot Management to a different Web page or web server.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistresetrate">
+<tt class="descname">botviolblacklistresetrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolblacklistresetrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolblacklistreset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitresetrate">
+<tt class="descname">botviolratelimitresetrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.botviolratelimitresetrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for botviolratelimitreset.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>service</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch the statistics of all bot_stats resources that are configured on netscaler.
+set statbindings=True in options to retrieve bindings.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.Clearstats">
+<em class="property">class </em><tt class="descname">Clearstats</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.Clearstats" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.Clearstats.basic">
+<tt class="descname">basic</tt><em class="property"> = 'basic'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.Clearstats.basic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.Clearstats.full">
+<tt class="descname">full</tt><em class="property"> = 'full'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_stats.Clearstats.full" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_response">
+<em class="property">class </em><tt class="descname">bot_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.bot_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.aaa.html">aaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.basic.html">basic</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.html">bot</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">bot_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.botpolicy_stats.html">botpolicy_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.botpolicylabel_stats.html">botpolicylabel_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.botprofile_stats.html">botprofile_stats</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.cache.html">cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.cmp.html">cmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.contentinspection.html">contentinspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.cr.html">cr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.cs.html">cs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.gslb.html">gslb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.ha.html">ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.ica.html">ica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.ipsecalg.html">ipsecalg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.lb.html">lb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.lldp.html">lldp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.lsn.html">lsn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.network.html">network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.ns.html">ns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.pcp.html">pcp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.pq.html">pq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.html">protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.qos.html">qos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.user.html">user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.videooptimization.html">videooptimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.vpn.html">vpn</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.html"
+                        title="previous chapter">bot package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.botpolicy_stats.html"
+                        title="next chapter">botpolicy_stats module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

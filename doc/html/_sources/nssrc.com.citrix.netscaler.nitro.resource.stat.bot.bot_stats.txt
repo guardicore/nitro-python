@@ -1,0 +1,8 @@
+bot_stats module
+================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.stat.bot.bot_stats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

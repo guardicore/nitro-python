@@ -1,0 +1,8 @@
+appfwurlencodedformcontenttype module
+=====================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.appfw.appfwurlencodedformcontenttype
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

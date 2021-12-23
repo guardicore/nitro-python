@@ -1,0 +1,8 @@
+urlfilteringparameter module
+============================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.urlfilteringparameter
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
