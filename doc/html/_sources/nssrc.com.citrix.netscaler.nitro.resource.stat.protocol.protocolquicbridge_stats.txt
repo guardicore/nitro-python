@@ -1,0 +1,8 @@
+protocolquicbridge_stats module
+===============================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolquicbridge_stats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

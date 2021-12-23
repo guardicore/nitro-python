@@ -1,0 +1,8 @@
+videooptimizationglobalpacing_videooptimizationpacingpolicy_binding module
+==========================================================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.videooptimization.videooptimizationglobalpacing_videooptimizationpacingpolicy_binding
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

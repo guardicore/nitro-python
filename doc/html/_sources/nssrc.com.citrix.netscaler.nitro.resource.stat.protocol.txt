@@ -1,0 +1,20 @@
+protocol package
+================
+
+Subpackages
+-----------
+
+.. toctree::
+
+	protocolhttp2_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats>
+	protocolhttp3_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp3_stats>
+	protocolhttp_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp_stats>
+	protocolicmp_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolicmp_stats>
+	protocolicmpv6_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolicmpv6_stats>
+	protocolip_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolip_stats>
+	protocolipv6_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolipv6_stats>
+	protocolmptcp_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolmptcp_stats>
+	protocolquic_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolquic_stats>
+	protocolquicbridge_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolquicbridge_stats>
+	protocoltcp_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocoltcp_stats>
+	protocoludp_stats <nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocoludp_stats>

@@ -1,0 +1,8 @@
+appflowaction_analyticsprofile_binding module
+=============================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.appflow.appflowaction_analyticsprofile_binding
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

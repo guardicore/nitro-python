@@ -1,0 +1,8 @@
+botprofile module
+=================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.bot.botprofile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

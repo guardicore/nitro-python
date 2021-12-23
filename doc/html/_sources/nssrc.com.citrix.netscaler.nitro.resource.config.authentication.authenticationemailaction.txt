@@ -1,0 +1,8 @@
+authenticationemailaction module
+================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.authentication.authenticationemailaction
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

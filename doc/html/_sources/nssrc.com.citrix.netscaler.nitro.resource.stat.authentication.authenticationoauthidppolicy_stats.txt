@@ -1,0 +1,8 @@
+authenticationoauthidppolicy_stats module
+=========================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.stat.authentication.authenticationoauthidppolicy_stats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

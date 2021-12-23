@@ -1,0 +1,8 @@
+protocolhttp2_stats module
+==========================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

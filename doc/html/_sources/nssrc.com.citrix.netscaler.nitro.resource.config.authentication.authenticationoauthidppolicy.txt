@@ -1,0 +1,8 @@
+authenticationoauthidppolicy module
+===================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.authentication.authenticationoauthidppolicy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

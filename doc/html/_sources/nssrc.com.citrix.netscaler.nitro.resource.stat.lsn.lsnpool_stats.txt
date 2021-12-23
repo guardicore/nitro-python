@@ -1,0 +1,8 @@
+lsnpool_stats module
+====================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.stat.lsn.lsnpool_stats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

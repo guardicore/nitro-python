@@ -1,0 +1,8 @@
+quicbridgeprofile module
+========================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.quicbridge.quicbridgeprofile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

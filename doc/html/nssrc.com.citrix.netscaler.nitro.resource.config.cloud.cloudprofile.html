@@ -1,0 +1,834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>cloudprofile module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="cloud package" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.html" />
+    <link rel="next" title="cloudservice module" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudservice.html" />
+    <link rel="prev" title="cloudparaminternal module" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudparaminternal.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudservice.html" title="cloudservice module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudparaminternal.html" title="cloudparaminternal module"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.html" accesskey="U">cloud package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile">
+<span id="cloudprofile-module"></span><h1>cloudprofile module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile">
+<em class="property">class </em><tt class="descname">cloudprofile</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<p>Configuration for cloud profile resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.name">
+<tt class="descname">name</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for the Cloud profile. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (&#64;), equals (=), and hyphen (-) characters. Cannot be changed after the profile is created.&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  127.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.type">
+<tt class="descname">type</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Type of cloud profile that you want to create, Vserver or based on Azure Tags.&lt;br/&gt;Possible values = autoscale, azuretags.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.vservername">
+<tt class="descname">vservername</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.vservername" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for the virtual server. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at sign (&#64;), equal sign (=), and hyphen (-) characters. Can be changed after the virtual server is created.
+CLI Users: If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, &#8220;my vserver&#8221; or &#8216;my vserver&#8217;). .&lt;br/&gt;Minimum length =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.servicetype">
+<tt class="descname">servicetype</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.servicetype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Protocol used by the service (also called the service type).&lt;br/&gt;Possible values = HTTP, FTP, TCP, UDP, SSL, SSL_BRIDGE, SSL_TCP, DTLS, NNTP, DNS, DHCPRA, ANY, SIP_UDP, SIP_TCP, SIP_SSL, DNS_TCP, RTSP, PUSH, SSL_PUSH, RADIUS, RDP, MYSQL, MSSQL, DIAMETER, SSL_DIAMETER, TFTP, ORACLE, SMPP, SYSLOGTCP, SYSLOGUDP, FIX, SSL_FIX, PROXY, USER_TCP, USER_SSL_TCP, QUIC, IPFIX, LOGSTREAM, MONGO, MONGO_TLS, MQTT, MQTT_TLS, QUIC_BRIDGE, HTTP_QUIC.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.ipaddress">
+<tt class="descname">ipaddress</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.ipaddress" title="Permalink to this definition">¶</a></dt>
+<dd><p>IPv4 or IPv6 address to assign to the virtual server.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.port">
+<tt class="descname">port</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.port" title="Permalink to this definition">¶</a></dt>
+<dd><p>Port number for the virtual server.&lt;br/&gt;Range 1 - 65535&lt;br/&gt;* in CLI is represented as 65535 in NITRO API.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.servicegroupname">
+<tt class="descname">servicegroupname</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.servicegroupname" title="Permalink to this definition">¶</a></dt>
+<dd><p>servicegroups bind to this server.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.boundservicegroupsvctype">
+<tt class="descname">boundservicegroupsvctype</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.boundservicegroupsvctype" title="Permalink to this definition">¶</a></dt>
+<dd><p>The type of bound service.&lt;br/&gt;Possible values = HTTP, FTP, TCP, UDP, SSL, SSL_BRIDGE, SSL_TCP, DTLS, NNTP, RPCSVR, DNS, ADNS, SNMP, RTSP, DHCPRA, ANY, SIP_UDP, SIP_TCP, SIP_SSL, DNS_TCP, ADNS_TCP, MYSQL, MSSQL, ORACLE, MONGO, MONGO_TLS, RADIUS, RADIUSListener, RDP, DIAMETER, SSL_DIAMETER, TFTP, SMPP, PPTP, GRE, SYSLOGTCP, SYSLOGUDP, FIX, SSL_FIX, USER_TCP, USER_SSL_TCP, QUIC, IPFIX, LOGSTREAM, LOGSTREAM_SSL, MQTT, MQTT_TLS, QUIC_BRIDGE.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.vsvrbindsvcport">
+<tt class="descname">vsvrbindsvcport</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.vsvrbindsvcport" title="Permalink to this definition">¶</a></dt>
+<dd><p>The port number to be used for the bound service.&lt;br/&gt;Range 1 - 65535&lt;br/&gt;* in CLI is represented as 65535 in NITRO API.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.graceful">
+<tt class="descname">graceful</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.graceful" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates graceful shutdown of the service. System will wait for all outstanding connections to this service to be closed before disabling the service.&lt;br/&gt;Default value: NO&lt;br/&gt;Possible values = YES, NO.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.delay">
+<tt class="descname">delay</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.delay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time, in seconds, after which all the services configured on the server are disabled.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.azuretagname">
+<tt class="descname">azuretagname</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.azuretagname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Azure tag name.&lt;br/&gt;Maximum length =  512.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.azuretagvalue">
+<tt class="descname">azuretagvalue</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.azuretagvalue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Azure tag value.&lt;br/&gt;Maximum length =  256.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.azurepollperiod">
+<tt class="descname">azurepollperiod</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.azurepollperiod" title="Permalink to this definition">¶</a></dt>
+<dd><p>Azure polling period (in seconds).&lt;br/&gt;Default value: 60&lt;br/&gt;Minimum length =  60&lt;br/&gt;Maximum length =  3600.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.filter_add_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_add_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.filter_add_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only add operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.add">
+<em class="property">classmethod </em><tt class="descname">add</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to add cloudprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.filter_delete_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_delete_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.filter_delete_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only delete operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.delete">
+<em class="property">classmethod </em><tt class="descname">delete</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to delete cloudprofile.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>client</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the cloudprofile resources that are configured on netscaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.get_filtered">
+<em class="property">classmethod </em><tt class="descname">get_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.get_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch filtered set of cloudprofile resources.
+filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.count">
+<em class="property">classmethod </em><tt class="descname">count</tt><big>(</big><em>client</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count the cloudprofile resources configured on NetScaler.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.count_filtered">
+<em class="property">classmethod </em><tt class="descname">count_filtered</tt><big>(</big><em>client</em>, <em>filter_</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.count_filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to count filtered the set of cloudprofile resources.
+Filter string should be in JSON format.eg: &#8220;port:80,servicetype:HTTP&#8221;.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype">
+<em class="property">class </em><tt class="descname">Boundservicegroupsvctype</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.HTTP">
+<tt class="descname">HTTP</tt><em class="property"> = 'HTTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.HTTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.FTP">
+<tt class="descname">FTP</tt><em class="property"> = 'FTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.FTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.TCP">
+<tt class="descname">TCP</tt><em class="property"> = 'TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.UDP">
+<tt class="descname">UDP</tt><em class="property"> = 'UDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.UDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SSL">
+<tt class="descname">SSL</tt><em class="property"> = 'SSL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SSL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SSL_BRIDGE">
+<tt class="descname">SSL_BRIDGE</tt><em class="property"> = 'SSL_BRIDGE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SSL_BRIDGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SSL_TCP">
+<tt class="descname">SSL_TCP</tt><em class="property"> = 'SSL_TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SSL_TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.DTLS">
+<tt class="descname">DTLS</tt><em class="property"> = 'DTLS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.DTLS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.NNTP">
+<tt class="descname">NNTP</tt><em class="property"> = 'NNTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.NNTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.RPCSVR">
+<tt class="descname">RPCSVR</tt><em class="property"> = 'RPCSVR'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.RPCSVR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.DNS">
+<tt class="descname">DNS</tt><em class="property"> = 'DNS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.DNS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.ADNS">
+<tt class="descname">ADNS</tt><em class="property"> = 'ADNS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.ADNS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SNMP">
+<tt class="descname">SNMP</tt><em class="property"> = 'SNMP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SNMP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.RTSP">
+<tt class="descname">RTSP</tt><em class="property"> = 'RTSP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.RTSP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.DHCPRA">
+<tt class="descname">DHCPRA</tt><em class="property"> = 'DHCPRA'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.DHCPRA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.ANY">
+<tt class="descname">ANY</tt><em class="property"> = 'ANY'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.ANY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SIP_UDP">
+<tt class="descname">SIP_UDP</tt><em class="property"> = 'SIP_UDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SIP_UDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SIP_TCP">
+<tt class="descname">SIP_TCP</tt><em class="property"> = 'SIP_TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SIP_TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SIP_SSL">
+<tt class="descname">SIP_SSL</tt><em class="property"> = 'SIP_SSL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SIP_SSL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.DNS_TCP">
+<tt class="descname">DNS_TCP</tt><em class="property"> = 'DNS_TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.DNS_TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.ADNS_TCP">
+<tt class="descname">ADNS_TCP</tt><em class="property"> = 'ADNS_TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.ADNS_TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.MYSQL">
+<tt class="descname">MYSQL</tt><em class="property"> = 'MYSQL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.MYSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.MSSQL">
+<tt class="descname">MSSQL</tt><em class="property"> = 'MSSQL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.MSSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.ORACLE">
+<tt class="descname">ORACLE</tt><em class="property"> = 'ORACLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.ORACLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.MONGO">
+<tt class="descname">MONGO</tt><em class="property"> = 'MONGO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.MONGO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.MONGO_TLS">
+<tt class="descname">MONGO_TLS</tt><em class="property"> = 'MONGO_TLS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.MONGO_TLS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.RADIUS">
+<tt class="descname">RADIUS</tt><em class="property"> = 'RADIUS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.RADIUS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.RADIUSListener">
+<tt class="descname">RADIUSListener</tt><em class="property"> = 'RADIUSListener'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.RADIUSListener" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.RDP">
+<tt class="descname">RDP</tt><em class="property"> = 'RDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.RDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.DIAMETER">
+<tt class="descname">DIAMETER</tt><em class="property"> = 'DIAMETER'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.DIAMETER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SSL_DIAMETER">
+<tt class="descname">SSL_DIAMETER</tt><em class="property"> = 'SSL_DIAMETER'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SSL_DIAMETER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.TFTP">
+<tt class="descname">TFTP</tt><em class="property"> = 'TFTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.TFTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SMPP">
+<tt class="descname">SMPP</tt><em class="property"> = 'SMPP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SMPP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.PPTP">
+<tt class="descname">PPTP</tt><em class="property"> = 'PPTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.PPTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.GRE">
+<tt class="descname">GRE</tt><em class="property"> = 'GRE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.GRE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SYSLOGTCP">
+<tt class="descname">SYSLOGTCP</tt><em class="property"> = 'SYSLOGTCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SYSLOGTCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SYSLOGUDP">
+<tt class="descname">SYSLOGUDP</tt><em class="property"> = 'SYSLOGUDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SYSLOGUDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.FIX">
+<tt class="descname">FIX</tt><em class="property"> = 'FIX'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.FIX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SSL_FIX">
+<tt class="descname">SSL_FIX</tt><em class="property"> = 'SSL_FIX'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.SSL_FIX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.USER_TCP">
+<tt class="descname">USER_TCP</tt><em class="property"> = 'USER_TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.USER_TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.USER_SSL_TCP">
+<tt class="descname">USER_SSL_TCP</tt><em class="property"> = 'USER_SSL_TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.USER_SSL_TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.QUIC">
+<tt class="descname">QUIC</tt><em class="property"> = 'QUIC'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.QUIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.IPFIX">
+<tt class="descname">IPFIX</tt><em class="property"> = 'IPFIX'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.IPFIX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.LOGSTREAM">
+<tt class="descname">LOGSTREAM</tt><em class="property"> = 'LOGSTREAM'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.LOGSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.LOGSTREAM_SSL">
+<tt class="descname">LOGSTREAM_SSL</tt><em class="property"> = 'LOGSTREAM_SSL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.LOGSTREAM_SSL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.MQTT">
+<tt class="descname">MQTT</tt><em class="property"> = 'MQTT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.MQTT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.MQTT_TLS">
+<tt class="descname">MQTT_TLS</tt><em class="property"> = 'MQTT_TLS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.MQTT_TLS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.QUIC_BRIDGE">
+<tt class="descname">QUIC_BRIDGE</tt><em class="property"> = 'QUIC_BRIDGE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Boundservicegroupsvctype.QUIC_BRIDGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Type">
+<em class="property">class </em><tt class="descclassname">cloudprofile.</tt><tt class="descname">Type</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Type" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Type.autoscale">
+<tt class="descname">autoscale</tt><em class="property"> = 'autoscale'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Type.autoscale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Type.azuretags">
+<tt class="descname">azuretags</tt><em class="property"> = 'azuretags'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Type.azuretags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype">
+<em class="property">class </em><tt class="descclassname">cloudprofile.</tt><tt class="descname">Servicetype</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.HTTP">
+<tt class="descname">HTTP</tt><em class="property"> = 'HTTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.HTTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.FTP">
+<tt class="descname">FTP</tt><em class="property"> = 'FTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.FTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.TCP">
+<tt class="descname">TCP</tt><em class="property"> = 'TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.UDP">
+<tt class="descname">UDP</tt><em class="property"> = 'UDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.UDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SSL">
+<tt class="descname">SSL</tt><em class="property"> = 'SSL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SSL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SSL_BRIDGE">
+<tt class="descname">SSL_BRIDGE</tt><em class="property"> = 'SSL_BRIDGE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SSL_BRIDGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SSL_TCP">
+<tt class="descname">SSL_TCP</tt><em class="property"> = 'SSL_TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SSL_TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.DTLS">
+<tt class="descname">DTLS</tt><em class="property"> = 'DTLS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.DTLS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.NNTP">
+<tt class="descname">NNTP</tt><em class="property"> = 'NNTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.NNTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.DNS">
+<tt class="descname">DNS</tt><em class="property"> = 'DNS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.DNS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.DHCPRA">
+<tt class="descname">DHCPRA</tt><em class="property"> = 'DHCPRA'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.DHCPRA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.ANY">
+<tt class="descname">ANY</tt><em class="property"> = 'ANY'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.ANY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SIP_UDP">
+<tt class="descname">SIP_UDP</tt><em class="property"> = 'SIP_UDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SIP_UDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SIP_TCP">
+<tt class="descname">SIP_TCP</tt><em class="property"> = 'SIP_TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SIP_TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SIP_SSL">
+<tt class="descname">SIP_SSL</tt><em class="property"> = 'SIP_SSL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SIP_SSL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.DNS_TCP">
+<tt class="descname">DNS_TCP</tt><em class="property"> = 'DNS_TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.DNS_TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.RTSP">
+<tt class="descname">RTSP</tt><em class="property"> = 'RTSP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.RTSP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.PUSH">
+<tt class="descname">PUSH</tt><em class="property"> = 'PUSH'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.PUSH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SSL_PUSH">
+<tt class="descname">SSL_PUSH</tt><em class="property"> = 'SSL_PUSH'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SSL_PUSH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.RADIUS">
+<tt class="descname">RADIUS</tt><em class="property"> = 'RADIUS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.RADIUS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.RDP">
+<tt class="descname">RDP</tt><em class="property"> = 'RDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.RDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.MYSQL">
+<tt class="descname">MYSQL</tt><em class="property"> = 'MYSQL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.MYSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.MSSQL">
+<tt class="descname">MSSQL</tt><em class="property"> = 'MSSQL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.MSSQL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.DIAMETER">
+<tt class="descname">DIAMETER</tt><em class="property"> = 'DIAMETER'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.DIAMETER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SSL_DIAMETER">
+<tt class="descname">SSL_DIAMETER</tt><em class="property"> = 'SSL_DIAMETER'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SSL_DIAMETER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.TFTP">
+<tt class="descname">TFTP</tt><em class="property"> = 'TFTP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.TFTP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.ORACLE">
+<tt class="descname">ORACLE</tt><em class="property"> = 'ORACLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.ORACLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SMPP">
+<tt class="descname">SMPP</tt><em class="property"> = 'SMPP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SMPP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SYSLOGTCP">
+<tt class="descname">SYSLOGTCP</tt><em class="property"> = 'SYSLOGTCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SYSLOGTCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SYSLOGUDP">
+<tt class="descname">SYSLOGUDP</tt><em class="property"> = 'SYSLOGUDP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SYSLOGUDP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.FIX">
+<tt class="descname">FIX</tt><em class="property"> = 'FIX'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.FIX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SSL_FIX">
+<tt class="descname">SSL_FIX</tt><em class="property"> = 'SSL_FIX'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.SSL_FIX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.PROXY">
+<tt class="descname">PROXY</tt><em class="property"> = 'PROXY'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.PROXY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.USER_TCP">
+<tt class="descname">USER_TCP</tt><em class="property"> = 'USER_TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.USER_TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.USER_SSL_TCP">
+<tt class="descname">USER_SSL_TCP</tt><em class="property"> = 'USER_SSL_TCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.USER_SSL_TCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.QUIC">
+<tt class="descname">QUIC</tt><em class="property"> = 'QUIC'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.QUIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.IPFIX">
+<tt class="descname">IPFIX</tt><em class="property"> = 'IPFIX'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.IPFIX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.LOGSTREAM">
+<tt class="descname">LOGSTREAM</tt><em class="property"> = 'LOGSTREAM'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.LOGSTREAM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.MONGO">
+<tt class="descname">MONGO</tt><em class="property"> = 'MONGO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.MONGO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.MONGO_TLS">
+<tt class="descname">MONGO_TLS</tt><em class="property"> = 'MONGO_TLS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.MONGO_TLS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.MQTT">
+<tt class="descname">MQTT</tt><em class="property"> = 'MQTT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.MQTT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.MQTT_TLS">
+<tt class="descname">MQTT_TLS</tt><em class="property"> = 'MQTT_TLS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.MQTT_TLS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.QUIC_BRIDGE">
+<tt class="descname">QUIC_BRIDGE</tt><em class="property"> = 'QUIC_BRIDGE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.QUIC_BRIDGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.HTTP_QUIC">
+<tt class="descname">HTTP_QUIC</tt><em class="property"> = 'HTTP_QUIC'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Servicetype.HTTP_QUIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Graceful">
+<em class="property">class </em><tt class="descclassname">cloudprofile.</tt><tt class="descname">Graceful</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Graceful" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Graceful.YES">
+<tt class="descname">YES</tt><em class="property"> = 'YES'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Graceful.YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Graceful.NO">
+<tt class="descname">NO</tt><em class="property"> = 'NO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile.Graceful.NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile_response">
+<em class="property">class </em><tt class="descname">cloudprofile_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.cloudprofile_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html">aaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.adm.html">adm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.analytics.html">analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.app.html">app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.azure.html">azure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.basic.html">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bfd.html">bfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bot.html">bot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cache.html">cache</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.html">cloud</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudallowedngsticketprofile.html">cloudallowedngsticketprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudautoscalegroup.html">cloudautoscalegroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudcredential.html">cloudcredential</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudngsparameter.html">cloudngsparameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudparameter.html">cloudparameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudparaminternal.html">cloudparaminternal</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">cloudprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudservice.html">cloudservice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudvserverip.html">cloudvserverip</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cmp.html">cmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.html">contentinspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cr.html">cr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html">cs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.db.html">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html">gslb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ha.html">ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html">ica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsecalg.html">ipsecalg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html">lb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lldp.html">lldp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html">lsn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.network.html">network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html">ns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ntp.html">ntp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pcp.html">pcp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.policy.html">policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pq.html">pq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.protocol.html">protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quic.html">quic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quicbridge.html">quicbridge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html">rdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.reputation.html">reputation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.router.html">router</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.smpp.html">smpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.html">subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ulfd.html">ulfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.html">urlfiltering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.user.html">user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.utility.html">utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.videooptimization.html">videooptimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.vpn.html">vpn</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a></li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudparaminternal.html"
+                        title="previous chapter">cloudparaminternal module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudservice.html"
+                        title="next chapter">cloudservice module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.config.cloud.cloudprofile.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

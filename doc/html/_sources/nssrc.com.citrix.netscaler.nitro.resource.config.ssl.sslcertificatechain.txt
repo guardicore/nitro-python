@@ -1,0 +1,8 @@
+sslcertificatechain module
+==========================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.ssl.sslcertificatechain
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

@@ -1,0 +1,7 @@
+nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.urlfilteringcategories_args module
+================================================================================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.urlfilteringcategories_args
+    :members:
+    :undoc-members:
+    :show-inheritance:

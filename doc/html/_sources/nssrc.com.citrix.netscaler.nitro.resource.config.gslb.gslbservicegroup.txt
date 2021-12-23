@@ -1,0 +1,8 @@
+gslbservicegroup module
+=======================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

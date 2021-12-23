@@ -1,0 +1,1050 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>lbparameter module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="lb package" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html" />
+    <link rel="next" title="lbpersistentsessions module" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbpersistentsessions.html" />
+    <link rel="prev" title="lbmonitor_sslcertkey_binding module" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonitor_sslcertkey_binding.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbpersistentsessions.html" title="lbpersistentsessions module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonitor_sslcertkey_binding.html" title="lbmonitor_sslcertkey_binding module"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html" accesskey="U">lb package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter">
+<span id="lbparameter-module"></span><h1>lbparameter module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter">
+<em class="property">class </em><tt class="descname">lbparameter</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<p>Configuration for LB parameter resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.httponlycookieflag">
+<tt class="descname">httponlycookieflag</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.httponlycookieflag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Include the HttpOnly attribute in persistence cookies. The HttpOnly attribute limits the scope of a cookie to HTTP requests and helps mitigate the risk of cross-site scripting attacks.&lt;br/&gt;Default value: ENABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.usesecuredpersistencecookie">
+<tt class="descname">usesecuredpersistencecookie</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.usesecuredpersistencecookie" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encode persistence cookie values using SHA2 hash.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.useencryptedpersistencecookie">
+<tt class="descname">useencryptedpersistencecookie</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.useencryptedpersistencecookie" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encode persistence cookie values using SHA2 hash.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.cookiepassphrase">
+<tt class="descname">cookiepassphrase</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.cookiepassphrase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this parameter to specify the passphrase used to generate secured persistence cookie value. It specifies the passphrase with a maximum of 31 characters.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.consolidatedlconn">
+<tt class="descname">consolidatedlconn</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.consolidatedlconn" title="Permalink to this definition">¶</a></dt>
+<dd><p>To find the service with the fewest connections, the virtual server uses the consolidated connection statistics from all the packet engines. The NO setting allows consideration of only the number of connections on the packet engine that received the new connection.&lt;br/&gt;Default value: YES&lt;br/&gt;Possible values = YES, NO.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.useportforhashlb">
+<tt class="descname">useportforhashlb</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.useportforhashlb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Include the port number of the service when creating a hash for hash based load balancing methods. With the NO setting, only the IP address of the service is considered when creating a hash.&lt;br/&gt;Default value: YES&lt;br/&gt;Possible values = YES, NO.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.preferdirectroute">
+<tt class="descname">preferdirectroute</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.preferdirectroute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform route lookup for traffic received by the Citrix ADC, and forward the traffic according to configured routes. Do not set this parameter if you want a wildcard virtual server to direct packets received by the appliance to an intermediary device, such as a firewall, even if their destination is directly connected to the appliance. Route lookup is performed after the packets have been processed and returned by the intermediary device.&lt;br/&gt;Default value: YES&lt;br/&gt;Possible values = YES, NO.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.startuprrfactor">
+<tt class="descname">startuprrfactor</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.startuprrfactor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of requests, per service, for which to apply the round robin load balancing method before switching to the configured load balancing method, thus allowing services to ramp up gradually to full load. Until the specified number of requests is distributed, the Citrix ADC is said to be implementing the slow start mode (or startup round robin). Implemented for a virtual server when one of the following is true:
+* The virtual server is newly created.
+* One or more services are newly bound to the virtual server. 
+* One or more services bound to the virtual server are enabled.
+* The load balancing method is changed.
+This parameter applies to all the load balancing virtual servers configured on the Citrix ADC, except for those virtual servers for which the virtual server-level slow start parameters (New Service Startup Request Rate and Increment Interval) are configured. If the global slow start parameter and the slow start parameters for a given virtual server are not set, the appliance implements a default slow start for the virtual server, as follows:
+* For a newly configured virtual server, the appliance implements slow start for the first 100 requests received by the virtual server.
+* For an existing virtual server, if one or more services are newly bound or newly enabled, or if the load balancing method is changed, the appliance dynamically computes the number of requests for which to implement startup round robin. It obtains this number by multiplying the request rate by the number of bound services (it includes services that are marked as DOWN). For example, if the current request rate is 20 requests/s and ten services are bound to the virtual server, the appliance performs startup round robin for 200 requests.
+Not applicable to a virtual server for which a hash based load balancing method is configured.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.monitorskipmaxclient">
+<tt class="descname">monitorskipmaxclient</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.monitorskipmaxclient" title="Permalink to this definition">¶</a></dt>
+<dd><p>When a monitor initiates a connection to a service, do not check to determine whether the number of connections to the service has reached the limit specified by the service&#8217;s Max Clients setting. Enables monitoring to continue even if the service has reached its connection limit.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.monitorconnectionclose">
+<tt class="descname">monitorconnectionclose</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.monitorconnectionclose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close monitoring connections by sending the service a connection termination message with the specified bit set.&lt;br/&gt;Default value: FIN&lt;br/&gt;Possible values = RESET, FIN.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.vserverspecificmac">
+<tt class="descname">vserverspecificmac</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.vserverspecificmac" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allow a MAC-mode virtual server to accept traffic returned by an intermediary device, such as a firewall, to which the traffic was previously forwarded by another MAC-mode virtual server. The second virtual server can then distribute that traffic across the destination server farm. Also useful when load balancing Branch Repeater appliances.
+Note: The second virtual server can also send the traffic to another set of intermediary devices, such as another set of firewalls. If necessary, you can configure multiple MAC-mode virtual servers to pass traffic successively through multiple sets of intermediary devices.&lt;br/&gt;Default value: DISABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.allowboundsvcremoval">
+<tt class="descname">allowboundsvcremoval</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.allowboundsvcremoval" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is used, to enable/disable the option of svc/svcgroup removal, if it is bound to one or more vserver. If it is enabled, the svc/svcgroup can be removed, even if it bound to vservers. If disabled, an error will be thrown, when the user tries to remove a svc/svcgroup without unbinding from its vservers.&lt;br/&gt;Default value: ENABLED&lt;br/&gt;Possible values = ENABLED, DISABLED.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.retainservicestate">
+<tt class="descname">retainservicestate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.retainservicestate" title="Permalink to this definition">¶</a></dt>
+<dd><p>This option is used to retain the original state of service or servicegroup member when an enable server command is issued.&lt;br/&gt;Default value: OFF&lt;br/&gt;Possible values = ON, OFF.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.dbsttl">
+<tt class="descname">dbsttl</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.dbsttl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify the TTL for DNS record for domain based service. The default value of ttl is 0 which indicates to use the TTL received in DNS response for monitors.&lt;br/&gt;Default value: 0.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.maxpipelinenat">
+<tt class="descname">maxpipelinenat</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.maxpipelinenat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum number of concurrent requests to allow on a single client connection, which is identified by the &lt;clientip:port&gt;-&lt;vserver ip:port&gt; tuple. This parameter is applicable to ANY service type and all UDP service types (except DNS) and only when &#8220;svrTimeout&#8221; is set to zero. A value of 0 (zero) applies no limit to the number of concurrent requests allowed on a single client connection.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.literaladccookieattribute">
+<tt class="descname">literaladccookieattribute</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.literaladccookieattribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>String configured as LiteralADCCookieAttribute will be appended as attribute for Citrix ADC cookie (for example: LB cookie persistence , GSLB site persistence, CS cookie persistence, LB group cookie persistence).
+Sample usage -
+set lb parameter -LiteralADCCookieAttribute &#8221;;SameSite=None&#8221;.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.computedadccookieattribute">
+<tt class="descname">computedadccookieattribute</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.computedadccookieattribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>ComputedADCCookieAttribute accepts ns variable as input in form of string starting with $ (to understand how to configure ns variable, please check man add ns variable). policies can be configured to modify this variable for every transaction and the final value of the variable after policy evaluation will be appended as attribute to Citrix ADC cookie (for example: LB cookie persistence , GSLB sitepersistence, CS cookie persistence, LB group cookie persistence). Only one of ComputedADCCookieAttribute, LiteralADCCookieAttribute can be set.
+Sample usage -
+add ns variable lbvar -type TEXT(100) -scope Transaction
+add ns assignment lbassign -variable $lbvar -set &#8220;\&#8221;;SameSite=Strict\&#8221;&#8221;
+add rewrite policy lbpol &lt;valid policy expression&gt; lbassign
+bind rewrite global lbpol 100 next -type RES_OVERRIDE
+set lb param -ComputedADCCookieAttribute &#8220;$lbvar&#8221;
+For incoming client request, if above policy evaluates TRUE, then SameSite=Strict will be appended to ADC generated cookie.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.storemqttclientidandusername">
+<tt class="descname">storemqttclientidandusername</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.storemqttclientidandusername" title="Permalink to this definition">¶</a></dt>
+<dd><p>This option allows to store the MQTT clientid and username in transactional logs.&lt;br/&gt;Default value: NO&lt;br/&gt;Possible values = YES, NO.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.dropmqttjumbomessage">
+<tt class="descname">dropmqttjumbomessage</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.dropmqttjumbomessage" title="Permalink to this definition">¶</a></dt>
+<dd><p>When this option is enabled, MQTT messages of length greater than 64k will be dropped and the client/server connections will be reset.&lt;br/&gt;Default value: YES&lt;br/&gt;Possible values = YES, NO.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.lbhashalgorithm">
+<tt class="descname">lbhashalgorithm</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.lbhashalgorithm" title="Permalink to this definition">¶</a></dt>
+<dd><p>This option dictates the hashing algorithm used for hash based LB methods (URLHASH, DOMAINHASH, SOURCEIPHASH, DESTINATIONIPHASH, SRCIPDESTIPHASH, SRCIPSRCPORTHASH, TOKEN, USER_TOKEN, CALLIDHASH).&lt;br/&gt;Default value: DEFAULT&lt;br/&gt;Possible values = DEFAULT, PRAC, JARH.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.lbhashfingers">
+<tt class="descname">lbhashfingers</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.lbhashfingers" title="Permalink to this definition">¶</a></dt>
+<dd><p>This option is used to specify the number of fingers to be used in PRAC and JARH algorithms for hash based LB methods. Increasing the number of fingers might give better distribution of traffic at the expense of additional memory.&lt;br/&gt;Default value: 256&lt;br/&gt;Minimum length =  1&lt;br/&gt;Maximum length =  1024.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.sessionsthreshold">
+<tt class="descname">sessionsthreshold</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.sessionsthreshold" title="Permalink to this definition">¶</a></dt>
+<dd><p>This option is used to get the upper-limit on the number of persistent sessions set by the administrator for this system.&lt;br/&gt;Minimum value =  1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.builtin">
+<tt class="descname">builtin</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.builtin" title="Permalink to this definition">¶</a></dt>
+<dd><p>.&lt;br/&gt;Possible values = MODIFIABLE, DELETABLE, IMMUTABLE, PARTITION_ALL.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.feature">
+<tt class="descname">feature</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.feature" title="Permalink to this definition">¶</a></dt>
+<dd><p>The feature to be checked while applying this config.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.adccookieattributewarningmsg">
+<tt class="descname">adccookieattributewarningmsg</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.adccookieattributewarningmsg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used to describe any configuration issue with respect to ns variable configured as part of set lb parameter.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.lbhashalgowinsize">
+<tt class="descname">lbhashalgowinsize</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.lbhashalgowinsize" title="Permalink to this definition">¶</a></dt>
+<dd><p>This options allows to increase window size used in LB hashing algorithm(DEFAULT).&lt;br/&gt;Default value: 16.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.filter_update_parameters">
+<em class="property">classmethod </em><tt class="descname">filter_update_parameters</tt><big>(</big><em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.filter_update_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to create a resource with only update operation specific parameters.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.update">
+<em class="property">classmethod </em><tt class="descname">update</tt><big>(</big><em>client</em>, <em>resource</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to update lbparameter.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.unset">
+<em class="property">classmethod </em><tt class="descname">unset</tt><big>(</big><em>client</em>, <em>resource</em>, <em>args</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.unset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to unset the properties of lbparameter resource.
+Properties that need to be unset are specified in args array.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>client</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch all the lbparameter resources that are configured on netscaler.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Usesecuredpersistencecookie">
+<em class="property">class </em><tt class="descname">Usesecuredpersistencecookie</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Usesecuredpersistencecookie" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Usesecuredpersistencecookie.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Usesecuredpersistencecookie.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Usesecuredpersistencecookie.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Usesecuredpersistencecookie.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Dropmqttjumbomessage">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Dropmqttjumbomessage</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Dropmqttjumbomessage" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Dropmqttjumbomessage.YES">
+<tt class="descname">YES</tt><em class="property"> = 'YES'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Dropmqttjumbomessage.YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Dropmqttjumbomessage.NO">
+<tt class="descname">NO</tt><em class="property"> = 'NO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Dropmqttjumbomessage.NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Httponlycookieflag">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Httponlycookieflag</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Httponlycookieflag" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Httponlycookieflag.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Httponlycookieflag.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Httponlycookieflag.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Httponlycookieflag.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Feature</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.WL">
+<tt class="descname">WL</tt><em class="property"> = 'WL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.WL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.WebLogging">
+<tt class="descname">WebLogging</tt><em class="property"> = 'WebLogging'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.WebLogging" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SP">
+<tt class="descname">SP</tt><em class="property"> = 'SP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SurgeProtection">
+<tt class="descname">SurgeProtection</tt><em class="property"> = 'SurgeProtection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SurgeProtection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.LB">
+<tt class="descname">LB</tt><em class="property"> = 'LB'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.LB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.LoadBalancing">
+<tt class="descname">LoadBalancing</tt><em class="property"> = 'LoadBalancing'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.LoadBalancing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CS">
+<tt class="descname">CS</tt><em class="property"> = 'CS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ContentSwitching">
+<tt class="descname">ContentSwitching</tt><em class="property"> = 'ContentSwitching'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ContentSwitching" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CR">
+<tt class="descname">CR</tt><em class="property"> = 'CR'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CacheRedirection">
+<tt class="descname">CacheRedirection</tt><em class="property"> = 'CacheRedirection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CacheRedirection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SC">
+<tt class="descname">SC</tt><em class="property"> = 'SC'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SureConnect">
+<tt class="descname">SureConnect</tt><em class="property"> = 'SureConnect'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SureConnect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CMP">
+<tt class="descname">CMP</tt><em class="property"> = 'CMP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CMP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CMPcntl">
+<tt class="descname">CMPcntl</tt><em class="property"> = 'CMPcntl'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CMPcntl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CompressionControl">
+<tt class="descname">CompressionControl</tt><em class="property"> = 'CompressionControl'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CompressionControl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.PQ">
+<tt class="descname">PQ</tt><em class="property"> = 'PQ'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.PQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.PriorityQueuing">
+<tt class="descname">PriorityQueuing</tt><em class="property"> = 'PriorityQueuing'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.PriorityQueuing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.HDOSP">
+<tt class="descname">HDOSP</tt><em class="property"> = 'HDOSP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.HDOSP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.HttpDoSProtection">
+<tt class="descname">HttpDoSProtection</tt><em class="property"> = 'HttpDoSProtection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.HttpDoSProtection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SSLVPN">
+<tt class="descname">SSLVPN</tt><em class="property"> = 'SSLVPN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SSLVPN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.AAA">
+<tt class="descname">AAA</tt><em class="property"> = 'AAA'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.AAA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.GSLB">
+<tt class="descname">GSLB</tt><em class="property"> = 'GSLB'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.GSLB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.GlobalServerLoadBalancing">
+<tt class="descname">GlobalServerLoadBalancing</tt><em class="property"> = 'GlobalServerLoadBalancing'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.GlobalServerLoadBalancing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SSL">
+<tt class="descname">SSL</tt><em class="property"> = 'SSL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SSL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SSLOffload">
+<tt class="descname">SSLOffload</tt><em class="property"> = 'SSLOffload'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SSLOffload" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SSLOffloading">
+<tt class="descname">SSLOffloading</tt><em class="property"> = 'SSLOffloading'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SSLOffloading" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CF">
+<tt class="descname">CF</tt><em class="property"> = 'CF'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ContentFiltering">
+<tt class="descname">ContentFiltering</tt><em class="property"> = 'ContentFiltering'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ContentFiltering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.IC">
+<tt class="descname">IC</tt><em class="property"> = 'IC'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.IC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.IntegratedCaching">
+<tt class="descname">IntegratedCaching</tt><em class="property"> = 'IntegratedCaching'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.IntegratedCaching" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.OSPF">
+<tt class="descname">OSPF</tt><em class="property"> = 'OSPF'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.OSPF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.OSPFRouting">
+<tt class="descname">OSPFRouting</tt><em class="property"> = 'OSPFRouting'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.OSPFRouting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.RIP">
+<tt class="descname">RIP</tt><em class="property"> = 'RIP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.RIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.RIPRouting">
+<tt class="descname">RIPRouting</tt><em class="property"> = 'RIPRouting'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.RIPRouting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.BGP">
+<tt class="descname">BGP</tt><em class="property"> = 'BGP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.BGP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.BGPRouting">
+<tt class="descname">BGPRouting</tt><em class="property"> = 'BGPRouting'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.BGPRouting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.REWRITE">
+<tt class="descname">REWRITE</tt><em class="property"> = 'REWRITE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.REWRITE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.IPv6PT">
+<tt class="descname">IPv6PT</tt><em class="property"> = 'IPv6PT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.IPv6PT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.IPv6protocoltranslation">
+<tt class="descname">IPv6protocoltranslation</tt><em class="property"> = 'IPv6protocoltranslation'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.IPv6protocoltranslation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.AppFw">
+<tt class="descname">AppFw</tt><em class="property"> = 'AppFw'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.AppFw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ApplicationFirewall">
+<tt class="descname">ApplicationFirewall</tt><em class="property"> = 'ApplicationFirewall'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ApplicationFirewall" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.RESPONDER">
+<tt class="descname">RESPONDER</tt><em class="property"> = 'RESPONDER'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.RESPONDER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.HTMLInjection">
+<tt class="descname">HTMLInjection</tt><em class="property"> = 'HTMLInjection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.HTMLInjection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.push">
+<tt class="descname">push</tt><em class="property"> = 'push'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.push" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.NSPush">
+<tt class="descname">NSPush</tt><em class="property"> = 'NSPush'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.NSPush" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.NetScalerPush">
+<tt class="descname">NetScalerPush</tt><em class="property"> = 'NetScalerPush'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.NetScalerPush" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.AppFlow">
+<tt class="descname">AppFlow</tt><em class="property"> = 'AppFlow'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.AppFlow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CloudBridge">
+<tt class="descname">CloudBridge</tt><em class="property"> = 'CloudBridge'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CloudBridge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ISIS">
+<tt class="descname">ISIS</tt><em class="property"> = 'ISIS'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ISIS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ISISRouting">
+<tt class="descname">ISISRouting</tt><em class="property"> = 'ISISRouting'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ISISRouting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CH">
+<tt class="descname">CH</tt><em class="property"> = 'CH'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CallHome">
+<tt class="descname">CallHome</tt><em class="property"> = 'CallHome'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CallHome" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.AppQoE">
+<tt class="descname">AppQoE</tt><em class="property"> = 'AppQoE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.AppQoE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ContentAccelerator">
+<tt class="descname">ContentAccelerator</tt><em class="property"> = 'ContentAccelerator'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ContentAccelerator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SYSTEM">
+<tt class="descname">SYSTEM</tt><em class="property"> = 'SYSTEM'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SYSTEM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.RISE">
+<tt class="descname">RISE</tt><em class="property"> = 'RISE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.RISE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.FEO">
+<tt class="descname">FEO</tt><em class="property"> = 'FEO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.FEO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.LSN">
+<tt class="descname">LSN</tt><em class="property"> = 'LSN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.LSN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.LargeScaleNAT">
+<tt class="descname">LargeScaleNAT</tt><em class="property"> = 'LargeScaleNAT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.LargeScaleNAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.RDPProxy">
+<tt class="descname">RDPProxy</tt><em class="property"> = 'RDPProxy'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.RDPProxy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.Rep">
+<tt class="descname">Rep</tt><em class="property"> = 'Rep'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.Rep" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.Reputation">
+<tt class="descname">Reputation</tt><em class="property"> = 'Reputation'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.Reputation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.URLFiltering">
+<tt class="descname">URLFiltering</tt><em class="property"> = 'URLFiltering'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.URLFiltering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.VideoOptimization">
+<tt class="descname">VideoOptimization</tt><em class="property"> = 'VideoOptimization'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.VideoOptimization" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ForwardProxy">
+<tt class="descname">ForwardProxy</tt><em class="property"> = 'ForwardProxy'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ForwardProxy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SSLInterception">
+<tt class="descname">SSLInterception</tt><em class="property"> = 'SSLInterception'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.SSLInterception" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.AdaptiveTCP">
+<tt class="descname">AdaptiveTCP</tt><em class="property"> = 'AdaptiveTCP'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.AdaptiveTCP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CQA">
+<tt class="descname">CQA</tt><em class="property"> = 'CQA'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CQA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CI">
+<tt class="descname">CI</tt><em class="property"> = 'CI'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.CI" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ContentInspection">
+<tt class="descname">ContentInspection</tt><em class="property"> = 'ContentInspection'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.ContentInspection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.Bot">
+<tt class="descname">Bot</tt><em class="property"> = 'Bot'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.Bot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.APIGateway">
+<tt class="descname">APIGateway</tt><em class="property"> = 'APIGateway'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Feature.APIGateway" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Monitorconnectionclose">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Monitorconnectionclose</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Monitorconnectionclose" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Monitorconnectionclose.RESET">
+<tt class="descname">RESET</tt><em class="property"> = 'RESET'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Monitorconnectionclose.RESET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Monitorconnectionclose.FIN">
+<tt class="descname">FIN</tt><em class="property"> = 'FIN'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Monitorconnectionclose.FIN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Builtin">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Builtin</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Builtin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Builtin.MODIFIABLE">
+<tt class="descname">MODIFIABLE</tt><em class="property"> = 'MODIFIABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Builtin.MODIFIABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Builtin.DELETABLE">
+<tt class="descname">DELETABLE</tt><em class="property"> = 'DELETABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Builtin.DELETABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Builtin.IMMUTABLE">
+<tt class="descname">IMMUTABLE</tt><em class="property"> = 'IMMUTABLE'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Builtin.IMMUTABLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Builtin.PARTITION_ALL">
+<tt class="descname">PARTITION_ALL</tt><em class="property"> = 'PARTITION_ALL'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Builtin.PARTITION_ALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Lbhashalgorithm">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Lbhashalgorithm</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Lbhashalgorithm" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Lbhashalgorithm.DEFAULT">
+<tt class="descname">DEFAULT</tt><em class="property"> = 'DEFAULT'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Lbhashalgorithm.DEFAULT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Lbhashalgorithm.PRAC">
+<tt class="descname">PRAC</tt><em class="property"> = 'PRAC'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Lbhashalgorithm.PRAC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Lbhashalgorithm.JARH">
+<tt class="descname">JARH</tt><em class="property"> = 'JARH'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Lbhashalgorithm.JARH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Allowboundsvcremoval">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Allowboundsvcremoval</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Allowboundsvcremoval" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Allowboundsvcremoval.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Allowboundsvcremoval.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Allowboundsvcremoval.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Allowboundsvcremoval.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Retainservicestate">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Retainservicestate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Retainservicestate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Retainservicestate.ON">
+<tt class="descname">ON</tt><em class="property"> = 'ON'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Retainservicestate.ON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Retainservicestate.OFF">
+<tt class="descname">OFF</tt><em class="property"> = 'OFF'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Retainservicestate.OFF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Useportforhashlb">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Useportforhashlb</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Useportforhashlb" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Useportforhashlb.YES">
+<tt class="descname">YES</tt><em class="property"> = 'YES'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Useportforhashlb.YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Useportforhashlb.NO">
+<tt class="descname">NO</tt><em class="property"> = 'NO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Useportforhashlb.NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Consolidatedlconn">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Consolidatedlconn</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Consolidatedlconn" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Consolidatedlconn.YES">
+<tt class="descname">YES</tt><em class="property"> = 'YES'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Consolidatedlconn.YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Consolidatedlconn.NO">
+<tt class="descname">NO</tt><em class="property"> = 'NO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Consolidatedlconn.NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Vserverspecificmac">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Vserverspecificmac</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Vserverspecificmac" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Vserverspecificmac.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Vserverspecificmac.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Vserverspecificmac.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Vserverspecificmac.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Useencryptedpersistencecookie">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Useencryptedpersistencecookie</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Useencryptedpersistencecookie" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Useencryptedpersistencecookie.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Useencryptedpersistencecookie.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Useencryptedpersistencecookie.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Useencryptedpersistencecookie.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Storemqttclientidandusername">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Storemqttclientidandusername</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Storemqttclientidandusername" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Storemqttclientidandusername.YES">
+<tt class="descname">YES</tt><em class="property"> = 'YES'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Storemqttclientidandusername.YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Storemqttclientidandusername.NO">
+<tt class="descname">NO</tt><em class="property"> = 'NO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Storemqttclientidandusername.NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Monitorskipmaxclient">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Monitorskipmaxclient</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Monitorskipmaxclient" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Monitorskipmaxclient.ENABLED">
+<tt class="descname">ENABLED</tt><em class="property"> = 'ENABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Monitorskipmaxclient.ENABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Monitorskipmaxclient.DISABLED">
+<tt class="descname">DISABLED</tt><em class="property"> = 'DISABLED'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Monitorskipmaxclient.DISABLED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Preferdirectroute">
+<em class="property">class </em><tt class="descclassname">lbparameter.</tt><tt class="descname">Preferdirectroute</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Preferdirectroute" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Preferdirectroute.YES">
+<tt class="descname">YES</tt><em class="property"> = 'YES'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Preferdirectroute.YES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Preferdirectroute.NO">
+<tt class="descname">NO</tt><em class="property"> = 'NO'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter.Preferdirectroute.NO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter_response">
+<em class="property">class </em><tt class="descname">lbparameter_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.lbparameter_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.aaa.html">aaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.adm.html">adm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.analytics.html">analytics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.app.html">app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.azure.html">azure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.basic.html">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bfd.html">bfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.bot.html">bot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cache.html">cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cloud.html">cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cmp.html">cmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.contentinspection.html">contentinspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cr.html">cr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.cs.html">cs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.db.html">db</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.gslb.html">gslb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ha.html">ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ica.html">ica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ipsecalg.html">ipsecalg</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.html">lb</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbgroup.html">lbgroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbgroup_binding.html">lbgroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbgroup_lbvserver_binding.html">lbgroup_lbvserver_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmetrictable.html">lbmetrictable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmetrictable_binding.html">lbmetrictable_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmetrictable_metric_binding.html">lbmetrictable_metric_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonbindings.html">lbmonbindings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonbindings_binding.html">lbmonbindings_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonbindings_gslbservicegroup_binding.html">lbmonbindings_gslbservicegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonbindings_service_binding.html">lbmonbindings_service_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonbindings_servicegroup_binding.html">lbmonbindings_servicegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonitor.html">lbmonitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonitor_binding.html">lbmonitor_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonitor_metric_binding.html">lbmonitor_metric_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonitor_service_binding.html">lbmonitor_service_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonitor_servicegroup_binding.html">lbmonitor_servicegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonitor_sslcertkey_binding.html">lbmonitor_sslcertkey_binding</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">lbparameter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbpersistentsessions.html">lbpersistentsessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbprofile.html">lbprofile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbroute.html">lbroute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbroute6.html">lbroute6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbsipparameters.html">lbsipparameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver.html">lbvserver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_analyticsprofile_binding.html">lbvserver_analyticsprofile_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_appflowpolicy_binding.html">lbvserver_appflowpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_appfwpolicy_binding.html">lbvserver_appfwpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_appqoepolicy_binding.html">lbvserver_appqoepolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_auditnslogpolicy_binding.html">lbvserver_auditnslogpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_auditsyslogpolicy_binding.html">lbvserver_auditsyslogpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_authorizationpolicy_binding.html">lbvserver_authorizationpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_binding.html">lbvserver_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_botpolicy_binding.html">lbvserver_botpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_cachepolicy_binding.html">lbvserver_cachepolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_cmppolicy_binding.html">lbvserver_cmppolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_contentinspectionpolicy_binding.html">lbvserver_contentinspectionpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_csvserver_binding.html">lbvserver_csvserver_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_dnspolicy64_binding.html">lbvserver_dnspolicy64_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_dospolicy_binding.html">lbvserver_dospolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_feopolicy_binding.html">lbvserver_feopolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_filterpolicy_binding.html">lbvserver_filterpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_pqpolicy_binding.html">lbvserver_pqpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_responderpolicy_binding.html">lbvserver_responderpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_rewritepolicy_binding.html">lbvserver_rewritepolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_scpolicy_binding.html">lbvserver_scpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_service_binding.html">lbvserver_service_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_servicegroup_binding.html">lbvserver_servicegroup_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_servicegroupmember_binding.html">lbvserver_servicegroupmember_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_spilloverpolicy_binding.html">lbvserver_spilloverpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_tmtrafficpolicy_binding.html">lbvserver_tmtrafficpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_transformpolicy_binding.html">lbvserver_transformpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_videooptimizationdetectionpolicy_binding.html">lbvserver_videooptimizationdetectionpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbvserver_videooptimizationpacingpolicy_binding.html">lbvserver_videooptimizationpacingpolicy_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbwlm.html">lbwlm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbwlm_binding.html">lbwlm_binding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbwlm_lbvserver_binding.html">lbwlm_lbvserver_binding</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lldp.html">lldp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.lsn.html">lsn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.network.html">network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ns.html">ns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ntp.html">ntp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pcp.html">pcp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.policy.html">policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.pq.html">pq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.protocol.html">protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quic.html">quic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.quicbridge.html">quicbridge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rdp.html">rdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.reputation.html">reputation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.router.html">router</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.smpp.html">smpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.subscriber.html">subscriber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.ulfd.html">ulfd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.urlfiltering.html">urlfiltering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.user.html">user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.utility.html">utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.videooptimization.html">videooptimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.vpn.html">vpn</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a></li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbmonitor_sslcertkey_binding.html"
+                        title="previous chapter">lbmonitor_sslcertkey_binding module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbpersistentsessions.html"
+                        title="next chapter">lbpersistentsessions module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.config.lb.lbparameter.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

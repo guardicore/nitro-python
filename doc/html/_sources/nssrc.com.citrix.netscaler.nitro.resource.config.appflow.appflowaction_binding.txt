@@ -1,0 +1,8 @@
+appflowaction_binding module
+============================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.appflow.appflowaction_binding
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

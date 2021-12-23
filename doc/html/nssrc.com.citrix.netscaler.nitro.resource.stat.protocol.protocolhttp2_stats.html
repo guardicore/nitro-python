@@ -1,0 +1,799 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>protocolhttp2_stats module &mdash; Nitro  documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Nitro  documentation" href="index.html" />
+    <link rel="up" title="protocol package" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.html" />
+    <link rel="next" title="protocolhttp3_stats module" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp3_stats.html" />
+    <link rel="prev" title="protocol package" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp3_stats.html" title="protocolhttp3_stats module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.html" title="protocol package"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Nitro  documentation</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.stat.html" >config package</a> &raquo;</li>
+          <li><a href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.html" accesskey="U">protocol package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats">
+<span id="protocolhttp2-stats-module"></span><h1>protocolhttp2_stats module<a class="headerlink" href="#module-nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats">
+<em class="property">class </em><tt class="descname">protocolhttp2_stats</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_resource.base_resource</span></tt></a></p>
+<p>Statistics for http2 resource.</p>
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.clearstats">
+<tt class="descname">clearstats</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.clearstats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear the statsistics / counters.&lt;br/&gt;Possible values = basic, full.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2errresfrafloodrate">
+<tt class="descname">http2errresfrafloodrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2errresfrafloodrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2errresfraflood.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2requpgrate">
+<tt class="descname">http2requpgrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2requpgrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2requpg.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2dataframesrcvdrate">
+<tt class="descname">http2dataframesrcvdrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2dataframesrcvdrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2dataframesrcvd.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inpriorityframesrate">
+<tt class="descname">http2inpriorityframesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inpriorityframesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2inpriorityframes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2serverdirectrate">
+<tt class="descname">http2serverdirectrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2serverdirectrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2serverdirect.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2priorityframessent">
+<tt class="descname">http2priorityframessent</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2priorityframessent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 PRIORITY frames sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2headerframessent">
+<tt class="descname">http2headerframessent</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2headerframessent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 HEADER frames sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2serverupgradefailedrate">
+<tt class="descname">http2serverupgradefailedrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2serverupgradefailedrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2serverupgradefailed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inheaderframes">
+<tt class="descname">http2inheaderframes</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inheaderframes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 HEADER frames.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pushpromframesrcvdrate">
+<tt class="descname">http2pushpromframesrcvdrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pushpromframesrcvdrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2pushpromframesrcvd.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2responsesrate">
+<tt class="descname">http2responsesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2responsesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2responses.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inpriorityframes">
+<tt class="descname">http2inpriorityframes</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inpriorityframes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 PRIORITY frames.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2serverdirectfailedrate">
+<tt class="descname">http2serverdirectfailedrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2serverdirectfailedrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2serverdirectfailed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2serverdirectfailed">
+<tt class="descname">http2serverdirectfailed</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2serverdirectfailed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 server direct failed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2goawayframesrcvd">
+<tt class="descname">http2goawayframesrcvd</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2goawayframesrcvd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 GOAWAY frames received.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2dataframessent">
+<tt class="descname">http2dataframessent</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2dataframessent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 DATA frames sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2continuationframesrcvd">
+<tt class="descname">http2continuationframesrcvd</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2continuationframesrcvd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 CONTINUATION frames received.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2rststreamframessent">
+<tt class="descname">http2rststreamframessent</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2rststreamframessent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 RST_STREAM frames sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2rststreamframesrcvd">
+<tt class="descname">http2rststreamframesrcvd</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2rststreamframesrcvd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 RST_STREAM frames received.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inwindowupdateframesrate">
+<tt class="descname">http2inwindowupdateframesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inwindowupdateframesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2inwindowupdateframes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2windowupdateframessent">
+<tt class="descname">http2windowupdateframessent</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2windowupdateframessent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 WINDOW_UPDATE frames sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2headerframesrcvdrate">
+<tt class="descname">http2headerframesrcvdrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2headerframesrcvdrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2headerframesrcvd.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pingframessent">
+<tt class="descname">http2pingframessent</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pingframessent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 PING frames sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2requests">
+<tt class="descname">http2requests</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2requests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of http2 requests.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2errsetfloodrate">
+<tt class="descname">http2errsetfloodrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2errsetfloodrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2errsetflood.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inpingframesrate">
+<tt class="descname">http2inpingframesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inpingframesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2inpingframes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2requestsrate">
+<tt class="descname">http2requestsrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2requestsrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2requests.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inpingframes">
+<tt class="descname">http2inpingframes</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inpingframes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 PING frames.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2priorityframessentrate">
+<tt class="descname">http2priorityframessentrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2priorityframessentrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2priorityframessent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2settingframesrcvd">
+<tt class="descname">http2settingframesrcvd</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2settingframesrcvd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 SETTINGS frames received.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2windowupdateframessentrate">
+<tt class="descname">http2windowupdateframessentrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2windowupdateframessentrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2windowupdateframessent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2nomatcipherrate">
+<tt class="descname">http2nomatcipherrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2nomatcipherrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2nomatcipher.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2headerframessentrate">
+<tt class="descname">http2headerframessentrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2headerframessentrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2headerframessent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2serverupgradefailed">
+<tt class="descname">http2serverupgradefailed</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2serverupgradefailed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 server upgrade failed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2indataframes">
+<tt class="descname">http2indataframes</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2indataframes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 DATA frames.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2errsetflood">
+<tt class="descname">http2errsetflood</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2errsetflood" title="Permalink to this definition">¶</a></dt>
+<dd><p>HTTP/2 number of settings frames received on connection is above rate limit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2frametoobig">
+<tt class="descname">http2frametoobig</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2frametoobig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 frames received carrying a frame length greater than SETTINGS_MAX_FRAME_SIZE sent by NetScale .</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2priorityframesrcvd">
+<tt class="descname">http2priorityframesrcvd</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2priorityframesrcvd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of http2 priority frames received.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2direct">
+<tt class="descname">http2direct</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2direct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of http2 direct connections established.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2incontinuationframes">
+<tt class="descname">http2incontinuationframes</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2incontinuationframes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 CONTINUATION frames.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inpushpromiseframesrate">
+<tt class="descname">http2inpushpromiseframesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inpushpromiseframesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2inpushpromiseframes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pingframesrcvdrate">
+<tt class="descname">http2pingframesrcvdrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pingframesrcvdrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2pingframesrcvd.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pushpromiseframessent">
+<tt class="descname">http2pushpromiseframessent</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pushpromiseframessent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 PUSH_PROMISE frames sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2ingoawayframesrate">
+<tt class="descname">http2ingoawayframesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2ingoawayframesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2ingoawayframes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2totgrpcfailure">
+<tt class="descname">http2totgrpcfailure</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2totgrpcfailure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of gRPC failures.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2dataframesrcvd">
+<tt class="descname">http2dataframesrcvd</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2dataframesrcvd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 DATA frames received.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2insettingframes">
+<tt class="descname">http2insettingframes</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2insettingframes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 SETTINGS frames.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2nomatcipher">
+<tt class="descname">http2nomatcipher</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2nomatcipher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of cipher mismatch failures.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inwindowupdateframes">
+<tt class="descname">http2inwindowupdateframes</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inwindowupdateframes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 WINDOW_UPDATE frames.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2priorityframesrcvdrate">
+<tt class="descname">http2priorityframesrcvdrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2priorityframesrcvdrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2priorityframesrcvd.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2winupdateframesrcvd">
+<tt class="descname">http2winupdateframesrcvd</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2winupdateframesrcvd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 WINDOW_UPDATE frames received.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2altsvcframessent">
+<tt class="descname">http2altsvcframessent</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2altsvcframessent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 ALTSVC frames sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pingframessentrate">
+<tt class="descname">http2pingframessentrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pingframessentrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2pingframessent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2totgrpcresponse">
+<tt class="descname">http2totgrpcresponse</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2totgrpcresponse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of gRPC responses.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2goawayframesrcvdrate">
+<tt class="descname">http2goawayframesrcvdrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2goawayframesrcvdrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2goawayframesrcvd.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2continuationframesrcvdrate">
+<tt class="descname">http2continuationframesrcvdrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2continuationframesrcvdrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2continuationframesrcvd.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pingfloodrate">
+<tt class="descname">http2pingfloodrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pingfloodrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2pingflood.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2rststreamframesrcvdrate">
+<tt class="descname">http2rststreamframesrcvdrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2rststreamframesrcvdrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2rststreamframesrcvd.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inheaderframesrate">
+<tt class="descname">http2inheaderframesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inheaderframesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2inheaderframes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pushpromiseframessentrate">
+<tt class="descname">http2pushpromiseframessentrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pushpromiseframessentrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2pushpromiseframessent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2totgrpcrequest">
+<tt class="descname">http2totgrpcrequest</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2totgrpcrequest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of gRPC requests.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2responses">
+<tt class="descname">http2responses</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2responses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of http2 responses.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2directrate">
+<tt class="descname">http2directrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2directrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2direct.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2serverdirect">
+<tt class="descname">http2serverdirect</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2serverdirect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 server direct.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pingflood">
+<tt class="descname">http2pingflood</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pingflood" title="Permalink to this definition">¶</a></dt>
+<dd><p>HTTP/2 number of ping frames received on connection is above rate limit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2grpcfailurerate">
+<tt class="descname">http2grpcfailurerate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2grpcfailurerate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2totgrpcfailure.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2continuationframessentrate">
+<tt class="descname">http2continuationframessentrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2continuationframessentrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2continuationframessent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pushpromframesrcvd">
+<tt class="descname">http2pushpromframesrcvd</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pushpromframesrcvd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 PUSH_PROMISE frames received.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2altsvcframessentrate">
+<tt class="descname">http2altsvcframessentrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2altsvcframessentrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2altsvcframessent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2errresfraflood">
+<tt class="descname">http2errresfraflood</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2errresfraflood" title="Permalink to this definition">¶</a></dt>
+<dd><p>HTTP/2 number of reset frames received on connection is above rate limit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2grpcsuccessrate">
+<tt class="descname">http2grpcsuccessrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2grpcsuccessrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2totgrpcsuccess.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2goawayframessentrate">
+<tt class="descname">http2goawayframessentrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2goawayframessentrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2goawayframessent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2headerframesrcvd">
+<tt class="descname">http2headerframesrcvd</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2headerframesrcvd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of http2 header frames received.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2grpcresponserate">
+<tt class="descname">http2grpcresponserate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2grpcresponserate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2totgrpcresponse.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2totgrpcsuccess">
+<tt class="descname">http2totgrpcsuccess</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2totgrpcsuccess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of gRPC success.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inrststreamframes">
+<tt class="descname">http2inrststreamframes</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inrststreamframes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 RST_STREAM frames.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2rststreamframessentrate">
+<tt class="descname">http2rststreamframessentrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2rststreamframessentrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2rststreamframessent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2incontinuationframesrate">
+<tt class="descname">http2incontinuationframesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2incontinuationframesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2incontinuationframes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2requestupgradefailedrate">
+<tt class="descname">http2requestupgradefailedrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2requestupgradefailedrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2requestupgradefailed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2errempfraflood">
+<tt class="descname">http2errempfraflood</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2errempfraflood" title="Permalink to this definition">¶</a></dt>
+<dd><p>HTTP/2 number of empty frames received on connection is above rate limit.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2continuationframessent">
+<tt class="descname">http2continuationframessent</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2continuationframessent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 CONTINUATION frames sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inpushpromiseframes">
+<tt class="descname">http2inpushpromiseframes</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inpushpromiseframes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 PUSH_PROMISE frames.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2requestupgradefailed">
+<tt class="descname">http2requestupgradefailed</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2requestupgradefailed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 request upgrade failed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2dataframessentrate">
+<tt class="descname">http2dataframessentrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2dataframessentrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2dataframessent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2settingframesrcvdrate">
+<tt class="descname">http2settingframesrcvdrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2settingframesrcvdrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2settingframesrcvd.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2winupdateframesrcvdrate">
+<tt class="descname">http2winupdateframesrcvdrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2winupdateframesrcvdrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2winupdateframesrcvd.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2indataframesrate">
+<tt class="descname">http2indataframesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2indataframesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2indataframes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2errempfrafloodrate">
+<tt class="descname">http2errempfrafloodrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2errempfrafloodrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2errempfraflood.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2goawayframessent">
+<tt class="descname">http2goawayframessent</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2goawayframessent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 GOAWAY frames sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2requpg">
+<tt class="descname">http2requpg</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2requpg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of connections upgraded to HTTP2.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2settingframessent">
+<tt class="descname">http2settingframessent</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2settingframessent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 SETTINGS frames sent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pingframesrcvd">
+<tt class="descname">http2pingframesrcvd</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2pingframesrcvd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 PING frames received.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2insettingframesrate">
+<tt class="descname">http2insettingframesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2insettingframesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2insettingframes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2ingoawayframes">
+<tt class="descname">http2ingoawayframes</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2ingoawayframes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of HTTP/2 GOAWAY frames.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2settingframessentrate">
+<tt class="descname">http2settingframessentrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2settingframessentrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2settingframessent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2frametoobigrate">
+<tt class="descname">http2frametoobigrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2frametoobigrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2frametoobig.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inrststreamframesrate">
+<tt class="descname">http2inrststreamframesrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2inrststreamframesrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2inrststreamframes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2grpcrequestrate">
+<tt class="descname">http2grpcrequestrate</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.http2grpcrequestrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rate (/s) counter for http2totgrpcrequest.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.get">
+<em class="property">classmethod </em><tt class="descname">get</tt><big>(</big><em>service</em>, <em>name=''</em>, <em>option_=''</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this API to fetch the statistics of all protocolhttp2_stats resources that are configured on netscaler.
+set statbindings=True in options to retrieve bindings.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.Clearstats">
+<em class="property">class </em><tt class="descname">Clearstats</tt><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.Clearstats" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.Clearstats.basic">
+<tt class="descname">basic</tt><em class="property"> = 'basic'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.Clearstats.basic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.Clearstats.full">
+<tt class="descname">full</tt><em class="property"> = 'full'</em><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_stats.Clearstats.full" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_response">
+<em class="property">class </em><tt class="descname">protocolhttp2_response</tt><big>(</big><em>length=1</em><big>)</big><a class="headerlink" href="#nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.protocolhttp2_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.html#nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response" title="nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response"><tt class="xref py py-class docutils literal"><span class="pre">nssrc.com.citrix.netscaler.nitro.resource.base.base_response.base_response</span></tt></a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.exception.html">Nitro exception Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.base.html">Base Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.service.html">Service Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.util.html">Util Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.config.html">Config Package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.html">Stat Package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.aaa.html">aaa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.appflow.html">appflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.appfw.html">appfw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.appqoe.html">appqoe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.audit.html">audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.authentication.html">authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.authorization.html">authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.autoscale.html">autoscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.basic.html">basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.bot.html">bot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.cache.html">cache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.cluster.html">cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.cmp.html">cmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.contentinspection.html">contentinspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.cr.html">cr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.cs.html">cs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.dns.html">dns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.dos.html">dos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.feo.html">feo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.gslb.html">gslb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.ha.html">ha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.ica.html">ica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.ipsec.html">ipsec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.ipsecalg.html">ipsecalg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.lb.html">lb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.lldp.html">lldp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.lsn.html">lsn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.network.html">network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.ns.html">ns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.pcp.html">pcp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.pq.html">pq</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.html">protocol</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">protocolhttp2_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp3_stats.html">protocolhttp3_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp_stats.html">protocolhttp_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolicmp_stats.html">protocolicmp_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolicmpv6_stats.html">protocolicmpv6_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolip_stats.html">protocolip_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolipv6_stats.html">protocolipv6_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolmptcp_stats.html">protocolmptcp_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolquic_stats.html">protocolquic_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolquicbridge_stats.html">protocolquicbridge_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocoltcp_stats.html">protocoltcp_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocoludp_stats.html">protocoludp_stats</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.qos.html">qos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.responder.html">responder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.rewrite.html">rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.sc.html">sc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.snmp.html">snmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.spillover.html">spillover</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.ssl.html">ssl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.stream.html">stream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.system.html">system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.tm.html">tm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.transform.html">transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.tunnel.html">tunnel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.user.html">user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.videooptimization.html">videooptimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nssrc.com.citrix.netscaler.nitro.resource.stat.vpn.html">vpn</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.html"
+                        title="previous chapter">protocol package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp3_stats.html"
+                        title="next chapter">protocolhttp3_stats module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/nssrc.com.citrix.netscaler.nitro.resource.stat.protocol.protocolhttp2_stats.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+
+    <div class="footer">
+        &copy; Copyright © 1999-2014 Citrix Systems, Inc. All Rights Reserved.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

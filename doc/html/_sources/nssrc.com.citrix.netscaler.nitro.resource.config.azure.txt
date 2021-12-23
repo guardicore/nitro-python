@@ -1,0 +1,10 @@
+azure package
+=============
+
+Subpackages
+-----------
+
+.. toctree::
+
+	azureapplication <nssrc.com.citrix.netscaler.nitro.resource.config.azure.azureapplication>
+	azurekeyvault <nssrc.com.citrix.netscaler.nitro.resource.config.azure.azurekeyvault>

@@ -1,0 +1,8 @@
+admparameter module
+===================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.adm.admparameter
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

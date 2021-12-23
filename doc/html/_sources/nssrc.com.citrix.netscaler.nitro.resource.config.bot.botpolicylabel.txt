@@ -1,0 +1,8 @@
+botpolicylabel module
+=====================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.bot.botpolicylabel
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

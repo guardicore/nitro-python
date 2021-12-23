@@ -1,0 +1,7 @@
+nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbsyncstatus_args module
+================================================================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbsyncstatus_args
+    :members:
+    :undoc-members:
+    :show-inheritance:

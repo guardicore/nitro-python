@@ -1,0 +1,8 @@
+gslbservicegroup_servicegroupentitymonbindings_binding module
+=============================================================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.gslb.gslbservicegroup_servicegroupentitymonbindings_binding
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

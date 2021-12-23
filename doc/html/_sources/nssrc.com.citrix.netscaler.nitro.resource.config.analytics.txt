@@ -1,0 +1,11 @@
+analytics package
+=================
+
+Subpackages
+-----------
+
+.. toctree::
+
+	analyticsglobal_analyticsprofile_binding <nssrc.com.citrix.netscaler.nitro.resource.config.analytics.analyticsglobal_analyticsprofile_binding>
+	analyticsglobal_binding <nssrc.com.citrix.netscaler.nitro.resource.config.analytics.analyticsglobal_binding>
+	analyticsprofile <nssrc.com.citrix.netscaler.nitro.resource.config.analytics.analyticsprofile>

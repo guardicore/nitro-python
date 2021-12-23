@@ -1,0 +1,8 @@
+nstestlicense module
+====================
+
+.. automodule:: nssrc.com.citrix.netscaler.nitro.resource.config.ns.nstestlicense
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
